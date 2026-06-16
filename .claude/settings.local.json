@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Figma__get_design_context",
+      "mcp__Figma__get_screenshot",
+      "mcp__Figma__get_metadata",
+      "Bash(find \"/Users/user/Documents/Documents - Chima's MacBook Pro\" -maxdepth 1 -type d)",
+      "Bash(python3 -c \"import os; entries = os.listdir\\(os.path.expanduser\\('~/Documents'\\)\\); print\\([e for e in entries if 'Chima' in e or 'Claude' in e]\\)\")",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/user/.nvm/versions/**)",
+      "Bash(find /opt /usr/local /Users/user -name \"node\" -type f 2>/dev/null | head -5; find /opt /usr/local /Users/user -name \"npx\" -type f 2>/dev/null | head -5)",
+      "Read(//private/tmp/**)",
+      "Bash(python3 -c ' *)",
+      "Read(//usr/local/n/versions/**)",
+      "Bash(command -v node npm npx)",
+      "Bash(command -v cwebp sips)",
+      "Bash(sips --help)",
+      "Bash(python3)"
+    ]
+  }
+}
