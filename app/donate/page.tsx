@@ -16,13 +16,15 @@ const profileLinks:SocialLink[] = [
   {
     name: "Email",
     href: "mailto:Ecodoctr@gmail.com",
-    icon: socialIcons.email,},
-  {
-    name: "TikTok",
-    href: "https://www.tiktok.com/@achii_institute",
-    target: "_blank",
-    icon: socialIcons.tiktok,
+    icon: socialIcons.email,
   },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/ecodoctr",
+    target: "_blank",
+    icon: socialIcons.linkedin,
+  },
+  
   {
     name: "X",
     href: "https://x.com/ACHII_Ecodoctr",
@@ -36,10 +38,10 @@ const profileLinks:SocialLink[] = [
     icon: socialIcons.instagram,
   },
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/company/ecodoctr",
+    name: "TikTok",
+    href: "https://www.tiktok.com/@achii_institute",
     target: "_blank",
-    icon: socialIcons.linkedin,
+    icon: socialIcons.tiktok,
   },
   {
     name: "Linktree",

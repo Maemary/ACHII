@@ -34,7 +34,7 @@ export async function subscribeEmail({ email, name, role, source }: SubscribeInp
   // Fire the welcome email — don't block the response on it failing
   try {
     await resend.emails.send({
-      from: "ACHII <hello@mail.achii.co>",
+      from: `ACHII <${process.env.EMAIL_FROM}>`,
       to: email,
       subject: "Welcome to ACHII Allies",
       html: `

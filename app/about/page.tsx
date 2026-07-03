@@ -46,7 +46,7 @@ const teams = [
     role: "Research Team Lead",
    // organisation: "WHO Africa",
     bio: "Fancy Kutoi is Research Team Co-Lead at ACHII — an anthropologist and climate-health researcher advancing equitable, evidence-based solutions at the intersection of climate change, public health, and climate justice across Africa.",
-    photo: "/images/fancy.jpg",
+    photo: "/images/Fancy.jpg",
   },
   {
     name: "Benjamin Ayejusunle",
