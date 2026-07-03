@@ -15,10 +15,34 @@ function Badge({ type }: { type: ContentType }) {
 function ArchiveCard({ item, onOpen }: { item: Item; onOpen: (i: Item) => void }) {
   return (
     <button onClick={() => onOpen(item)} className="text-left group rounded-2xl overflow-hidden border border-stroke-soft hover:border-primary-base hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 bg-white flex flex-col">
-      <div className="relative h-44 w-full overflow-hidden bg-primary-base">
-        {item.image && <Image src={item.image} alt={item.title} fill sizes="(max-width:768px) 100vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />}
+      {/* <div className="relative h-44 w-full overflow-hidden bg-primary-base">
+        {item.image && <Image src={item.image} alt={item.title} fill sizes="(max-width:768px) 100vw, 33vw" className="object-contain transition-transform duration-500 group-hover:scale-105" />}
         <div className="absolute left-4 top-4"><Badge type={item.type} /></div>
-      </div>
+      </div> */}
+      <div className="relative h-44 w-full overflow-hidden bg-primary-base">
+  {item.image && (
+    <>
+      {/* blurred fill background */}
+      <Image
+        src={item.image}
+        alt=""
+        fill
+        sizes="(max-width:768px) 100vw, 33vw"
+        className="object-cover scale-110 blur-lg opacity-60"
+      />
+      {/* full image, untouched */}
+      <Image
+        src={item.image}
+        alt={item.title}
+        fill
+        sizes="(max-width:768px) 100vw, 33vw"
+        className="object-contain transition-transform duration-500 group-hover:scale-105"
+      />
+    </>
+  )}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent" />
+  <div className="absolute left-4 top-4 z-10"><Badge type={item.type} /></div>
+</div>
       <div className="p-6 flex flex-col flex-1">
         <h3 className="font-header font-semibold text-strong text-base leading-snug mb-2 group-hover:text-primary-base transition-colors">{item.title}</h3>
         <p className="font-body text-sub text-sm leading-[1.6] mb-4 flex-1">{item.excerpt}</p>
@@ -40,7 +64,7 @@ export default function InsightsExplorer() {
 
   const featured = byId("wb0003-mosquitoes")!;
   const upcoming = items.filter((i) => i.upcoming);
-  const pastWebinars = items.filter((i) => (i.type === "Webinar" || i.type === "Recording") && !i.upcoming && i.id !== featured.id);
+  const pastWebinars = items.filter((i) => (i.type === "Webinar") && !i.upcoming && i.id !== featured.id);
   const insights = items.filter((i) => ["Insight Brief", "Research Summary", "Report"].includes(i.type));
 
   const isFiltering = query.trim() !== "" || typeFilter !== "All Content" || topic !== null;
@@ -110,7 +134,7 @@ export default function InsightsExplorer() {
             <p className="label-tag mb-6">Featured Webinar</p>
             <button onClick={() => open(featured)} className="w-full text-left group rounded-3xl overflow-hidden border border-stroke-soft hover:border-primary-base hover:shadow-xl transition-all duration-300 grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto lg:min-h-[360px] overflow-hidden bg-primary-base">
-                {featured.image && <Image src={featured.image} alt={featured.title} fill sizes="(max-width:1024px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />}
+                {featured.image && <Image src={featured.image} alt={featured.title} fill sizes="(max-width:1024px) 100vw, 50vw" className="object-contain transition-transform duration-500 group-hover:scale-105 scale-110 blur-lg opacity-60" />}
               </div>
               <div className="p-8 lg:p-12 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-5"><Badge type={featured.type} /><span className="font-body text-sub text-xs">{featured.tag}</span></div>

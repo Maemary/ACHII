@@ -1,5 +1,7 @@
 "use client";
+import { supabase } from "@/lib/supabase";
 import { createContext, useContext, useEffect, useState } from "react";
+import SubscribeForm from "./EmailSignup";
 
 type JoinCtx = { open: () => void; close: () => void };
 const Ctx = createContext<JoinCtx>({ open: () => {}, close: () => {} });
@@ -18,6 +20,7 @@ export default function JoinModalProvider({ children }: { children: React.ReactN
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
   const open = () => {
     setDone(false);
@@ -108,12 +111,40 @@ export default function JoinModalProvider({ children }: { children: React.ReactN
                   <p className="font-body text-sub text-sm leading-[1.6] mb-7">
                     Email only is all we need. The rest is optional and helps us tailor what we send you.
                   </p>
-                  <form
+                  {/* <form
                     onSubmit={(ev) => {
                       ev.preventDefault();
                       if (email) setDone(true);
                     }}
                     className="space-y-4"
+                  > */}
+                  <form
+                    onSubmit={async (ev) => {
+                      ev.preventDefault();
+                      if (!email) return;
+                      setSubmitting(true);
+                    
+                const res = await fetch("/api/subscribe", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ email, name, role, source: "join_movement" }),
+                });
+
+                setSubmitting(false);
+
+                if (!res.ok) {
+                  const { error } = await res.json();
+                  alert(
+                    error === "already_exists"
+                      ? "You're already signed up!"
+                      : "Something went wrong. Please try again."
+                  );
+                  return;
+                }
+
+                setDone(true);
+                }}
+                                    className="space-y-4"
                   >
                     <div>
                       <label className="block font-body text-xs text-sub mb-1.5">Email address *</label>
@@ -154,11 +185,14 @@ export default function JoinModalProvider({ children }: { children: React.ReactN
                     </div>
                     <button
                       type="submit"
+                      disabled={submitting}
                       className="w-full inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-header font-medium text-sm bg-yellow text-strong hover:bg-[#f5c01f] transition-colors"
                     >
-                      Join the Movement
+                      {submitting ? "Joining..." : "Join the Movement"}
+                      {submitting && (
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
-                    </button>
+                      )}
+                      </button>
                     <p className="font-body text-soft text-xs text-center">
                       No spam. Nothing financial. Unsubscribe anytime.
                     </p>

@@ -1,6 +1,5 @@
 export type ContentType =
   | "Webinar"
-  | "Recording"
   | "Insight Brief"
   | "Research Summary"
   | "Report";
@@ -39,27 +38,111 @@ export const TOPICS = [
 export const TYPE_FILTERS: (ContentType | "All Content")[] = [
   "All Content",
   "Webinar",
-  "Recording",
   "Insight Brief",
   "Research Summary",
   "Report",
 ];
 
 export const typeStyles: Record<ContentType, string> = {
-  Webinar: "bg-primary-base/12 text-primary-base",
-  Recording: "bg-green/12 text-green",
-  "Insight Brief": "bg-yellow/30 text-[#7a5e00]",
-  "Research Summary": "bg-primary-dark/12 text-primary-dark",
-  Report: "bg-strong/8 text-strong",
+  Webinar: "bg-primary-base/90 text-strong",
+  "Insight Brief": "bg-yellow/80 text-strong ",
+  "Research Summary": "bg-primary-light/90 text-strong",
+  Report: "bg-primary-base/90 text-strong",
+
 };
 
+
 export const items: Item[] = [
+   {
+    id: "wb0000-health",
+    type: "Webinar",
+    topic: "Climate & Health",
+    tag: "WB0000 · October 2025",
+    title: "Climate Change Is a Health Emergency: What Every Healthcare Worker Must Know.",
+    excerpt:
+      "What if the next patient you treat is already suffering from the invisible wounds of climate change?",
+    summary:
+      "From heat waves to flooding, shifting weather patterns are fueling new health emergencies. Healthcare workers stand at the frontline, yet many lack the knowledge to connect climate change with its medical consequences. ",
+    date: "October 2025",
+    duration: "75 min",
+    speakers: ["ACHII Policy Team"],
+    image: "/images/hero.jpg",
+    reportHref: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view",
+    takeaways: [
+      "Nigeria loses ₦3.5 trillion in food annually after harvest.",
+      "Solutions exist at household, farm, and policy levels simultaneously.",
+      "Food security is inseparable from climate-health resilience.",
+    ],
+    discussion: [
+      "Storage and cold-chain gaps in rural supply lines.",
+      "How youth-led agriculture can change the trajectory.",
+      "Policy levers that actually reach smallholder farmers.",
+    ],
+    related: ["wb0003-mosquitoes", "wb0002-childhood", "report-q1"],
+  },
+ 
+  {
+    id: "wb0001-food",
+    type: "Webinar",
+    topic: "Food Systems",
+    tag: "WB0001 · January 2026",
+    title: "The Future of Food & Sustainable Agriculture in Nigeria",
+    excerpt:
+      "Nigeria loses ₦3.5 trillion in food annually post-harvest — and climate change is compounding the failure.",
+    summary:
+      "Our opening webinar reached 42 attendees and delivered four audience-specific solutions across households, farmers, youth, and advocates. The headline: post-harvest loss is a climate-health problem hiding in plain sight, and the fixes are within reach if we act at every level at once.",
+    date: "January 2026",
+    duration: "75 min",
+    speakers: ["ACHII Policy Team"],
+    image: "/images/Jan.png",
+    reportHref: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view",
+    takeaways: [
+      "Nigeria loses ₦3.5 trillion in food annually after harvest.",
+      "Solutions exist at household, farm, and policy levels simultaneously.",
+      "Food security is inseparable from climate-health resilience.",
+    ],
+    discussion: [
+      "Storage and cold-chain gaps in rural supply lines.",
+      "How youth-led agriculture can change the trajectory.",
+      "Policy levers that actually reach smallholder farmers.",
+    ],
+    related: ["wb0003-mosquitoes", "wb0002-childhood", "report-q1"],
+  },
+  
+  {
+    id: "wb0002-childhood",
+    type: "Webinar",
+    topic: "Child Health",
+    tag: "WB0002 · February 2026",
+    title: "Future-Proofing Childhood: Building Climate-Resilient Minds and Spaces for our Children",
+    excerpt:
+      "85% of brain development happens before age 3 — and climate stress in that window causes irreversible damage.",
+    summary:
+      "The most evidence-dense session of the series examined how heat, malnutrition, and disaster stress in early childhood reshape lifelong health. A sobering, deeply practical conversation about protecting the youngest in a warming world.",
+    date: "February 2026",
+    duration: "80 min",
+    speakers: ["EcoTech Insights"],
+    image: "/images/February-Webinar.jpg",
+    reportHref: "https://drive.google.com/file/d/14I7XJDDjV0aOpNysRcwGv6oWWvRz7CVC/view",
+    takeaways: [
+      "85% of brain development is complete before age three.",
+      "Heat and malnutrition in early life cause irreversible harm.",
+      "Early-childhood protection is a frontline climate intervention.",
+    ],
+    discussion: [
+      "How disaster displacement disrupts early development.",
+      "Community-level buffers against childhood heat stress.",
+      "Measuring long-term outcomes from early exposure.",
+    ],
+    related: ["wb0004-heat", "wb0001-food", "research-national"],
+  },
+
   {
     id: "wb0003-mosquitoes",
     type: "Webinar",
     topic: "Disease Surveillance",
     tag: "WB0003 · March 2026",
-    title: "Climate change is the best thing to happen to mosquitoes in a century.",
+    title: "The Big Itch: Why Climate change is the best thing to happen to mosquitoes.",
     excerpt:
       "Why a warming continent is rewriting the map of vector-borne disease — and why African epidemiology must lead the response.",
     summary:
@@ -67,8 +150,8 @@ export const items: Item[] = [
     date: "March 2026",
     duration: "90 min",
     speakers: ["One Health Expert Panel"],
-    image: "/images/band-research.jpg",
-    watchHref: "https://drive.google.com/open?id=1gNLNEklLqfuleq_Qm7e2y9evS0cGl0Wt",
+    image: "/images/March.png",
+    watchHref: "https://drive.google.com/file/d/1T5Ezw5EQ5lPkD0e2P5xpmS34YQfPKQvp/view",
     takeaways: [
       "Warming seasons extend mosquito breeding windows into previously low-risk regions.",
       "AI outbreak prediction has reached ~85% accuracy and is improving fast.",
@@ -82,63 +165,10 @@ export const items: Item[] = [
     related: ["wb0001-food", "research-national", "report-q1"],
     featured: true,
   },
-  {
-    id: "wb0001-food",
-    type: "Recording",
-    topic: "Food Systems",
-    tag: "WB0001 · January 2026",
-    title: "The Future of Food & Sustainable Agriculture in Nigeria",
-    excerpt:
-      "Nigeria loses ₦3.5 trillion in food annually post-harvest — and climate change is compounding the failure.",
-    summary:
-      "Our opening webinar reached 42 attendees and delivered four audience-specific solutions across households, farmers, youth, and advocates. The headline: post-harvest loss is a climate-health problem hiding in plain sight, and the fixes are within reach if we act at every level at once.",
-    date: "January 2026",
-    duration: "75 min",
-    speakers: ["ACHII Policy Team"],
-    image: "/images/hero.jpg",
-    watchHref: "https://drive.google.com/open?id=1DKPK2nBlWhwa0LXWmvcXDGoE3MLwGRap",
-    takeaways: [
-      "Nigeria loses ₦3.5 trillion in food annually after harvest.",
-      "Solutions exist at household, farm, and policy levels simultaneously.",
-      "Food security is inseparable from climate-health resilience.",
-    ],
-    discussion: [
-      "Storage and cold-chain gaps in rural supply lines.",
-      "How youth-led agriculture can change the trajectory.",
-      "Policy levers that actually reach smallholder farmers.",
-    ],
-    related: ["wb0003-mosquitoes", "wb0002-childhood", "report-q1"],
-  },
-  {
-    id: "wb0002-childhood",
-    type: "Recording",
-    topic: "Child Health",
-    tag: "WB0002 · February 2026",
-    title: "Future-Proofing Childhood: Building Climate-Resilient Minds",
-    excerpt:
-      "85% of brain development happens before age 3 — and climate stress in that window causes irreversible damage.",
-    summary:
-      "The most evidence-dense session of the series examined how heat, malnutrition, and disaster stress in early childhood reshape lifelong health. A sobering, deeply practical conversation about protecting the youngest in a warming world.",
-    date: "February 2026",
-    duration: "80 min",
-    speakers: ["EcoTech Insights"],
-    image: "/images/students-tree.jpg",
-    watchHref: "https://drive.google.com/open?id=1Ub3-VabR_WQU0KxwJXHNqrOzIe7frSa0",
-    takeaways: [
-      "85% of brain development is complete before age three.",
-      "Heat and malnutrition in early life cause irreversible harm.",
-      "Early-childhood protection is a frontline climate intervention.",
-    ],
-    discussion: [
-      "How disaster displacement disrupts early development.",
-      "Community-level buffers against childhood heat stress.",
-      "Measuring long-term outcomes from early exposure.",
-    ],
-    related: ["wb0004-heat", "wb0001-food", "research-national"],
-  },
+   
   {
     id: "wb0004-heat",
-    type: "Recording",
+    type: "Webinar",
     topic: "Urban Resilience",
     tag: "WB0004 · April 2026",
     title: "Too Hot to Handle: Why Heat is the Ultimate Inequality",
@@ -149,8 +179,8 @@ export const items: Item[] = [
     date: "April 2026",
     duration: "85 min",
     speakers: ["Urban Futures Collective"],
-    image: "/images/outreach-crowd.jpg",
-    watchHref: "https://drive.google.com/open?id=15pk3F-o2XD432kn9bdhIBV4x27BzntTA",
+    image: "/images/April.png",
+    watchHref: "https://drive.google.com/file/d/1z7zzcZcKqk-T9KAZJGvMDo2YU1wwL50f/view",
     takeaways: [
       "Heat exposure tracks directly onto existing inequality.",
       "Outdoor workers and the elderly carry the heaviest burden.",
@@ -166,16 +196,44 @@ export const items: Item[] = [
   {
     id: "wb0005-minds",
     type: "Webinar",
-    topic: "Climate & Health",
-    tag: "WB0005 · 30 May 2026",
+     topic: "Climate & Health",
+    tag: "WB0005",
     title: "Minds Under Pressure: The Unseen Wounds of Climate Change",
     excerpt:
       "Examining the psychological, emotional, and psychiatric toll of a changing climate on African communities.",
     summary:
       "A 90-minute conversation with leading voices on climate-mental health in Africa. Eco-anxiety, eco-grief, post-disaster trauma, and displacement stress are real clinical realities reshaping mental-health care — and they remain severely under-discussed.",
-    date: "Saturday, 30 May 2026",
+    date: "May 2026",
     duration: "7:00–8:30 PM WAT",
     speakers: ["Odunola Oladeji"],
+    image: "/images/May.png",
+    watchHref: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
+    takeaways: [
+       "Climate shocks compound an already under-resourced mental-health system.",
+      "Eco-anxiety and eco-grief are clinical realities, not metaphors.",
+      "Community-centred frameworks can respond at scale.",
+    ],
+  discussion: [
+      "Screening for climate-related distress in primary care.",
+      "Therapeutic frameworks adapted to African contexts.",
+      "Building peer-support networks after disasters.",
+    ],
+    related: ["wb0004-heat", "research-national"],
+  },
+//Upcoming?
+  {
+    id: "wb0006-equity",
+    type: "Webinar",
+    topic: "Climate & Health",
+    tag: "WB0006 · 27 June 2026",
+    title: "Voices From The Margins: Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis",
+    excerpt:
+      "Elevating solutions-oriented voices from within these communities, and builds collective action for protection and resilience. ",
+    summary:
+      "A 90-minute conversation that examines the intersecting vulnerabilities these groups face, explores evidence-based adaptation strategies, and builds pathways for inclusive climate action that prioritises protection, dignity, and equitable access to resources.",
+    date: "Saturday, 27 June 2026",
+    duration: "7:00–8:30 PM WAT",
+    speakers: ["Lasisi Godwin (UNICEF GEN-U Youth Advisor) "],
     image: "/images/outreach-assembly.jpg",
     watchHref: "https://forms.gle/rG283eQxCjRa7i1M6",
     takeaways: [
@@ -191,6 +249,7 @@ export const items: Item[] = [
     related: ["wb0004-heat", "research-national"],
     upcoming: true,
   },
+
   {
     id: "research-national",
     type: "Research Summary",
@@ -217,6 +276,7 @@ export const items: Item[] = [
     ],
     related: ["wb0003-mosquitoes", "report-q1"],
   },
+
   {
     id: "report-q1",
     type: "Report",
@@ -243,6 +303,8 @@ export const items: Item[] = [
     ],
     related: ["research-national", "wb0001-food"],
   },
+
+//INSIGHT-BRIEFS
   {
     id: "insight-food",
     type: "Insight Brief",
@@ -255,8 +317,8 @@ export const items: Item[] = [
       "Drawn from our Food Systems webinar: climate change is compounding post-harvest failure, but household, farm, and policy solutions can move together. Food security is a climate-health issue, not a separate one.",
     date: "January 2026",
     speakers: ["ACHII Policy Team"],
-    image: "/images/team-posters.jpg",
-    reportHref: "/reports",
+    image: "/images/Jan.png",
+    reportHref: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view",
     takeaways: [
       "₦3.5 trillion in food is lost annually post-harvest.",
       "Cold-chain and storage gaps drive most of the loss.",
@@ -270,6 +332,58 @@ export const items: Item[] = [
     related: ["wb0001-food", "report-q1"],
   },
   {
+    id: "insight-childhood",
+    type: "Insight Brief",
+    topic: "Child Health",
+    tag: "Insight · Childhood",
+    title: "Future-Proofing Childhood.",
+    excerpt:
+      "Building Climate-Resilient Minds.",
+    summary:
+      "A sobering, deeply practical conversation about protecting the youngest in a warming world.",
+    date: "February 2026",
+    speakers: ["ACHII Policy Team"],
+    image: "/images/February-Webinar.jpg",
+    reportHref: "https://drive.google.com/file/d/1T5Ezw5EQ5lPkD0e2P5xpmS34YQfPKQvp/view",
+    takeaways: [
+      "₦3.5 trillion in food is lost annually post-harvest.",
+      "Cold-chain and storage gaps drive most of the loss.",
+      "Fixes must run from household to national policy at once.",
+    ],
+    discussion: [
+      "What scalable storage looks like for smallholders.",
+      "How youth-led agriculture shifts the curve.",
+      "Aligning incentives across the supply chain.",
+    ],
+    related: ["wb0002-childhood", "report-q1"],
+  },
+  {
+    id: "insight-mosquitoes",
+    type: "Insight Brief",
+    topic: "Disease Surveillance",
+    tag: "Insight · mosquitoes",
+    title: "Climate change is the best thing to happen to mosquitoes in a century.",
+    excerpt:
+      "how climate change is expanding the range and season of disease-carrying mosquitoes.",
+    summary:
+      " AI-driven outbreak prediction is now hitting 85% accuracy — but the data, models, and decisions must be grounded in African epidemiology, not imported wholesale.",
+    date: "March 2026",
+    speakers: ["ACHII Policy Team"],
+    image: "/images/March.png",
+    reportHref: "https://drive.google.com/file/d/1TGCKxJ782m7CnvczVm6Rm8jWxW8OAOE4/view",
+    takeaways: [
+      "₦3.5 trillion in food is lost annually post-harvest.",
+      "Cold-chain and storage gaps drive most of the loss.",
+      "Fixes must run from household to national policy at once.",
+    ],
+    discussion: [
+      "What scalable storage looks like for smallholders.",
+      "How youth-led agriculture shifts the curve.",
+      "Aligning incentives across the supply chain.",
+    ],
+    related: ["wb0003-mosquitoes", "report-q1"],
+  },
+  {
     id: "insight-heat",
     type: "Insight Brief",
     topic: "Urban Resilience",
@@ -281,8 +395,8 @@ export const items: Item[] = [
       "From our Heat webinar: extreme heat is a justice issue as much as a medical one. Urban design, labour protections, and cooling access now determine survivable temperatures for the most exposed.",
     date: "April 2026",
     speakers: ["Urban Futures Collective"],
-    image: "/images/band-community.jpg",
-    reportHref: "/reports",
+    image: "/images/April.png",
+    reportHref: "https://drive.google.com/file/d/13oW_jL8wlDlkYxPzh5rO-EKZL2sxlaxr/view",
     takeaways: [
       "Heat exposure maps directly onto existing inequality.",
       "Outdoor workers and the elderly bear the heaviest load.",
@@ -294,6 +408,32 @@ export const items: Item[] = [
       "Accountability for heat-related harm.",
     ],
     related: ["wb0004-heat", "report-q1"],
+  },
+   {
+    id: "insights-minds",
+    type: "Insight Brief",
+     topic: "Climate & Health",
+    tag: "Insight · Mind",
+    title: "Minds Under Pressure: The Unseen Wounds of Climate Change",
+    excerpt:
+      "Examining the psychological, emotional, and psychiatric toll of a changing climate on African communities.",
+    summary:
+      "A 90-minute conversation with leading voices on climate-mental health in Africa. Eco-anxiety, eco-grief, post-disaster trauma, and displacement stress are real clinical realities reshaping mental-health care — and they remain severely under-discussed.",
+    date: "May 2026",
+    speakers: ["Odunola Oladeji"],
+    image: "/images/May.png",
+    reportHref: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
+    takeaways: [
+       "Climate shocks compound an already under-resourced mental-health system.",
+      "Eco-anxiety and eco-grief are clinical realities, not metaphors.",
+      "Community-centred frameworks can respond at scale.",
+    ],
+  discussion: [
+      "Screening for climate-related distress in primary care.",
+      "Therapeutic frameworks adapted to African contexts.",
+      "Building peer-support networks after disasters.",
+    ],
+    related: ["wb0005-minds", "research-national"],
   },
 ];
 

@@ -6,6 +6,7 @@ import Button from "@/app/components/Button";
 import Image from "next/image";
 import Placeholder from "@/app/components/Placeholder";
 import ImageBand from "@/app/components/ImageBand";
+import TeamGrid from "../components/TeamGrid";
 
 export const metadata = {
   title: "About Us — ACHII",
@@ -30,12 +31,44 @@ const values = [
   ["Empathy", "Compassion in service. We lead with heart."],
 ];
 
-const roles = [
-  "Founder & Executive Director — Dr Aishat Oduye",
-  "Research Lead",
-  "Operations Lead",
-  "Communications Lead",
-  "Programmes Lead",
+
+const teams = [
+  {
+    name: "Promise",
+    role: "Operations Team Lead",
+   // organisation: "NIMET",
+    bio: "Nil",
+    photo: "/images/promise.jpeg",
+  },
+  
+  {
+    name: "Fancy Kutoi",
+    role: "Research Team Lead",
+   // organisation: "WHO Africa",
+    bio: "Fancy Kutoi is Research Team Co-Lead at ACHII — an anthropologist and climate-health researcher advancing equitable, evidence-based solutions at the intersection of climate change, public health, and climate justice across Africa.",
+    photo: "/images/fancy.jpg",
+  },
+  {
+    name: "Benjamin Ayejusunle",
+    role: "Research Team Lead",
+  //  organisation: "University of Lagos",
+    bio: "Benjamin Ayejusunle is a Data Analyst and Climate Scientist with a degree in Meteorology, serving as Co-Research Lead at ACHII. He drives data-driven research and climate communication to advance evidence-based responses to climate change.",
+    photo: "/images/Benjamin.jpg",
+  },
+  {
+    name: "Temitope",
+    role: "Media Team Lead",
+   // organisation: "NIMET",
+    bio: "Nil",
+    photo: "/images/temitope.jpeg",
+  },
+  {
+    name: "Oluwasemilore Daniel Olaitan",
+    role: "Media Team Lead",
+   // organisation: "NIMET",
+    bio: "Oluwasemilore Daniel Olaitan is an environmental scientist and digital strategist serving as Media Team Co-Lead at ACHII. He transforms complex climate and health data into accessible advocacy, drawing on a background in Marine Science and coastal oceanography to drive impactful climate communication across Africa.",
+    photo: "/images/Oluwasemilore.jpg",
+  },
 ];
 
 export default function AboutPage() {
@@ -136,12 +169,10 @@ export default function AboutPage() {
             <SectionHeader eyebrow="Our Impact So Far" title="The work is small. The intent is not." />
             <div className="max-w-2xl">
               <p className="font-body text-sub text-base leading-[1.75] mb-7">
-                In our first six months, ACHII has delivered four webinars reaching 117 attendees across
-                four countries. We’ve reached ~70 secondary school students through in-person outreach.
+                In our first nine months, ACHII has delivered six webinars reaching 170 attendees across
+                four countries. We’ve reached 1,570 secondary school students through in-person outreach.
                 We’ve launched Nigeria’s first national climate-health awareness study. We’ve deployed
-                17 Regional Champions across all six geopolitical zones. And we’ve mapped strategic
-                partnerships with 10 global organisations including WHO, Wellcome Trust, UNEP, AfDB, and
-                the Red Cross Red Crescent Climate Centre.
+                22 Regional Champions across all six geopolitical zones. And we’ve built active partnerships with NYSC, CHYN, Transformers Global, and Ecohealth Africa.
               </p>
               <div className="bg-primary-lighter rounded-2xl p-7">
                 <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-primary-base mb-3">Vision 2036</p>
@@ -190,34 +221,17 @@ export default function AboutPage() {
         <section className="bg-white py-20 lg:py-[120px]">
           <div className="container-site">
             <SectionHeader
-              eyebrow="Board of Advisors"
-              title="Senior leaders guiding ACHII’s strategy and impact."
-              intro="Our Board brings together expertise across climate science, public health, healthcare policy, research, and youth advocacy."
-              className="mb-10"
-            />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-              {[1, 2, 3].map((n) => (
-                <Placeholder key={n} label={`Advisor ${n} — photo · name · role · organisation · bio`} className="min-h-[200px]" />
-              ))}
-            </div>
-
-            <SectionHeader
               eyebrow="Core Team"
               title="The team building this every day."
               intro="ACHII is run by a small, focused team of clinicians, researchers, communicators, and operations leads — every hire mission-aligned."
               className="mb-10"
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {roles.map((r) => (
-                <div key={r} className="bg-primary-lighter rounded-xl p-6">
-                  <p className="font-header font-medium text-strong text-sm">{r}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </div>
-
+           {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 "> */}
+  <TeamGrid teams={teams} />
+  </div>
+  </section>
+  </div>
+  
       {/* Volunteers */}
       <div data-nav-theme="light">
         <section className="bg-bg-soft py-20 lg:py-[120px]">

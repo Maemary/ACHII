@@ -4,6 +4,7 @@ import SplitHero from "@/app/components/SplitHero";
 import SectionHeader from "@/app/components/SectionHeader";
 import Image from "next/image";
 import Button from "@/app/components/Button";
+import SubscribeForm from "../components/EmailSignup";
 
 export const metadata = {
   title: "Reports & Resources — ACHII",
@@ -18,11 +19,29 @@ const bankItems = [
   ["Infographics & Expert Briefs", "Updated as new evidence and resources are published."],
 ];
 
+
 const webinarReports = [
-  "WB0001 Report — Food & Sustainable Agriculture in Nigeria",
-  "WB0002 Report — Climate-Resilient Childhood",
-  "WB0003 Report — Climate Change and Vector-Borne Disease",
-  "WB0004 Report — Heat and Inequality",
+  {
+    title: "WB0001 Report — Food & Sustainable Agriculture in Nigeria",
+    link: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view",
+  },
+  {
+    title: "WB0002 Report — Climate-Resilient Childhood",
+    link: "https://drive.google.com/file/d/1T5Ezw5EQ5lPkD0e2P5xpmS34YQfPKQvp/view",
+  },
+  {
+    title: "WB0003 Report — Climate Change and Vector-Borne Disease",
+    link: "https://drive.google.com/file/d/1TGCKxJ782m7CnvczVm6Rm8jWxW8OAOE4/view",
+  },
+  {
+    title: "WB0004 Report — Heat and Inequality",
+    link: "https://drive.google.com/file/d/13oW_jL8wlDlkYxPzh5rO-EKZL2sxlaxr/view",
+  },
+   {
+    title: "WB0005 Report —  Wounds of Climate Change",
+    link: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
+  },
+  
 ];
 
 const toolkits = [
@@ -64,7 +83,7 @@ export default function ReportsPage() {
                 </div>
               ))}
             </div>
-            <div className="max-w-3xl mb-9 space-y-4">
+            {/* <div className="max-w-3xl mb-9 space-y-4">
               <p className="font-body text-white/80 text-base leading-[1.75]">
                 The Resource Bank is part of the ACHII Allies experience. Join the Allies community
                 (free, email only) and you get access to everything in the vault — plus first word
@@ -74,11 +93,10 @@ export default function ReportsPage() {
                 Already an Ally? Welcome back. Want a specific topic, dataset, or resource added? Tell
                 us. We’re building this for you.
               </p>
-            </div>
+            </div> */}
             <div className="flex flex-wrap gap-3">
-              <Button href="#" variant="yellow">Access the Resource Bank</Button>
-              <Button href="/get-involved" variant="outline-white">Become an Ally to Unlock</Button>
-            </div>
+              <Button href="https://drive.google.com/drive/folders/1XJCt3uu6n7Vt02aj3BUx9mZ6ahIvWM2M" variant="yellow">Access the Resource Bank</Button>
+               </div>
           </div>
         </section>
       </div>
@@ -102,7 +120,7 @@ export default function ReportsPage() {
                 the Regional Champion Model. It’s also a window into how ACHII works — what we
                 measure, what we learn, and what we do next.
               </p>
-                <Button href="#" variant="yellow">Download the Q1 Report (PDF)</Button>
+                <Button href="https://drive.google.com/file/d/1bLIfrLKF6yd2MylH6F0jaeaKpKQMw9lf/view?usp=drive_link" variant="yellow">Download the Q1 Report (PDF)</Button>
               </div>
             </div>
           </div>
@@ -119,12 +137,23 @@ export default function ReportsPage() {
               intro="Each webinar session has a companion report — speaker insights, audience Q&A highlights, and the evidence base."
               className="mb-10"
             />
-            <ul className="divide-y divide-stroke-sub/70 border-t border-b border-stroke-sub/70">
-              {webinarReports.map((r) => (
-                <li key={r} className="flex items-center justify-between gap-4 py-5">
-                  <span className="font-header font-medium text-strong text-base">{r}</span>
-                  <a href="#" className="inline-flex items-center gap-1.5 font-header font-medium text-sm text-primary-base hover:text-primary-dark transition-colors whitespace-nowrap">
-                    Read Report
+              <ul className="divide-y divide-stroke-sub/70 border-t border-b border-stroke-sub/70">
+                {webinarReports.map((report) => (
+                  <li
+                    key={report.title}
+                    className="flex items-center justify-between gap-4 py-5"
+                  >
+                    <span className="font-header font-medium text-strong text-base">
+                      {report.title}
+                    </span>
+
+                    <a
+                      href={report.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 font-header font-medium text-sm text-primary-base hover:text-primary-dark transition-colors whitespace-nowrap"
+                    >  
+                     Read Report
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                   </a>
                 </li>
@@ -152,7 +181,7 @@ export default function ReportsPage() {
                 </div>
               ))}
             </div>
-            <Button href="#" variant="yellow">Browse Toolkits</Button>
+            <Button href="https://drive.google.com/drive/folders/1_8ovBrWdtCqYk_TLQwvu9NCbn6N4QTNh"  variant="yellow">Browse Toolkits in Resource Bank</Button>
           </div>
         </section>
       </div>
@@ -169,8 +198,14 @@ export default function ReportsPage() {
                 Once a month, we share what we’re working on, what we’ve learned, and what we need
                 help with. Past editions are archived here so new readers can catch up.
               </p>
-              <Button href="/get-involved" variant="yellow">Subscribe to the Newsletter</Button>
-            </div>
+              <SubscribeForm
+  source="newsletter"
+  buttonLabel="Subscribe to the Newsletter"
+/>
+<p className="font-body text-soft text-xs mt-3">
+  Email only. We'll send your welcome letter, WhatsApp invite, and Resource Bank link.
+</p>
+              </div>
             <div className="bg-white rounded-2xl p-9">
               <p className="label-tag mb-4">Writings from African Voices</p>
               <h2 className="font-header font-semibold text-strong text-2xl lg:text-[28px] leading-tight mb-3">Climate health, told by the people living it.</h2>
@@ -180,8 +215,8 @@ export default function ReportsPage() {
                 we want to hear from you.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button href="#" variant="outline-dark">Read the Latest Writings</Button>
-                <Button href="#" variant="yellow">Submit Your Writing</Button>
+                <Button href="#" variant="outline-dark">Read the Latest Writings <p className="text-yellow">(Coming Soon)</p></Button>
+                <Button href="https://forms.gle/bYggA3xcLdvT5eMK7" variant="yellow">Submit Your Writing</Button>
               </div>
             </div>
           </div>

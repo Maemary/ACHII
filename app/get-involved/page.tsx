@@ -4,7 +4,7 @@ import PageHero from "@/app/components/PageHero";
 import SectionHeader from "@/app/components/SectionHeader";
 import Button from "@/app/components/Button";
 import Placeholder from "@/app/components/Placeholder";
-import EmailSignup from "@/app/components/EmailSignup";
+import SubscribeForm from "@/app/components/EmailSignup";
 import Image from "next/image";
 
 export const metadata = {
@@ -61,7 +61,10 @@ export default function GetInvolvedPage() {
               </p>
               <div className="bg-primary-lighter rounded-2xl p-7">
                 <p className="font-header font-semibold text-strong text-sm mb-3">Join in 30 seconds.</p>
-                <EmailSignup buttonLabel="Join as an Ally" />
+                <SubscribeForm
+  source="join_ally"
+  buttonLabel="Join as an Ally"
+/>
                 <p className="font-body text-soft text-xs mt-3">
                   Email only. We’ll send your welcome letter, WhatsApp invite, and Resource Bank link.
                 </p>
@@ -79,7 +82,7 @@ export default function GetInvolvedPage() {
         </section>
       </div>
 
-      {/* Option 2 — Donate */}
+      {/* Option 2 — Donate 
       <div data-nav-theme="dark" id="donate">
         <section className="bg-primary-base py-20 lg:py-[120px]">
           <div className="container-site">
@@ -106,7 +109,7 @@ export default function GetInvolvedPage() {
         </section>
       </div>
 
-      {/* Option 3 — Merch */}
+      {/* Option 3 — Merch 
       <div data-nav-theme="light" id="shop">
         <section className="bg-white py-20 lg:py-[120px]">
           <div className="container-site">
@@ -125,11 +128,11 @@ export default function GetInvolvedPage() {
                 </div>
               ))}
             </div>
-            <Button href="#" variant="yellow">Notify Me When the Store Launches</Button>
+            <Button href="https://forms.gle/q7JTqAYGj4fEi6xb8" variant="yellow">Notify Me When the Store Launches</Button>
           </div>
         </section>
       </div>
-
+*/}
       {/* Option 4 — Partner */}
       <div data-nav-theme="light" id="partner">
         <section className="bg-bg-soft py-20 lg:py-[120px]">
@@ -145,7 +148,7 @@ export default function GetInvolvedPage() {
               partners across funding, research collaboration, training delivery, policy advocacy, and
               infrastructure prototyping.
             </p>
-            <Button href="mailto:ecodoctr@gmail.com" variant="yellow">Partner With Us</Button>
+            <Button href="/donate" variant="yellow">Partner With Us</Button>
           </div>
         </section>
       </div>
@@ -168,7 +171,7 @@ export default function GetInvolvedPage() {
               community organising, and writing. Whether you have 2 hours a month or 20, there’s a place
               for you in this work.
             </p>
-            <Button href="#" variant="yellow">Volunteer With ACHII</Button>
+            <Button href="https://docs.google.com/forms/d/e/1FAIpQLSd4jAuK5degYOf0rI-hEhkBzbMtLNrJDIznBQEhNEasZ_XjLg/viewform" variant="yellow">Volunteer With ACHII</Button>
             </div>
           </div>
         </section>

@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Item, typeStyles, byId } from "@/app/data/insights";
+import SocialLinks, { type SocialLink } from "../SocialLinks";
+import { socialIcons } from "@/lib/socialIcons";
 
 function Badge({ type }: { type: Item["type"] }) {
   return (
@@ -10,6 +12,8 @@ function Badge({ type }: { type: Item["type"] }) {
     </span>
   );
 }
+
+
 
 export default function InsightModal({
   item,
@@ -41,7 +45,42 @@ export default function InsightModal({
 
   if (!item) return null;
 
-  const url = typeof window !== "undefined" ? `${window.location.origin}/insights#${item.id}` : "";
+  const url =
+  item.watchHref ??
+  item.reportHref ??
+  (typeof window !== "undefined"
+    ? `${window.location.origin}/insights#${item.id}`
+    : "");
+
+
+    const shareLinks: SocialLink[] = [
+  {
+    name: "WhatsApp",
+    href: `https://wa.me/?text=${encodeURIComponent(
+      `${item.title}\n${url}`
+    )}`,
+    target: "_blank",
+    icon: socialIcons.whatsapp,
+  },
+  {
+    name: "LinkedIn",
+    href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+      url
+    )}`,
+    target: "_blank",
+    icon: socialIcons.linkedin,
+  },
+  {
+    name: "X",
+    href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      item.title
+    )}&url=${encodeURIComponent(url)}`,
+    target: "_blank",
+    icon: socialIcons.x,
+  },
+];
+
+
   const shareText = encodeURIComponent(item.title);
 
   const toggleSave = () => {
@@ -72,17 +111,40 @@ export default function InsightModal({
 
         <div className="flex-1 min-h-0 overflow-y-auto">
           {/* Banner (scrolls with content) */}
-          <div className="relative h-[270px] sm:h-[345px] w-full bg-primary-base">
-            {item.image && <Image src={item.image} alt={item.title} fill sizes="(max-width:896px) 100vw, 896px" className="object-cover" />}
-            <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/85 via-primary-dark/15 to-transparent" />
-            <div className="absolute left-6 sm:left-9 bottom-6 right-6">
-              <div className="flex items-center gap-3 mb-3">
-                <Badge type={item.type} />
-                {item.tag && <span className="font-body text-white/85 text-xs">{item.tag}</span>}
-              </div>
-              <h2 className="font-header font-semibold text-white text-2xl sm:text-[30px] leading-[1.12] tracking-[-0.01em] max-w-2xl">{item.title}</h2>
-            </div>
-          </div>
+         {/* Banner (scrolls with content) */}
+<div className="relative h-[270px] sm:h-[345px] w-full bg-primary-dark overflow-hidden">
+  {item.image && (
+    <>
+      {/* Blurred fill so contain doesn't leave bare gaps */}
+      <Image
+        src={item.image}
+        alt=""
+        fill
+        sizes="(max-width:896px) 100vw, 896px"
+        className="object-cover scale-110 blur-xl opacity-50"
+      />
+      {/* Full image, uncropped */}
+      <Image
+        src={item.image}
+        alt={item.title}
+        fill
+        sizes="(max-width:896px) 100vw, 896px"
+        className="object-contain"
+      />
+    </>
+  )}
+  {/* Strong scrim so overlay text is always legible */}
+  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary-dark/60 to-primary-dark/10" />
+  <div className="absolute left-6 sm:left-9 bottom-6 right-6">
+    <div className="flex items-center gap-3 mb-3">
+      <Badge type={item.type} />
+      {item.tag && <span className="font-body text-white/85 text-xs">{item.tag}</span>}
+    </div>
+    <h2 className="font-header font-semibold text-white text-2xl sm:text-[30px] leading-[1.12] tracking-[-0.01em] max-w-2xl drop-shadow-md">
+      {item.title}
+    </h2>
+  </div>
+</div>
 
           {/* Body */}
           <div className="p-6 sm:p-9">
@@ -136,9 +198,11 @@ export default function InsightModal({
 
             <div className="flex flex-wrap items-center gap-2 pt-6 border-t border-stroke-soft">
               <span className="font-body text-xs text-soft uppercase tracking-wide mr-1">Share</span>
-              <a href={`https://wa.me/?text=${shareText}%20${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer" className="rounded-full border border-stroke-sub px-3.5 py-1.5 font-body text-xs text-sub hover:border-primary-base hover:text-primary-base transition-colors">WhatsApp</a>
-              <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer" className="rounded-full border border-stroke-sub px-3.5 py-1.5 font-body text-xs text-sub hover:border-primary-base hover:text-primary-base transition-colors">LinkedIn</a>
-              <a href={`https://twitter.com/intent/tweet?text=${shareText}&url=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer" className="rounded-full border border-stroke-sub px-3.5 py-1.5 font-body text-xs text-sub hover:border-primary-base hover:text-primary-base transition-colors">X</a>
+              <SocialLinks
+  links={shareLinks}
+  size="sm"
+  bordered={false}
+/>
               <button onClick={copyLink} className="rounded-full border border-stroke-sub px-3.5 py-1.5 font-body text-xs text-sub hover:border-primary-base hover:text-primary-base transition-colors">{copied ? "Copied!" : "Copy link"}</button>
               <button onClick={toggleSave} className={`rounded-full border px-3.5 py-1.5 font-body text-xs transition-colors ml-auto ${saved ? "border-primary-base bg-primary-lighter text-primary-base" : "border-stroke-sub text-sub hover:border-primary-base hover:text-primary-base"}`}>
                 {saved ? "Saved" : "Save for later"}

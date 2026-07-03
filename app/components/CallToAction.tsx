@@ -2,7 +2,9 @@ import Link from "next/link";
 
 const actions = [
   { title: "Join as an Ally", desc: "Add your voice and get our monthly newsletter.", cta: "Join as an Ally", href: "#join", bg: "bg-primary-base", text: "text-white", desc2: "text-white/75", btn: "border border-white/50 text-white hover:bg-white hover:text-primary-base" },
-  { title: "Take the Survey", desc: "Help us reach 900 responses across Nigeria.", cta: "Take the Survey", href: "#survey", bg: "bg-yellow", text: "text-strong", desc2: "text-strong/75", btn: "border border-strong/40 text-strong hover:bg-strong hover:text-yellow" },
+  { title: "Take the Survey", desc: "Help us reach 900 responses across Nigeria.", cta: "Take the Survey", href: 
+    "https://forms.gle/UXaxsnP7xBfshLdHA"
+    , bg: "bg-yellow", text: "text-strong", desc2: "text-strong/75", btn: "border border-strong/40 text-strong hover:bg-strong hover:text-yellow" },
   { title: "Donate", desc: "Fund the research, training, and infrastructure work.", cta: "Support ACHII", href: "/donate", bg: "bg-green", text: "text-white", desc2: "text-white/75", btn: "border border-white/50 text-white hover:bg-white hover:text-green" },
 ];
 
