@@ -1,106 +1,143 @@
-"use client";
-import { useState } from "react";
 import Link from "next/link";
+import Button from "@/app/components/Button";
 import Image from "next/image";
-import { items, byId, typeStyles, Item } from "@/app/data/insights";
-import InsightModal from "./InsightModal";
 
-const featured = byId("wb0003-mosquitoes")!;
-const supporting = ["insight-food", "research-national", "wb0002-childhood"].map(byId).filter(Boolean) as Item[];
 
-function Badge({ type }: { type: Item["type"] }) {
-  return (
-    <span className={`inline-block w-fit self-start rounded-full px-3 py-1 font-body font-semibold text-[11px] tracking-wide uppercase ${typeStyles[type]}`}>
-      {type}
-    </span>
-  );
-}
+
+const upcomingWebinar = {
+  tag: "Upcoming Webinar · WB0006",
+  title: "Voices From The Margins",
+  subtitle: "Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis",
+  date: "Saturday, 27th June 2026",
+  time: "7:00 PM – 8:30 PM WAT",
+  platform: "Google Meet",
+  registerHref:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3HMKcuFBZ79qv9blfYRpMd313JLzYWyJw/viewform",
+};
+
+const pastWebinars = [
+  {
+    tag: "WB0005 · May 2026",
+    title: "Minds Under Pressure: The Unseen Wounds of Climate Change",
+    href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
+  },
+  {
+    tag: "WB0004 · April 2026",
+    title: "Too Hot to Handle: Why Heat is the Ultimate Inequality",
+    href: "https://drive.google.com/open?id=15pk3F-o2XD432kn9bdhIBV4x27BzntTA",
+  },
+  {
+    tag: "WB0003 · March 2026",
+    title: "The Big Itch: Why Climate Change is the Best Thing to Happen to Mosquitoes",
+    href: "https://drive.google.com/open?id=1gNLNEklLqfuleq_Qm7e2y9evS0cGl0Wt",
+  },
+];
 
 export default function HomeInsights() {
-  const [active, setActive] = useState<Item | null>(null);
-
   return (
     <section id="insights" className="bg-white py-20 lg:py-[120px]">
       <div className="container-site">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
-          <div className="max-w-2xl">
-            <p className="label-tag mb-4">Webinar Insights · What we’ve heard</p>
-            <h2 className="font-header font-semibold text-strong text-3xl lg:text-[44px] leading-[1.1] tracking-[-0.02em]">
-              A living archive of climate-health conversations.
-            </h2>
-          </div>
-          <Link href="/insights" className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-header font-medium text-sm bg-yellow text-strong hover:bg-[#f5c01f] transition-colors whitespace-nowrap self-start md:self-auto">
-            Explore the Knowledge Hub
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+
+        <div className="max-w-2xl mb-12">
+          <p className="label-tag mb-4">
+            ACHII Resource Bank · Access free, open-source tools and research built for African contexts
+          </p>
+          <h2 className="font-header font-semibold text-strong text-3xl lg:text-[44px] leading-[1.1] tracking-[-0.02em]">
+            An evolving knowledge bank for climate-health action.
+          </h2>
+        </div>
+              
+
+          <Link
+            href="/training"
+            className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 font-header font-medium text-sm bg-yellow text-strong hover:bg-[#f5c01f] transition-colors"
+          >
+            Explore All Training & Webinars
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M7 17 17 7M9 7h8v8" />
+            </svg>
           </Link>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
-          {/* Featured cover story */}
-          <button
-            onClick={() => setActive(featured)}
-            className="lg:col-span-2 text-left group rounded-3xl overflow-hidden border border-stroke-soft hover:border-primary-base hover:shadow-xl transition-all duration-300 bg-white flex flex-col"
-          >
-            <div className="relative h-64 sm:h-80 lg:h-[380px] w-full overflow-hidden bg-primary-base">
-              {featured.image && (
-                <Image src={featured.image} alt={featured.title} fill sizes="(max-width:1024px) 100vw, 66vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
-              )}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/85 via-primary-dark/20 to-transparent" />
-              <div className="absolute left-7 right-7 bottom-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Badge type={featured.type} />
-                  <span className="font-body text-white/80 text-xs">{featured.tag}</span>
-                </div>
-                <h3 className="font-header font-semibold text-white text-2xl sm:text-[32px] lg:text-[38px] leading-[1.1] tracking-[-0.01em] max-w-2xl">
-                  {featured.title}
-                </h3>
-              </div>
-            </div>
-            <div className="p-7 lg:p-8 flex-1 flex flex-col">
-              <p className="font-body text-sub text-base leading-[1.7] mb-6 max-w-2xl">{featured.excerpt}</p>
-              <ul className="space-y-2.5 mb-7 max-w-2xl">
-                {featured.takeaways.slice(0, 3).map((t) => (
-                  <li key={t} className="flex gap-3">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"/></svg>
-                    <span className="font-body text-sub text-sm leading-[1.55]">{t}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-auto flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-stroke-soft">
-                <span className="font-body text-soft text-sm">{featured.date} · {featured.speakers.join(", ")}</span>
-                <div className="flex items-center gap-4">
-                  <span className="font-header font-medium text-sm text-strong inline-flex items-center gap-1.5">
-                    Watch Webinar
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                  </span>
-                  <span className="font-header font-medium text-sm text-primary-base hidden sm:inline">Read Key Insights</span>
-                </div>
-              </div>
-            </div>
-          </button>
+          {/* Upcoming webinar announcement */}
+          <div className="flex flex-col lg:flex-row gap-8 lg:col-span-2 rounded-3xl overflow-hidden bg-primary-dark p-8 lg:p-10">
+          <div className=" flex flex-1 flex-col">
+            <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">
+              {upcomingWebinar.tag} · {upcomingWebinar.date}
+            </p>
+            <h3 className="font-header font-semibold text-white text-2xl sm:text-[32px] leading-[1.15] tracking-[-0.01em] mb-3">
+              {upcomingWebinar.title}
+            </h3>
+            <p className="font-body italic text-white/70 text-base mb-6 max-w-xl">
+              {upcomingWebinar.subtitle}
+            </p>
 
-          {/* Supporting cards */}
+            <dl className="grid grid-rows-5 sm:grid-rows-3 gap-8 mb-8 max-w-xl">
+              <div>
+                <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Date</dt>
+                <dd className="font-body text-white text-sm">{upcomingWebinar.date}</dd>
+              </div>
+              <div>
+                <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Time</dt>
+                <dd className="font-body text-white text-sm">{upcomingWebinar.time}</dd>
+              </div>
+              <div>
+                <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Platform</dt>
+                <dd className="font-body text-white text-sm">{upcomingWebinar.platform}</dd>
+              </div>
+            </dl>
+
+            <div className="mt-auto flex flex-wrap items-center gap-4">
+              <Button href={upcomingWebinar.registerHref} variant="yellow" external>
+                Register for the June Webinar
+              </Button>
+              <Link
+                href="/training"
+                className="font-header font-medium text-sm text-white/80 hover:text-white inline-flex items-center gap-1.5 transition-colors"
+              >
+                Event Details
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+            <div className="relative w-[290px] h-[350px] lg:h-[450px] rounded-3xl overflow-hidden ">
+                  <Image src="/images/volunteer-poster.jpg" alt="An ACHII volunteer holding a climate-health education poster" fill sizes="(max-width:1024px) 100vw, 360px" className="object-cover" />
+            </div>
+
+          </div>
+
+          {/* Past webinar recordings */}
           <div className="flex flex-col gap-6">
-            {supporting.map((s) => (
-              <button
-                key={s.id}
-                onClick={() => setActive(s)}
+            {pastWebinars.map((w) => (
+              <a
+                key={w.tag}
+                href={w.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-left group rounded-2xl border border-stroke-soft hover:border-primary-base hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 p-6 bg-white flex flex-col flex-1"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <Badge type={s.type} />
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-soft group-hover:text-primary-base transition-colors flex-shrink-0"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <span className="inline-block w-fit self-start rounded-full px-3 py-1 font-body font-semibold text-[11px] tracking-wide uppercase bg-primary-lighter text-primary-base">
+                    {w.tag}
+                  </span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-soft group-hover:text-primary-base transition-colors flex-shrink-0">
+                    <path d="M7 17 17 7M9 7h8v8" />
+                  </svg>
                 </div>
-                <h3 className="font-header font-semibold text-strong text-lg leading-snug mb-2 group-hover:text-primary-base transition-colors">{s.title}</h3>
-                <p className="font-body text-sub text-sm leading-[1.6] mb-4 flex-1">{s.excerpt}</p>
-                <span className="font-body text-soft text-xs">{s.date}</span>
-              </button>
+                <h3 className="font-header font-semibold text-strong text-lg leading-snug group-hover:text-primary-base transition-colors">
+                  {w.title}
+                </h3>
+                <span className="mt-auto pt-4 font-body text-soft text-xs">Watch recording</span>
+              </a>
             ))}
           </div>
         </div>
-      </div>
 
-      <InsightModal item={active} onClose={() => setActive(null)} onOpen={(i) => setActive(i)} />
+      </div>
     </section>
   );
 }

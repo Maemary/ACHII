@@ -15,11 +15,11 @@ const IconUsers = () => (
 );
 
 const pillars = [
-  { num: "01", title: "Education & Capacity Building", desc: "We train healthcare professionals to diagnose, treat, and prevent climate-driven illness, and build accredited, African-contextualised curricula and open-source learning resources.", icon: <IconBook />, theme: "dark" },
-  { num: "02", title: "Research & Evidence Generation", desc: "We fund African researchers to publish climate health findings, conduct participatory research with frontline communities, and build the evidence base policymakers need to act.", icon: <IconFlask />, theme: "dark" },
-  { num: "03", title: "Innovation & Infrastructure", desc: "We prototype climate-smart health facility upgrades, design low-cost replicable solutions for African contexts, and create blueprints for scale.", icon: <IconTools />, theme: "dark" },
-  { num: "04", title: "Policy & Advocacy", desc: "We translate frontline evidence into policy recommendations. We engage policymakers at local, national, and continental levels — and we make sure community voices are in the room.", icon: <IconMega />, theme: "light" },
-  { num: "05", title: "Youth Leadership & Legacy", desc: "From student ambassador to researcher to policy advocate to systems leader — ACHII creates pathways for the next generation of African climate-health leaders.", icon: <IconUsers />, theme: "dark" },
+  { num: "01", title: "Education & Capacity Building", desc: "Training healthcare professionals, youth, and community members to prevent and manage climate-driven illnesses using African-contextualized learning frameworks.", icon: <IconBook />, theme: "dark" },
+  { num: "02", title: "Research & Evidence Generation", desc: "Advancing African climate-health data by enabling researchers to co-create studies with frontline communities and provide actionable evidence for policy.", icon: <IconFlask />, theme: "dark" },
+  { num: "03", title: "Innovation & Infrastructure", desc: "Creating scalable blueprints and low-cost, climate-smart health facility upgrades designed specifically for African contexts.", icon: <IconTools />, theme: "dark" },
+  { num: "04", title: "Policy & Advocacy", desc: "Translating frontline evidence into actionable policy recommendations by engaging leaders at local, national, and continental levels while ensuring community voices shape the agenda.", icon: <IconMega />, theme: "dark" },
+  { num: "05", title: "Youth Leadership & Legacy", desc: " Empowering the next generation of African climate-health leaders to advance from grassroots student ambassadorship to high-level systems leadership.", icon: <IconUsers />, theme: "dark" },
 ];
 
 function Card({ p }: { p: typeof pillars[number] }) {

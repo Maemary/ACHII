@@ -1,15 +1,15 @@
 import nyscLogo from "@/public/partners/nysc.svg";
-import chynLogo from "@/public/partners/chyn.svg";
+import chynLogo from "@/public/partners/CHDY.jpeg";
 import transformersLogo from "@/public/partners/transformers-global.svg";
-import ecohealthLogo from "@/public/partners/ecohealth-africa.svg";
+import ecohealthLogo from "@/public/partners/Eco.png";
 
 export const partners = [
   {
-    name: "NYSC",
+    name: "National Youth Service Corps (NYSC)",
     logo: nyscLogo,
   },
   {
-    name: "CHYN",
+    name: "Climate and Health Development Initiative",
     logo: chynLogo,
   },
   {

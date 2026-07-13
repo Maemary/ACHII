@@ -13,6 +13,7 @@ export default function PartnerCarousel() {
   return (
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
+      
         {partners.map((partner) => (
           <div
             key={partner.name}

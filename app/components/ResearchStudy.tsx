@@ -58,29 +58,24 @@ export default function ResearchStudy() {
     <section id="research" className="bg-primary-base py-20 lg:py-[120px]">
       <div className="container-site">
         <h2 className="font-header font-semibold text-white text-[34px] lg:text-5xl leading-[1.12] tracking-[-0.02em] max-w-2xl mb-8">
-          The first national climate-health awareness study in Nigeria.
+          Our first national climate-health awareness study in Nigeria.
         </h2>
         <p className="font-body italic text-white/80 text-base mb-6">
-          Mixed-methods. Six geopolitical zones. 900 verified responses.
+          Six geopolitical zones. Over 600 verified responses.
         </p>
         <div className="space-y-4 max-w-[1280px] mb-12">
           <p className="font-body text-white/85 text-base leading-[1.75]">
-            ACHII is conducting Nigeria&apos;s first national study to examine climate-health awareness
-            among healthcare professionals AND communities simultaneously. Most existing research
-            looks at one or the other. We look at both &mdash; because the gap between what clinicians
-            know and what communities experience is where lives are lost.
+            Climate change is reshaping public health, yet frontline realities are rarely connected to clinical data. ACHII is changing that by launching a pan-national climate-health study across all six geopolitical zones. We are scaling our successful 533-response pilot to a nationwide target of 900 verified perspectives. 
           </p>
           <p className="font-body text-white/85 text-base leading-[1.75]">
-            The study uses a mixed-methods cross-sectional design across all six geopolitical zones.
-            We&apos;ve completed our pilot phase (533 responses) and are now scaling to 900 verified
-            responses nationally through the Regional Champion Model.
+            Your voice is the missing piece. By submitting your responses right now, you shift from a bystander to a co-creator of the evidence base.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <SurveyCard
             title="Add Your Voice to the Research"
-            desc="10 minutes. Fully anonymous. Healthcare professionals & community members in Nigeria."
+            desc="10 minutes. Fully anonymous.  Community members & Healthcare professionals in Nigeria."
             cta="Take the Survey"
             href={surveyUrl}
           />

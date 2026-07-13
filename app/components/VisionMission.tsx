@@ -37,11 +37,11 @@ export default function VisionMission() {
     <section className="relative bg-white">
       <div className="relative w-full h-[360px] sm:h-[528px] md:h-[816px] overflow-hidden bg-primary-base">
         <Image
-          src="/images/vision.jpg"
+          src="/images/Mission.jpg"
           alt="Young people in a circle, viewed from below against a blue sky"
           fill
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-top"
         />
         {/* Desktop: cards overlay the image bottom */}
         <div className="hidden md:block absolute inset-x-0 bottom-0">

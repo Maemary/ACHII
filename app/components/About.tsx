@@ -27,7 +27,7 @@ export default function About() {
               continent.
             </p>
           </div>
-          <Button href="#pillars" variant="yellow">Learn More About ACHII</Button>
+          <Button href="/about" variant="yellow">Learn More About ACHII</Button>
         </div>
       </div>
     </section>
