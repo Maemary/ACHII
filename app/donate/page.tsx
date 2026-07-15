@@ -87,12 +87,12 @@ const initialFreq = searchParams?.type === "monthly" ? "monthly" : "once";
 
       {/* Trust section */}
 <div data-nav-theme="light">
-  <section className="bg-primary-base py-3 lg:py-[50px] mb-2">
+  <section className="bg-white py-3 lg:py-[50px] mb-2">
     <div className="container-site text-center mb-10 lg:mb-14">
-      <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-4">
+      <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-primary-dark mb-4">
         Our Partners
       </p>
-      <h2 className="font-header font-semibold text-white text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em]">
+      <h2 className="font-header font-semibold text-primary-base text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em]">
         Organizations building this movement with us
       </h2>
     </div>

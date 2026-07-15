@@ -8,22 +8,22 @@ const SLIDES = [
     src: "/images/Slides1.JPG",
     alt: "A clinician and a community member examine a seedling in dry farmland",
   },
-//   {
-//     src: "/images/Slides2.JPG",
-//     alt: "Description of second image",
-//   },
-//   {
-//     src: "/images/Slides3.JPG",
-//     alt: "Description of third image",
-//   },
-//   {
-//     src: "/images/Slides4.JPG",
-//     alt: "Description of third image",
-//   },
-//   {
-//     src: "/images/Slides5.JPG",
-//     alt: "Description of third image",
-//   },
+  // {
+  //   src: "/images/Slides2.JPG",
+  //   alt: "Description of second image",
+  // },
+  // {
+  //   src: "/images/Slides3.JPG",
+  //   alt: "Description of third image",
+  // },
+  // {
+  //   src: "/images/Slides4.JPG",
+  //   alt: "Description of third image",
+  // },
+  {
+    src: "/images/Slides5.JPG",
+    alt: "Description of third image",
+  },
   {
     src: "/images/Slides6.JPG",
     alt: "Description of third image",
@@ -32,11 +32,15 @@ const SLIDES = [
     src: "/images/Slides7.JPG",
     alt: "Description of third image",
   },
+  // {
+  //   src: "/images/Slides8.JPG",
+  //   alt: "Description of third image",
+  // },
 ];
 
 const TRACK_SLIDES = [...SLIDES, SLIDES[0]];
 
-const AUTOPLAY_INTERVAL = 2000;
+const AUTOPLAY_INTERVAL = 3000;
 const SWIPE_THRESHOLD = 50;
 const TRANSITION_MS = 700;
 

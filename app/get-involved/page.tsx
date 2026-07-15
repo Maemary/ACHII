@@ -37,8 +37,8 @@ export default function GetInvolvedPage() {
         <PageHero
           image="/images/assembly-field.jpg"
           eyebrow="Get Involved"
-          title="Three ways to build this with us."
-          subtitle="Join as an Ally. Fund the work. Wear the movement."
+          title="Three ways to build with us."
+          subtitle="Join as an Ally. Fund the work. Partner with us."
           body={[
             "ACHII isn’t built by a single team. It’s built by a continent-wide community of people who believe Africa’s climate-health future is worth fighting for. Here’s how you join us.",
           ]}
@@ -50,7 +50,7 @@ export default function GetInvolvedPage() {
         <section className="bg-white py-20 lg:py-[120px]">
           <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <p className="label-tag mb-4">Option 1 — Register as an ACHII Ally</p>
+             <p className="label-tag mb-4">Join as an ACHII Ally</p>
               <h2 className="font-header font-semibold text-strong text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em] mb-4">
                 Add your voice. Stay close to the work.
               </h2>
@@ -138,7 +138,7 @@ export default function GetInvolvedPage() {
         <section className="bg-bg-soft py-20 lg:py-[120px]">
           <div className="container-site max-w-3xl">
             <SectionHeader
-              eyebrow="Option 4 — Partner with ACHII"
+              eyebrow="Partner with ACHII"
               title="For institutions, funders, and organisations."
               className="mb-6"
             />
@@ -148,7 +148,7 @@ export default function GetInvolvedPage() {
               partners across funding, research collaboration, training delivery, policy advocacy, and
               infrastructure prototyping.
             </p>
-            <Button href="/donate" variant="yellow">Partner With Us</Button>
+            <Button href="mailto:Ecodoctr@gmail.com" variant="yellow">Partner With Us</Button>
           </div>
         </section>
       </div>
@@ -162,14 +162,13 @@ export default function GetInvolvedPage() {
             </div>
             <div className="order-2 lg:order-1">
             <SectionHeader
-              eyebrow="Option 5 — Volunteer"
+              eyebrow="Volunteer with ACHII"
               title="Show up. Build with us."
               className="mb-6"
             />
             <p className="font-body text-sub text-base leading-[1.75] mb-8">
               We’re always looking for volunteers across research, communications, design, operations,
-              community organising, and writing. Whether you have 2 hours a month or 20, there’s a place
-              for you in this work.
+              community organising, and writing. If you’re a student, a professional, or a community member who wants to help build climate-resilient health systems in Africa, we’d love to hear from you.
             </p>
             <Button href="https://docs.google.com/forms/d/e/1FAIpQLSd4jAuK5degYOf0rI-hEhkBzbMtLNrJDIznBQEhNEasZ_XjLg/viewform" variant="yellow">Volunteer With ACHII</Button>
             </div>

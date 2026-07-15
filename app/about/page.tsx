@@ -59,7 +59,7 @@ const teams = [
     name: "Temitope",
     role: "Media Team Lead",
    // organisation: "NIMET",
-    bio: "Nil",
+    bio: "Adebayo Temitope Eunice is a Social Media Strategist, Content Manager, and Brand Communications Professional with expertise in building engaged digital communities through strategic content and storytelling. She has worked with startups, nonprofits, and impact-driven organizations across the agriculture, climate and health, education, and technology sectors, leading content strategy, campaigns, and community engagement. As Co-Lead of the Media Team at ACHII (formerly EcoDoctr), she helps drive the organization's digital presence and media strategy. A Chemical Engineering graduate of the Federal University of Petroleum Resources, Effurun (FUPRE), she combines analytical thinking with creative communication to deliver impactful digital campaigns.",
     photo: "/images/temitope.jpeg",
   },
   {

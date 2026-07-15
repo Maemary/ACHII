@@ -1,6 +1,6 @@
 import nyscLogo from "@/public/partners/nysc.svg";
 import chynLogo from "@/public/partners/CHDY.jpeg";
-import transformersLogo from "@/public/partners/transformers-global.svg";
+import transformersLogo from "@/public/partners/Transformer.jpeg";
 import ecohealthLogo from "@/public/partners/Eco.png";
 
 export const partners = [

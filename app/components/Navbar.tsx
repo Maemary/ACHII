@@ -6,11 +6,12 @@ import JoinButton from "./JoinButton";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Training", href: "/training" },
-  { label: "Insights", href: "/insights" },
-  { label: "Reports", href: "/reports" },
   { label: "About", href: "/about" },
+ { label: "Training", href: "/training" },
+//  { label: "Insights", href: "/insights" },
+  { label: "Blogs", href: "/reports" },
   { label: "Get Involved", href: "/get-involved" },
+  {label: "Partner with Us", href: "/donate"},
 ];
 
 export default function Navbar() {

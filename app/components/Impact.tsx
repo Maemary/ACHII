@@ -23,7 +23,7 @@ export default function Impact() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
           {stats.map((s) => (
-            <div key={s.label} className="bg-green rounded-xl p-7">
+            <div key={s.label} className="bg-primary-dark rounded-xl p-7">
               <div className="font-header font-semibold text-[56px] leading-none text-white mb-6">{s.value}</div>
               <div className="border-t border-stroke-sub/60 pt-4">
                 <span className="font-body text-sm text-white/80">{s.label}</span>

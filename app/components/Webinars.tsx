@@ -14,7 +14,7 @@ export default function Webinars() {
         <div className="mb-12 max-w-[787px]">
           <p className="label-tag mb-4">Webinar Insights &middot; What we&apos;ve heard</p>
           <h2 className="font-header font-semibold text-[34px] lg:text-5xl leading-[1.12] tracking-[-0.02em] text-strong mb-4">
-            Five webinars. One argument. A growing cross-continental conversation.
+            Seven webinars. One argument. A growing cross-continental conversation.
           </h2>
           <p className="font-body text-sub text-base leading-[1.7] mb-8">
             These are not separate topics. They are the same crisis at different scales and in

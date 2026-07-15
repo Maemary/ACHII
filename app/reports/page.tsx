@@ -7,7 +7,7 @@ import Button from "@/app/components/Button";
 import SubscribeForm from "../components/EmailSignup";
 
 export const metadata = {
-  title: "Reports & Resources — ACHII",
+  title: "Blogs & Resources — ACHII",
   description:
     "Webinar recordings, written reports, toolkits, infographics, and writings from African voices on the climate-health front line.",
 };
@@ -22,33 +22,42 @@ const bankItems = [
 
 const webinarReports = [
   {
-    title: "WB0001 Report — Food & Sustainable Agriculture in Nigeria",
+    title: "WB0001 Briefs — Food & Sustainable Agriculture in Nigeria",
     link: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view",
   },
   {
-    title: "WB0002 Report — Climate-Resilient Childhood",
+    title: "WB0002 Briefs — Climate-Resilient Childhood",
     link: "https://drive.google.com/file/d/1T5Ezw5EQ5lPkD0e2P5xpmS34YQfPKQvp/view",
   },
   {
-    title: "WB0003 Report — Climate Change and Vector-Borne Disease",
+    title: "WB0003 Briefs — Climate Change and Vector-Borne Disease",
     link: "https://drive.google.com/file/d/1TGCKxJ782m7CnvczVm6Rm8jWxW8OAOE4/view",
   },
   {
-    title: "WB0004 Report — Heat and Inequality",
+    title: "WB0004 Briefs — Heat and Inequality",
     link: "https://drive.google.com/file/d/13oW_jL8wlDlkYxPzh5rO-EKZL2sxlaxr/view",
   },
    {
-    title: "WB0005 Report —  Wounds of Climate Change",
+    title: "WB0005 Briefs —  Wounds of Climate Change",
     link: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
   },
   
 ];
 
 const toolkits = [
-  ["Heat Guide", "A community heat-preparedness guide for households, schools, and clinics. Practical, illustrated, and culturally grounded."],
-  ["Data Integrity Guide", "A short, hands-on resource for researchers and Regional Champions running surveys and data collection in the field."],
+  {
+    title: "Heat Guide",
+    description:
+      "A community heat-preparedness guide for households, schools, and clinics. Practical, illustrated, and culturally grounded.",
+    link: "https://drive.google.com/file/d/1Il8jCGYOU1a_M0ec-vyV_vMEQixnxC9F/view",
+  },
+  {
+    title: "Data Integrity Guide",
+    description:
+      "A short, hands-on resource for researchers and Regional Champions running surveys and data collection in the field.",
+    link: "https://drive.google.com/file/d/12UkWpQyaycXH48PxYKnMHb7qIw1-fsRT/view",
+  },
 ];
-
 export default function ReportsPage() {
   return (
     <main className="relative">
@@ -56,7 +65,7 @@ export default function ReportsPage() {
 
       <div data-nav-theme="dark">
         <SplitHero
-          eyebrow="Reports & Resources"
+          eyebrow="Blog Posts & Resources"
           title="Everything we’ve learned. In one place. Yours to use."
           subtitle="Webinar recordings, written reports, practical toolkits, infographics, and writings from African voices on the climate-health front line."
           image="/images/band-research.jpg"
@@ -153,7 +162,7 @@ export default function ReportsPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 font-header font-medium text-sm text-primary-base hover:text-primary-dark transition-colors whitespace-nowrap"
                     >  
-                     Read Report
+                     Read Briefs
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                   </a>
                 </li>
@@ -164,27 +173,33 @@ export default function ReportsPage() {
       </div>
 
       {/* Toolkits */}
-      <div data-nav-theme="light">
-        <section className="bg-white py-20 lg:py-[120px]">
-          <div className="container-site">
-            <SectionHeader
-              eyebrow="Practical Tools & Toolkits"
-              title="Field-tested. Free to use."
-              intro="Practical guides built for the work, not the bookshelf."
-              className="mb-10"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-9">
-              {toolkits.map(([t, d]) => (
-                <div key={t} className="bg-primary-lighter rounded-2xl p-7">
-                  <h3 className="font-header font-semibold text-strong text-lg mb-2">{t}</h3>
-                  <p className="font-body text-sub text-sm leading-[1.7]">{d}</p>
-                </div>
-              ))}
-            </div>
-            <Button href="https://drive.google.com/drive/folders/1_8ovBrWdtCqYk_TLQwvu9NCbn6N4QTNh"  variant="yellow">Browse Toolkits in Resource Bank</Button>
-          </div>
-        </section>
+    <div data-nav-theme="light">
+  <section className="bg-white py-20 lg:py-[120px]">
+    <div className="container-site">
+      <SectionHeader
+        eyebrow="Practical Tools & Toolkits"
+        title="Field-tested. Free to use."
+        intro="Practical guides built for the work, not the bookshelf."
+        className="mb-10"
+      />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-9">
+        {toolkits.map((tool) => (
+          <a
+            key={tool.title}
+            href={tool.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary-lighter rounded-2xl p-7 block hover:shadow-md transition-shadow"
+          >
+            <h3 className="font-header font-semibold text-strong text-lg mb-2">{tool.title}</h3>
+            <p className="font-body text-sub text-sm leading-[1.7]">{tool.description}</p>
+          </a>
+        ))}
       </div>
+        <Button href="https://drive.google.com/drive/folders/1_8ovBrWdtCqYk_TLQwvu9NCbn6N4QTNh"  variant="yellow">Browse Other Toolkits in Resource Bank</Button>
+    </div>
+  </section>
+</div>
 
       {/* Newsletter + Writings */}
       <div data-nav-theme="light">

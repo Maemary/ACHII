@@ -5,10 +5,10 @@ import Image from "next/image";
 
 
 const upcomingWebinar = {
-  tag: "Upcoming Webinar · WB0006",
-  title: "Voices From The Margins",
-  subtitle: "Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis",
-  date: "Saturday, 27th June 2026",
+  tag: "Upcoming Webinar · WB0007",
+  title: "Cities Underwater",
+  subtitle: "Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience",
+  date: "Saturday, 25th July 2026",
   time: "7:00 PM – 8:30 PM WAT",
   platform: "Google Meet",
   registerHref:
@@ -62,7 +62,7 @@ export default function HomeInsights() {
 
         <div className="grid lg:grid-cols-3 gap-6">
           {/* Upcoming webinar announcement */}
-          <div className="flex flex-col lg:flex-row gap-8 lg:col-span-2 rounded-3xl overflow-hidden bg-primary-dark p-8 lg:p-10">
+          <div className="flex flex-col lg:flex-row gap-8 lg:col-span-2 rounded-3xl overflow-hidden bg-primary-base p-8 lg:p-10">
           <div className=" flex flex-1 flex-col">
             <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">
               {upcomingWebinar.tag} · {upcomingWebinar.date}
@@ -91,7 +91,7 @@ export default function HomeInsights() {
 
             <div className="mt-auto flex flex-wrap items-center gap-4">
               <Button href={upcomingWebinar.registerHref} variant="yellow" external>
-                Register for the June Webinar
+                Register for the July Webinar
               </Button>
               <Link
                 href="/training"
@@ -104,8 +104,8 @@ export default function HomeInsights() {
               </Link>
             </div>
           </div>
-            <div className="relative w-[290px] h-[350px] lg:h-[450px] rounded-3xl overflow-hidden ">
-                  <Image src="/images/volunteer-poster.jpg" alt="An ACHII volunteer holding a climate-health education poster" fill sizes="(max-width:1024px) 100vw, 360px" className="object-cover" />
+            <div className="relative w-[350px] h-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 shadow-lg shadow-black/20 lg:ml-auto">
+                  <Image src="/images/July-Webinar.jpg" alt="An ACHII volunteer holding a climate-health education poster" fill sizes="(max-width:1024px) 100vw, 360px" className="object-cover" />
             </div>
 
           </div>
