@@ -2,14 +2,12 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import SplitHero from "@/app/components/SplitHero";
 import SectionHeader from "@/app/components/SectionHeader";
-import Button from "@/app/components/Button";
 import Image from "next/image";
 import Placeholder from "@/app/components/Placeholder";
 import ImageBand from "@/app/components/ImageBand";
-import TeamGrid from "../components/TeamGrid";
 
 export const metadata = {
-  title: "About Us — ACHII",
+  title: "About ACHII — ACHII",
   description:
     "Africa Climate and Health Innovation Institute. Formerly Ecodoctr. Built by African clinicians, students, and researchers for the climate-health future Africa deserves.",
 };
@@ -20,55 +18,6 @@ const truths = [
   "Communities face climate health crises without the knowledge to protect themselves.",
   "Passionate students have no platform to lead change.",
   "Climate-health knowledge stays locked in silos instead of scaling impact.",
-];
-
-const values = [
-  ["Collaboration", "Strength in unity. We share knowledge freely and value collective success over individual recognition."],
-  ["Inclusion", "Belonging for all. We intentionally seek out diverse perspectives."],
-  ["Proactiveness", "Ownership of action. See a gap? Fill it."],
-  ["Excellence", "Commitment to quality. Good enough is never the goal."],
-  ["Integrity", "Honesty in effort. Trust is the foundation of our work."],
-  ["Empathy", "Compassion in service. We lead with heart."],
-];
-
-
-const teams = [
-  {
-    name: "Promise",
-    role: "Operations Team Lead",
-   // organisation: "NIMET",
-    bio: "Nil",
-    photo: "/images/promise.jpeg",
-  },
-  
-  {
-    name: "Fancy Kutoi",
-    role: "Research Team Lead",
-   // organisation: "WHO Africa",
-    bio: "Fancy Kutoi is Research Team Co-Lead at ACHII — an anthropologist and climate-health researcher advancing equitable, evidence-based solutions at the intersection of climate change, public health, and climate justice across Africa.",
-    photo: "/images/Fancy.jpg",
-  },
-  {
-    name: "Benjamin Ayejusunle",
-    role: "Research Team Lead",
-  //  organisation: "University of Lagos",
-    bio: "Benjamin Ayejusunle is a Data Analyst and Climate Scientist with a degree in Meteorology, serving as Co-Research Lead at ACHII. He drives data-driven research and climate communication to advance evidence-based responses to climate change.",
-    photo: "/images/Benjamin.jpg",
-  },
-  {
-    name: "Temitope",
-    role: "Media Team Lead",
-   // organisation: "NIMET",
-    bio: "Adebayo Temitope Eunice is a Social Media Strategist, Content Manager, and Brand Communications Professional with expertise in building engaged digital communities through strategic content and storytelling. She has worked with startups, nonprofits, and impact-driven organizations across the agriculture, climate and health, education, and technology sectors, leading content strategy, campaigns, and community engagement. As Co-Lead of the Media Team at ACHII (formerly EcoDoctr), she helps drive the organization's digital presence and media strategy. A Chemical Engineering graduate of the Federal University of Petroleum Resources, Effurun (FUPRE), she combines analytical thinking with creative communication to deliver impactful digital campaigns.",
-    photo: "/images/temitope.jpeg",
-  },
-  {
-    name: "Oluwasemilore Daniel Olaitan",
-    role: "Media Team Lead",
-   // organisation: "NIMET",
-    bio: "Oluwasemilore Daniel Olaitan is an environmental scientist and digital strategist serving as Media Team Co-Lead at ACHII. He transforms complex climate and health data into accessible advocacy, drawing on a background in Marine Science and coastal oceanography to drive impactful climate communication across Africa.",
-    photo: "/images/Oluwasemilore.jpg",
-  },
 ];
 
 export default function AboutPage() {
@@ -190,88 +139,7 @@ export default function AboutPage() {
         <ImageBand src="/images/band-community.jpg" alt="Young people standing together" height="h-[432px] md:h-[624px]" />
       </div>
 
-      {/* Founder */}
-      <div data-nav-theme="light">
-        <section className="bg-bg-soft py-20 lg:py-[120px]">
-          <div className="container-site grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-12">
-            <div>
-              <Placeholder label="Founder photo — to be added" className="aspect-[4/5] mb-5" />
-              <h2 className="font-header font-semibold text-strong text-2xl leading-tight">Dr Aishat Oduye</h2>
-              <p className="font-body text-primary-base text-sm mt-1">Founder & Executive Director</p>
-            </div>
-            <div>
-              <p className="label-tag mb-4">Founder’s Story</p>
-              <h3 className="font-header font-semibold text-strong text-2xl lg:text-[28px] leading-tight mb-6">Why I started ACHII.</h3>
-              <Placeholder
-                dark={false}
-                label="Professional bio (100–150 words) and first-person “Why I started ACHII” narrative (250–400 words) to be added before launch. Pair with a founder photo and a 60–90 second video."
-                className="min-h-[180px] mb-6"
-              />
-              <p className="font-body text-sub text-sm leading-[1.7]">
-                We recommend pairing this section with a strong founder photo and a short video of the
-                founder telling this story in her own voice.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      {/* Board + Core team */}
-      <div data-nav-theme="light">
-        <section className="bg-white py-20 lg:py-[120px]">
-          <div className="container-site">
-            <SectionHeader
-              eyebrow="Core Team"
-              title="The team building this every day."
-              intro="ACHII is run by a small, focused team of clinicians, researchers, communicators, and operations leads — every hire mission-aligned."
-              className="mb-10"
-            />
-           {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 "> */}
-  <TeamGrid teams={teams} />
-  </div>
-  </section>
-  </div>
-  
-      {/* Volunteers */}
-      <div data-nav-theme="light">
-        <section className="bg-bg-soft py-20 lg:py-[120px]">
-          <div className="container-site">
-            <SectionHeader
-              eyebrow="Volunteers & ACHII Allies"
-              title="ACHII is powered by the people who show up."
-              intro="Beyond our core team, ACHII is sustained by a growing network of volunteers — Allies, Regional Champions, student ambassadors, peer reviewers, writers, and contributors of every kind."
-              className="mb-10"
-            />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-              {[1, 2, 3, 4, 5, 6].map((n) => (
-                <Placeholder key={n} label={`Volunteer ${n} — photo · name · role · region`} className="min-h-[160px]" />
-              ))}
-            </div>
-            <p className="font-body text-sub text-base mb-8">
-              If you’re already volunteering — thank you. If you’re not yet — there’s a place for you.
-            </p>
-            <Button href="/get-involved#volunteer" variant="yellow">Volunteer with ACHII</Button>
-          </div>
-        </section>
-      </div>
-
-      {/* Core values */}
-      <div data-nav-theme="dark">
-        <section className="bg-primary-base py-20 lg:py-[120px]">
-          <div className="container-site">
-            <SectionHeader light eyebrow="Our Core Values" title="Six values, six rules of engagement." className="mb-12" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {values.map(([t, d]) => (
-                <div key={t} className="bg-white/10 border border-white/15 rounded-2xl p-7">
-                  <h3 className="font-header font-semibold text-white text-lg mb-2">{t}</h3>
-                  <p className="font-body text-white/75 text-sm leading-[1.7]">{d}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </div>
-
+    
       <div data-nav-theme="dark"><Footer /></div>
     </main>
   );
