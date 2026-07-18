@@ -151,7 +151,7 @@ export default function ProgrammesPage() {
                   alt="ACHII school outreach students gathered outdoors"
                   fill
                   sizes="(max-width:1024px) 100vw, 380px"
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
@@ -211,13 +211,13 @@ export default function ProgrammesPage() {
                 </div>
               </div>
 
-              <div className="relative w-full h-[320px] lg:h-[560px] rounded-3xl overflow-hidden lg:sticky lg:top-28">
+              <div className="relative w-full h-[420px] lg:h-[680px] rounded-3xl overflow-hidden lg:sticky lg:top-28">
                 <Image
                   src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784301188/RCM_xg5kdm.jpg"
                   alt="An ACHII Regional Champion engaged in community fieldwork"
                   fill
                   sizes="(max-width:1024px) 100vw, 480px"
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
             </div>

@@ -82,7 +82,7 @@ export default function TrainingPage() {
               <p className="font-body italic text-sub text-base mb-7">
              Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience
               </p>
-              <div className="space-y-4 mb-8">
+              <div className="hidden md:block space-y-4 mb-8">
                 <p className="font-body text-sub text-base leading-[1.75]">
                  As extreme rainfall and failing municipal infrastructure trigger severe flash floods across Africa, our cities are facing an escalating health and water crisis. Blocked drainage networks and plastic waste bottlenecks are turning seasonal rains into immediate emergencies—compromising local clinics, threatening water security, and driving deadly outbreaks of waterborne pathogens like cholera.
                  </p>
