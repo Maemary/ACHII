@@ -22,12 +22,12 @@ const ogImage =
   "https://res.cloudinary.com/davuaeyxb/image/upload/c_fill,w_1200,h_630/v1784124075/achii/images/Slides1.jpg";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.achii.co"),
+  metadataBase: new URL("https://achii.co"),
   title: siteName,
   description: siteDescription,
   openGraph: {
     type: "website",
-    url: "https://www.achii.co",
+    url: "https://achii.co",
     siteName: "ACHII",
     title: siteName,
     description: siteDescription,
@@ -46,8 +46,8 @@ const organizationJsonLd = {
   "@type": "NGO",
   name: "Africa Climate and Health Innovation Institute",
   alternateName: "ACHII",
-  url: "https://www.achii.co",
-  logo: "https://www.achii.co/icon.png",
+  url: "https://achii.co",
+  logo: "https://achii.co/icon.png",
   description: siteDescription,
   sameAs: [
     "https://www.linkedin.com/company/ecodoctr",

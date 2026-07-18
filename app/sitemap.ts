@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://www.achii.co";
+const BASE_URL = "https://achii.co";
 
 const routes = [
   "",
