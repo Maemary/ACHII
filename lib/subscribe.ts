@@ -27,6 +27,8 @@ const socialLinksHtml = `
   <a href="${INSTAGRAM_URL}" target="_blank" style="color:#0f766e;font-weight:700;">Instagram</a>
 `;
 
+const LOGO_URL = "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123955/achii/images/achii-logo-full.png";
+
 function renderEmailShell({
   preheader,
   headerSubtitle,
@@ -53,9 +55,16 @@ function renderEmailShell({
             style="max-width:600px;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e5e7eb;"
           >
 
+            <!-- Logo -->
+            <tr>
+              <td style="background:#ffffff;padding:28px 30px 0;text-align:center;">
+                <img src="${LOGO_URL}" alt="ACHII" width="140" style="width:140px;max-width:60%;height:auto;display:inline-block;" />
+              </td>
+            </tr>
+
             <!-- Header -->
             <tr>
-              <td style="background:#0f766e;padding:40px 30px;text-align:center;">
+              <td style="background:#0f766e;padding:32px 30px 40px;text-align:center;">
                 <h1 style="margin:0;color:#ffffff;font-size:28px;font-weight:700;">
                   Welcome ACHII Allies
                 </h1>
