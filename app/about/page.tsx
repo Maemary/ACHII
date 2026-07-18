@@ -5,7 +5,7 @@ import SectionHeader from "@/app/components/SectionHeader";
 import Image from "next/image";
 import Placeholder from "@/app/components/Placeholder";
 import ImageBand from "@/app/components/ImageBand";
-
+import ImpactStats from "@/app/components/ImpactStats";
 export const metadata = {
   title: "About ACHII — ACHII",
   description:
@@ -29,14 +29,16 @@ export default function AboutPage() {
         <SplitHero
           reverse
           eyebrow="About Us"
-          title="ACHII is what happens when frontline clinicians decide the system isn’t going to fix itself."
+          title='"ACHII is what happens when frontline clinicians decide the system isn’t going to fix itself."'
+          quoteAuthor="Dr. Aishat"
           subtitle="Africa Climate and Health Innovation Institute. Formerly known as Ecodoctr. Built by African clinicians, students, and researchers for the climate-health future Africa deserves."
-          image="/images/brand-portrait.jpg"
+          image="https://res.cloudinary.com/davuaeyxb/image/upload/v1784289738/Aishat_Oduye_Photo_eoin1w.jpg"
           imageAlt="An ACHII team member at a school outreach"
-          imgPosition="object-cover object-top"
+          imgPosition="object-cover object-center"
         />
+       
       </div>
-
+    
       {/* Our Story */}
       <div data-nav-theme="light">
         <section className="bg-white py-20 lg:py-[120px]">
@@ -44,7 +46,7 @@ export default function AboutPage() {
             <div>
               <SectionHeader eyebrow="Our Story" title="From Ecodoctr to ACHII." />
               <div className="relative w-full h-[240px] rounded-2xl overflow-hidden mt-8 hidden lg:block">
-                <Image src="/images/volunteers-pair.jpg" alt="ACHII volunteers at a school outreach" fill sizes="420px" className="object-cover object-top" />
+                <Image src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124032/achii/images/Mission.jpg" alt="ACHII volunteers at a school outreach" fill sizes="420px" className="object-cover object-top" />
               </div>
             </div>
             <div className="space-y-5 max-w-2xl">
@@ -111,33 +113,34 @@ export default function AboutPage() {
         </section>
       </div>
 
-      {/* Impact so far */}
-      <div data-nav-theme="light">
-        <section className="bg-white py-20 lg:py-[120px]">
-          <div className="container-site grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-12">
-            <SectionHeader eyebrow="Our Impact So Far" title="The work is small. The intent is not." />
-            <div className="max-w-2xl">
-              <p className="font-body text-sub text-base leading-[1.75] mb-7">
-                In our first nine months, ACHII has delivered six webinars reaching 170 attendees across
-                four countries. We’ve reached 1,570 secondary school students through in-person outreach.
-                We’ve launched Nigeria’s first national climate-health awareness study. We’ve deployed
-                22 Regional Champions across all six geopolitical zones. And we’ve built active partnerships with NYSC, CHYN, Transformers Global, and Ecohealth Africa.
-              </p>
-              <div className="bg-primary-lighter rounded-2xl p-7">
-                <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-primary-base mb-3">Vision 2036</p>
-                <p className="font-body text-strong text-base leading-[1.7]">
-                  10,000+ credentialed professionals. 100+ peer-reviewed papers. 50+ retrofitted health
-                  facilities. 20+ influenced national policies. Financial independence and WHO integration.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+     {/* Impact so far */}
+<div data-nav-theme="light">
+  <section className="bg-white py-20 lg:py-[120px]">
+    <div className="container-site">
+      <div className="mb-12">
+        <p className="label-tag mb-4">Our Impact So Far</p>
+        <h2 className="font-header font-semibold text-[34px] lg:text-5xl leading-[1.12] tracking-[-0.02em] max-w-2xl">
+          <span className="text-green">Eleven months</span>
+          <span className="text-strong"> in. The numbers are just the start.</span>
+        </h2>
       </div>
 
-      <div data-nav-theme="dark">
-        <ImageBand src="/images/band-community.jpg" alt="Young people standing together" height="h-[432px] md:h-[624px]" />
+      <div className="mb-14">
+        <ImpactStats columns={3} />
       </div>
+
+      <div className="max-w-8xl">
+        <p className="font-body text-sub text-base leading-[1.75]">
+          In our first eleven months, ACHII has delivered six webinars reaching 170 attendees across
+          four countries. We've reached 1,570 secondary school students through in-person outreach.
+          We've launched Nigeria's first national climate-health awareness study. We've deployed
+          22 Regional Champions across all six geopolitical zones. And we've built active partnerships
+          with NYSC, CHDI, Transformers Global, and Ecohealth Africa.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
 
     
       <div data-nav-theme="dark"><Footer /></div>

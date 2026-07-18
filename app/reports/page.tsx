@@ -41,7 +41,10 @@ const webinarReports = [
     title: "WB0005 Briefs —  Wounds of Climate Change",
     link: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
   },
-  
+  {
+    title: "WB0006 Briefs —  Voices From The Margins report missing",
+    link: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
+  },
 ];
 
 const toolkits = [
@@ -68,7 +71,7 @@ export default function ReportsPage() {
           eyebrow="Blog Posts & Resources"
           title="Everything we’ve learned. In one place. Yours to use."
           subtitle="Webinar recordings, written reports, practical toolkits, infographics, and writings from African voices on the climate-health front line."
-          image="/images/band-research.jpg"
+          image="https://res.cloudinary.com/davuaeyxb/image/upload/v1784123972/achii/images/band-research.jpg"
           imageAlt="Healthcare professionals reviewing climate-health data together"
         />
       </div>
@@ -116,7 +119,7 @@ export default function ReportsPage() {
           <div className="container-site">
             <div className="bg-primary-lighter rounded-2xl overflow-hidden grid lg:grid-cols-2 items-stretch">
               <div className="relative min-h-[240px] lg:min-h-[380px] order-1 lg:order-2">
-                <Image src="/images/team-group.jpg" alt="ACHII team and students with climate-health infographics" fill sizes="(max-width:1024px) 100vw, 50vw" className="object-cover" />
+                <Image src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124126/achii/images/team-group.jpg" alt="ACHII team and students with climate-health infographics" fill sizes="(max-width:1024px) 100vw, 50vw" className="object-cover" />
               </div>
               <div className="p-9 lg:p-14 order-2 lg:order-1">
                 <p className="label-tag mb-4">Featured · Q1 Impact Report</p>
@@ -129,7 +132,7 @@ export default function ReportsPage() {
                 the Regional Champion Model. It’s also a window into how ACHII works — what we
                 measure, what we learn, and what we do next.
               </p>
-                <Button href="https://drive.google.com/file/d/1bLIfrLKF6yd2MylH6F0jaeaKpKQMw9lf/view?usp=drive_link" variant="yellow">Download the Q1 Report (PDF)</Button>
+                <Button href="https://drive.google.com/file/d/1bLIfrLKF6yd2MylH6F0jaeaKpKQMw9lf/view?usp=drive_link" variant="yellow">Download the Q1-Q2 Report (PDF)</Button>
               </div>
             </div>
           </div>
@@ -160,7 +163,7 @@ export default function ReportsPage() {
                       href={report.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 font-header font-medium text-sm text-primary-base hover:text-primary-dark transition-colors whitespace-nowrap"
+                      className="inline-flex items-center gap-1.5 font-header font-medium text-sm text-amber-500 hover:text-primary-dark transition-colors whitespace-nowrap"
                     >  
                      Read Briefs
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

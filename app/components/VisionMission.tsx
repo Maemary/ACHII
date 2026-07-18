@@ -37,7 +37,7 @@ export default function VisionMission() {
     <section className="relative bg-white">
       <div className="relative w-full h-[360px] sm:h-[528px] md:h-[816px] overflow-hidden bg-primary-base">
         <Image
-          src="/images/Mission.jpg"
+          src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124032/achii/images/Mission.jpg"
           alt="Young people in a circle, viewed from below against a blue sky"
           fill
           sizes="100vw"

@@ -80,8 +80,8 @@ const initialFreq = searchParams?.type === "monthly" ? "monthly" : "once";
     eyebrow="Why You Can Trust Us"
     eyebrowClassName="font-body font-semibold text-lg tracking-[0.14em] uppercase text-yellow mb-5"
     title="Transparency is part of the mission."
-    subtitle="Your support helps train climate-health leaders, fund community research, and ensure vulnerable communities are not left behind in the climate crisis."
-    sideImage="/images/Partner.jpg"
+    subtitle="Fund a Regional Champion's training. Fund a student's first research project. Your support builds Africa's next generation of climate-health leaders. Funding is directed to three measurable areas: leadership training, community research, and frontline infrastructure — reported back to you quarterly."
+    sideImage="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124044/achii/images/Partner.jpg"
   />
 </div>
 
@@ -92,9 +92,7 @@ const initialFreq = searchParams?.type === "monthly" ? "monthly" : "once";
       <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-primary-dark mb-4">
         Our Partners
       </p>
-      <h2 className="font-header font-semibold text-primary-base text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em]">
-        Organizations building this movement with us
-      </h2>
+      
     </div>
     <PartnerCarousel />
   </section>

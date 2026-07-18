@@ -32,11 +32,11 @@ export default function ShowcaseHero({
         {eyebrow && (
           <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">{eyebrow}</p>
         )}
-        <h1 className="font-header font-semibold text-white text-[34px] sm:text-5xl lg:text-[56px] leading-[1.08] tracking-[-0.01em] max-w-4xl">
+        <h1 className="font-header font-semibold text-white text-[34px] sm:text-5xl lg:text-[56px] leading-[1.08] tracking-[-0.01em] max-w-6xl">
           {title}
         </h1>
         {subtitle && (
-          <p className="mt-6 font-body text-white/75 text-lg leading-[1.65] max-w-2xl">{subtitle}</p>
+          <p className="mt-6 font-body text-white/75 text-lg leading-[1.65] max-w-7xl">{subtitle}</p>
         )}
         {ctas && ctas.length > 0 && (
           <div className="mt-9 flex flex-wrap gap-3">

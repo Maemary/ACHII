@@ -19,7 +19,7 @@ const pillars = [
   { num: "02", title: "Research & Evidence Generation", desc: "Advancing African climate-health data by enabling researchers to co-create studies with frontline communities and provide actionable evidence for policy.", icon: <IconFlask />, theme: "dark" },
   { num: "03", title: "Innovation & Infrastructure", desc: "Creating scalable blueprints and low-cost, climate-smart health facility upgrades designed specifically for African contexts.", icon: <IconTools />, theme: "dark" },
   { num: "04", title: "Policy & Advocacy", desc: "Translating frontline evidence into actionable policy recommendations by engaging leaders at local, national, and continental levels while ensuring community voices shape the agenda.", icon: <IconMega />, theme: "dark" },
-  { num: "05", title: "Youth Leadership & Legacy", desc: " Empowering the next generation of African climate-health leaders to advance from grassroots student ambassadorship to high-level systems leadership.", icon: <IconUsers />, theme: "dark" },
+  { num: "05", title: "Youth Leadership & Legacy", desc: "The next generation of climate-health leaders can't wait for permission, Student ambassador today. Systems leader tomorrow.", icon: <IconUsers />, theme: "dark" },
 ];
 
 function Card({ p }: { p: typeof pillars[number] }) {

@@ -66,7 +66,7 @@ export const items: Item[] = [
     date: "October 2025",
     duration: "75 min",
     speakers: ["ACHII Policy Team"],
-    image: "/images/hero.jpg",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123991/achii/images/hero.jpg",
     reportHref: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view",
     takeaways: [
       "Nigeria loses ₦3.5 trillion in food annually after harvest.",
@@ -94,7 +94,7 @@ export const items: Item[] = [
     date: "January 2026",
     duration: "75 min",
     speakers: ["ACHII Policy Team"],
-    image: "/images/Jan.png",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123995/achii/images/Jan.png",
     reportHref: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view",
     takeaways: [
       "Nigeria loses ₦3.5 trillion in food annually after harvest.",
@@ -122,7 +122,7 @@ export const items: Item[] = [
     date: "February 2026",
     duration: "80 min",
     speakers: ["EcoTech Insights"],
-    image: "/images/February-Webinar.jpg",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123990/achii/images/February-Webinar.jpg",
     reportHref: "https://drive.google.com/file/d/14I7XJDDjV0aOpNysRcwGv6oWWvRz7CVC/view",
     takeaways: [
       "85% of brain development is complete before age three.",
@@ -150,7 +150,7 @@ export const items: Item[] = [
     date: "March 2026",
     duration: "90 min",
     speakers: ["One Health Expert Panel"],
-    image: "/images/March.png",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124018/achii/images/March.png",
     watchHref: "https://drive.google.com/file/d/1T5Ezw5EQ5lPkD0e2P5xpmS34YQfPKQvp/view",
     takeaways: [
       "Warming seasons extend mosquito breeding windows into previously low-risk regions.",
@@ -179,7 +179,7 @@ export const items: Item[] = [
     date: "April 2026",
     duration: "85 min",
     speakers: ["Urban Futures Collective"],
-    image: "/images/April.png",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123967/achii/images/April.png",
     watchHref: "https://drive.google.com/file/d/1z7zzcZcKqk-T9KAZJGvMDo2YU1wwL50f/view",
     takeaways: [
       "Heat exposure tracks directly onto existing inequality.",
@@ -206,7 +206,7 @@ export const items: Item[] = [
     date: "May 2026",
     duration: "7:00–8:30 PM WAT",
     speakers: ["Odunola Oladeji"],
-    image: "/images/May.png",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124026/achii/images/May.png",
     watchHref: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
     takeaways: [
        "Climate shocks compound an already under-resourced mental-health system.",
@@ -234,7 +234,7 @@ export const items: Item[] = [
     date: "Saturday, 27 June 2026",
     duration: "7:00–8:30 PM WAT",
     speakers: ["Lasisi Godwin (UNICEF GEN-U Youth Advisor) "],
-    image: "/images/outreach-assembly.jpg",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124035/achii/images/outreach-assembly.jpg",
     watchHref: "https://forms.gle/rG283eQxCjRa7i1M6",
     takeaways: [
       "Climate shocks compound an already under-resourced mental-health system.",
@@ -262,7 +262,7 @@ export const items: Item[] = [
       "ACHII is examining climate-health awareness among healthcare professionals AND communities simultaneously — most research looks at only one. The pilot (81 responses) is complete; the study is now scaling nationally through the Regional Champion Model.",
     date: "Ongoing · 2026",
     speakers: ["ACHII Research Team"],
-    image: "/images/team-group.jpg",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124126/achii/images/team-group.jpg",
     reportHref: "/#research",
     takeaways: [
       "First study to survey clinicians and communities together.",
@@ -289,7 +289,7 @@ export const items: Item[] = [
       "Our first quarterly impact report is a window into how ACHII works — what we measure, what we learn, and what we do next. It covers the launch of the webinar series, school outreach, the national study pilot, and the deployment of 17 Regional Champions.",
     date: "April 2026",
     speakers: ["ACHII"],
-    image: "/images/outreach-blue.jpg",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124037/achii/images/outreach-blue.jpg",
     reportHref: "/reports",
     takeaways: [
       "117 webinar attendees across four countries.",
@@ -317,7 +317,7 @@ export const items: Item[] = [
       "Drawn from our Food Systems webinar: climate change is compounding post-harvest failure, but household, farm, and policy solutions can move together. Food security is a climate-health issue, not a separate one.",
     date: "January 2026",
     speakers: ["ACHII Policy Team"],
-    image: "/images/Jan.png",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123995/achii/images/Jan.png",
     reportHref: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view",
     takeaways: [
       "₦3.5 trillion in food is lost annually post-harvest.",
@@ -343,7 +343,7 @@ export const items: Item[] = [
       "A sobering, deeply practical conversation about protecting the youngest in a warming world.",
     date: "February 2026",
     speakers: ["ACHII Policy Team"],
-    image: "/images/February-Webinar.jpg",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123990/achii/images/February-Webinar.jpg",
     reportHref: "https://drive.google.com/file/d/1T5Ezw5EQ5lPkD0e2P5xpmS34YQfPKQvp/view",
     takeaways: [
       "₦3.5 trillion in food is lost annually post-harvest.",
@@ -369,7 +369,7 @@ export const items: Item[] = [
       " AI-driven outbreak prediction is now hitting 85% accuracy — but the data, models, and decisions must be grounded in African epidemiology, not imported wholesale.",
     date: "March 2026",
     speakers: ["ACHII Policy Team"],
-    image: "/images/March.png",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124018/achii/images/March.png",
     reportHref: "https://drive.google.com/file/d/1TGCKxJ782m7CnvczVm6Rm8jWxW8OAOE4/view",
     takeaways: [
       "₦3.5 trillion in food is lost annually post-harvest.",
@@ -395,7 +395,7 @@ export const items: Item[] = [
       "From our Heat webinar: extreme heat is a justice issue as much as a medical one. Urban design, labour protections, and cooling access now determine survivable temperatures for the most exposed.",
     date: "April 2026",
     speakers: ["Urban Futures Collective"],
-    image: "/images/April.png",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123967/achii/images/April.png",
     reportHref: "https://drive.google.com/file/d/13oW_jL8wlDlkYxPzh5rO-EKZL2sxlaxr/view",
     takeaways: [
       "Heat exposure maps directly onto existing inequality.",
@@ -421,7 +421,7 @@ export const items: Item[] = [
       "A 90-minute conversation with leading voices on climate-mental health in Africa. Eco-anxiety, eco-grief, post-disaster trauma, and displacement stress are real clinical realities reshaping mental-health care — and they remain severely under-discussed.",
     date: "May 2026",
     speakers: ["Odunola Oladeji"],
-    image: "/images/May.png",
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124026/achii/images/May.png",
     reportHref: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
     takeaways: [
        "Climate shocks compound an already under-resourced mental-health system.",

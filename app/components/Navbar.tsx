@@ -8,7 +8,7 @@ const links = [
   { label: "Home", href: "/" },
   {
     label: "About",
-    href: "/about",
+    href: "",
     children: [
       { label: "About ACHII", href: "/about" },
       { label: "Core Values", href: "/about/core-values" },
@@ -16,7 +16,7 @@ const links = [
     ],
   },
  { label: "Training", href: "/training" },
-//  { label: "Insights", href: "/insights" },
+ { label: "Programs", href: "/insights" },
   { label: "Blogs", href: "/reports" },
   { label: "Get Involved", href: "/get-involved" },
   {label: "Partner with Us", href: "/donate"},

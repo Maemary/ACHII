@@ -21,7 +21,7 @@ export default function Logo({
   return (
     <div className={`flex flex-col ${align === "left" ? "items-start" : "items-center"} leading-none ${className}`}>
       <img
-        src="/images/achii-logo-full.png"
+        src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784123955/achii/images/achii-logo-full.png"
         alt="ACHII"
         className={`${img} w-auto object-contain transition-[filter] duration-300 ${white ? "[filter:brightness(0)_invert(1)]" : ""}`}
       />

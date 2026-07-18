@@ -35,7 +35,7 @@ export default function GetInvolvedPage() {
 
       <div data-nav-theme="dark">
         <PageHero
-          image="/images/assembly-field.jpg"
+          image="https://res.cloudinary.com/davuaeyxb/image/upload/v1784123969/achii/images/assembly-field.jpg"
           eyebrow="Get Involved"
           title="Three ways to build with us."
           subtitle="Join as an Ally. Fund the work. Partner with us."
@@ -158,7 +158,7 @@ export default function GetInvolvedPage() {
         <section className="bg-white py-20 lg:py-[120px]">
           <div className="container-site grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-[320px] lg:h-[440px] rounded-3xl overflow-hidden order-1 lg:order-2">
-              <Image src="/images/volunteer-active.jpg" alt="An ACHII volunteer presenting climate-health materials" fill sizes="(max-width:1024px) 100vw, 50vw" className="object-cover object-top" />
+              <Image src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124137/achii/images/volunteer-active.jpg" alt="An ACHII volunteer presenting climate-health materials" fill sizes="(max-width:1024px) 100vw, 50vw" className="object-cover object-top" />
             </div>
             <div className="order-2 lg:order-1">
             <SectionHeader
@@ -167,8 +167,7 @@ export default function GetInvolvedPage() {
               className="mb-6"
             />
             <p className="font-body text-sub text-base leading-[1.75] mb-8">
-              We’re always looking for volunteers across research, communications, design, operations,
-              community organising, and writing. If you’re a student, a professional, or a community member who wants to help build climate-resilient health systems in Africa, we’d love to hear from you.
+             We recruit across six functional areas— research, communications, design, operations, community organising, and writing, this movement is built by people who simply showed up.
             </p>
             <Button href="https://docs.google.com/forms/d/e/1FAIpQLSd4jAuK5degYOf0rI-hEhkBzbMtLNrJDIznBQEhNEasZ_XjLg/viewform" variant="yellow">Volunteer With ACHII</Button>
             </div>

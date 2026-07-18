@@ -52,7 +52,7 @@ function processFile(filePath) {
   for (const [localPath, cloudUrl] of Object.entries(manifest)) {
     // Matches "/images/foo.jpeg", '/images/foo.jpeg', or `/images/foo.jpeg`
     const escaped = localPath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const regex = new RegExp(`(["'\`])${escaped}\\1`, "g");
+    const regex = new RegExp(`(["'\`])${escaped}\\1`, "gi");
     const matches = content.match(regex);
     if (matches) {
       content = content.replace(regex, (_match, quote) => `${quote}${cloudUrl}${quote}`);

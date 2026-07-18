@@ -18,7 +18,7 @@ export default function SectionHeader({
           {eyebrow}
         </p>
       )}
-      <h2 className={`font-header font-semibold text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em] max-w-3xl ${light ? "text-white" : "text-strong"}`}>
+      <h2 className={`font-header font-semibold text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em] max-w-5xl ${light ? "text-white" : "text-strong"}`}>
         {title}
       </h2>
       {intro && (

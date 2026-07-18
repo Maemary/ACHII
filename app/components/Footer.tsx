@@ -9,6 +9,7 @@ const cols = [
   { heading: "Explore", links: [
     { label: "Home", href: "/" },
     { label: "Training", href: "/training" },
+    { label: "Programmes", href: "/insights" },
     { label: "Research", href: "/#research" },
     { label: "Reports", href: "/reports" },
     { label: "About", href: "/about" },

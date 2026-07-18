@@ -4,12 +4,12 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 
 const SLIDES = [
-  { src: "/images/Jan.png", alt: "A clinician and a community member examine a seedling in dry farmland" },
-  { src: "/images/February-Webinar.jpg", alt: "Description of second image" },
-  { src: "/images/March.png", alt: "Description of third image" },
-  { src: "/images/April.png", alt: "Description of third image" },
-  { src: "/images/May.png", alt: "Description of third image" },
-  { src: "/images/June.png", alt: "Description of third image" },
+  { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123995/achii/images/Jan.png", alt: "A clinician and a community member examine a seedling in dry farmland" },
+  { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123990/achii/images/February-Webinar.jpg", alt: "Description of second image" },
+  { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124018/achii/images/March.png", alt: "Description of third image" },
+  { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123967/achii/images/April.png", alt: "Description of third image" },
+  { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124026/achii/images/May.png", alt: "Description of third image" },
+  { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123999/achii/images/June.png", alt: "Description of third image" },
 ];
 
 const TRACK_SLIDES = [...SLIDES, SLIDES[0]];

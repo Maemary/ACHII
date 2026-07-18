@@ -7,6 +7,7 @@ export default function SplitHero({
   eyebrow,
   title,
   subtitle,
+  quoteAuthor,
   ctas,
   image,
   imageAlt,
@@ -16,6 +17,7 @@ export default function SplitHero({
   eyebrow?: string;
   title: string;
   subtitle?: string;
+  quoteAuthor?: string;
   ctas?: CTA[];
   image: string;
   imageAlt: string;
@@ -32,6 +34,9 @@ export default function SplitHero({
           <h1 className="font-header font-semibold text-white text-[32px] sm:text-5xl lg:text-[52px] leading-[1.08] tracking-[-0.01em]">
             {title}
           </h1>
+          {quoteAuthor && (
+            <p className="mt-4 font-body text-sm text-white/60">— {quoteAuthor}</p>
+          )}
           {subtitle && (
             <p className="mt-6 font-body text-white/75 text-base lg:text-lg leading-[1.7] max-w-xl">{subtitle}</p>
           )}

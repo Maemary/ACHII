@@ -17,6 +17,11 @@ const upcomingWebinar = {
 
 const pastWebinars = [
   {
+    tag: "WB0006 · June 2026",
+    title: "Climate Health in Africa: A Youth-Led Research Agenda",
+    href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
+  },
+  {
     tag: "WB0005 · May 2026",
     title: "Minds Under Pressure: The Unseen Wounds of Climate Change",
     href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
@@ -26,11 +31,7 @@ const pastWebinars = [
     title: "Too Hot to Handle: Why Heat is the Ultimate Inequality",
     href: "https://drive.google.com/open?id=15pk3F-o2XD432kn9bdhIBV4x27BzntTA",
   },
-  {
-    tag: "WB0003 · March 2026",
-    title: "The Big Itch: Why Climate Change is the Best Thing to Happen to Mosquitoes",
-    href: "https://drive.google.com/open?id=1gNLNEklLqfuleq_Qm7e2y9evS0cGl0Wt",
-  },
+  
 ];
 
 export default function HomeInsights() {
@@ -74,20 +75,20 @@ export default function HomeInsights() {
               {upcomingWebinar.subtitle}
             </p>
 
-            <dl className="grid grid-rows-5 sm:grid-rows-3 gap-8 mb-8 max-w-xl">
-              <div>
-                <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Date</dt>
-                <dd className="font-body text-white text-sm">{upcomingWebinar.date}</dd>
-              </div>
-              <div>
-                <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Time</dt>
-                <dd className="font-body text-white text-sm">{upcomingWebinar.time}</dd>
-              </div>
-              <div>
-                <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Platform</dt>
-                <dd className="font-body text-white text-sm">{upcomingWebinar.platform}</dd>
-              </div>
-            </dl>
+           <dl className="grid grid-cols-3 sm:grid-rows-3 sm:grid-cols-none gap-4 sm:gap-8 mb-8 max-w-xl">
+  <div>
+    <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Date</dt>
+    <dd className="font-body text-white text-sm">{upcomingWebinar.date}</dd>
+  </div>
+  <div>
+    <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Time</dt>
+    <dd className="font-body text-white text-sm">{upcomingWebinar.time}</dd>
+  </div>
+  <div>
+    <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">Platform</dt>
+    <dd className="font-body text-white text-sm">{upcomingWebinar.platform}</dd>
+  </div>
+</dl>
 
             <div className="mt-auto flex flex-wrap items-center gap-4">
               <Button href={upcomingWebinar.registerHref} variant="yellow" external>
@@ -104,10 +105,15 @@ export default function HomeInsights() {
               </Link>
             </div>
           </div>
-            <div className="relative w-[350px] h-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 shadow-lg shadow-black/20 lg:ml-auto">
-                  <Image src="/images/July-Webinar.jpg" alt="An ACHII volunteer holding a climate-health education poster" fill sizes="(max-width:1024px) 100vw, 360px" className="object-cover" />
-            </div>
-
+           <div className="relative w-full h-[280px] sm:h-[350px] lg:w-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 shadow-lg shadow-black/20 lg:ml-auto">
+  <Image
+    src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784123996/achii/images/July-Webinar.jpg"
+    alt="An ACHII volunteer holding a climate-health education poster"
+    fill
+    sizes="(max-width:1024px) 100vw, 360px"
+    className="object-cover"
+  />
+</div>
           </div>
 
           {/* Past webinar recordings */}

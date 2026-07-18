@@ -23,12 +23,12 @@ export default function Home() {
       <div data-nav-theme="light"><Impact /></div>
       <div data-nav-theme="light"><Pillars /></div>
       <div data-nav-theme="dark">
-        <ImageBand src="/images/Students.jpg" alt="Students at an ACHII climate-health school outreach assembly" />
+        <ImageBand src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124123/achii/images/Students.jpg" alt="Students at an ACHII climate-health school outreach assembly" />
       </div>
       <div data-nav-theme="dark"><ResearchStudy /></div>
       <div data-nav-theme="light"><HomeInsights /></div>
       {/* <div data-nav-theme="dark">
-        <ImageBand src="/images/Partner.jpg" alt="Students gathered at an ACHII school outreach event" height="h-[552px] md:h-[929px]" />
+        <ImageBand src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124044/achii/images/Partner.jpg" alt="Students gathered at an ACHII school outreach event" height="h-[552px] md:h-[929px]" />
       </div> */}
       <div data-nav-theme="light"><CallToAction /></div>
        <div data-nav-theme="dark"><PartnersSection /></div>

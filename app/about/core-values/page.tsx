@@ -29,13 +29,10 @@ export default function CoreValuesPage() {
           title="Six values, six rules of engagement."
           subtitle="These are the values that shape every decision, partnership, and piece of work ACHII puts into the world."
         />
-      </div>
-
-      <div data-nav-theme="dark">
-        <section className="bg-primary-base py-20 lg:py-[120px]">
+           <section className="bg-primary-dark py-20 lg:pt-[5px] lg:pb-[85px]">
           <div className="container-site">
-            <SectionHeader light eyebrow="Our Core Values" title="What we hold ourselves to." className="mb-12" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {values.map(([t, d]) => (
                 <div key={t} className="bg-white/10 border border-white/15 rounded-2xl p-7">
                   <h3 className="font-header font-semibold text-white text-lg mb-2">{t}</h3>
@@ -43,8 +40,14 @@ export default function CoreValuesPage() {
                 </div>
               ))}
             </div>
+     
+           
           </div>
         </section>
+      </div>
+
+      <div data-nav-theme="dark">
+        
       </div>
 
       <div data-nav-theme="dark"><Footer /></div>

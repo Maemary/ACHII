@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function SubscribeForm({
   source,
@@ -11,13 +11,6 @@ export default function SubscribeForm({
 }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "already" | "error">("idle");
-  const [checked, setChecked] = useState(false);
-
-  useEffect(() => {
-    const remembered = localStorage.getItem(`achii_subscribed_${source}`);
-    if (remembered) setStatus("already");
-    setChecked(true);
-  }, [source]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -30,17 +23,13 @@ export default function SubscribeForm({
     });
 
     if (res.ok) {
-      localStorage.setItem(`achii_subscribed_${source}`, "true");
       setStatus("done");
     } else if (res.status === 409) {
-      localStorage.setItem(`achii_subscribed_${source}`, "true");
       setStatus("already");
     } else {
       setStatus("error");
     }
   }
-
-  if (!checked) return null; // avoid flashing the form before localStorage check runs
 
   if (status === "done") {
     return (

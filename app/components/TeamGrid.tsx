@@ -19,20 +19,24 @@ export default function TeamGrid({ teams }: TeamGridProps) {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8 mb-20">
         {teams.map((team) => (
-          <button
-            key={team.name}
-            onClick={() => setActive(team)}
-            className="text-left flex flex-col gap-3 bg-primary-lighter rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
-          >
-            <div className="relative w-full h-48 rounded-lg overflow-hidden">
-              <Image src={team.photo} alt={team.name} fill className="object-contain object-center" />
+         <button
+        key={team.name}
+        onClick={() => setActive(team)}
+        className="flex flex-col items-center gap-3 text-center  max-w-[320px] group"
+    >
+  <div className="relative w-full aspect-square rounded-xl overflow-hidden bg-primary-lighter"> 
+                <Image
+                src={team.photo}
+                alt={team.name}
+                fill
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div>
-              <p className="font-bold">{team.name}</p>
-              <p className="text-sm text-muted font-semibold">{team.role}</p>
-              <p className="text-xs mt-1 line-clamp-3">{team.bio}</p>
+              <p className="font-header font-semibold text-strong text-base">{team.name}</p>
+              <p className="font-body text-primary-dark text-lg mt-0.5">{team.role}</p>
             </div>
           </button>
         ))}
