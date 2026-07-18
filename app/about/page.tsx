@@ -76,11 +76,11 @@ export default function AboutPage() {
         <section className="bg-primary-dark py-20 lg:py-[120px]">
           <div className="container-site">
             <SectionHeader light eyebrow="Why ACHII Exists" title="Five hard truths." className="mb-12" />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 md:gap-6">
               {truths.map((t, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-7">
-                  <span className="font-header font-semibold text-yellow text-3xl block mb-4">0{i + 1}</span>
-                  <p className="font-body text-white/85 text-base leading-[1.65]">{t}</p>
+                <div key={i} className="bg-white/5 border border-white/10 rounded-lg md:rounded-2xl p-2.5 md:p-7">
+                  <span className="font-header font-semibold text-yellow text-base md:text-3xl block mb-1.5 md:mb-4">0{i + 1}</span>
+                  <p className="font-body text-white/85 text-[10px] md:text-base leading-[1.4] md:leading-[1.65]">{t}</p>
                 </div>
               ))}
             </div>

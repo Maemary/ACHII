@@ -217,7 +217,7 @@ export default function ProgrammesPage() {
                   alt="An ACHII Regional Champion engaged in community fieldwork"
                   fill
                   sizes="(max-width:1024px) 100vw, 480px"
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </div>

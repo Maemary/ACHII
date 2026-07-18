@@ -107,7 +107,7 @@ export default function JoinModalProvider({ children }: { children: React.ReactN
                   <p className="md:hidden font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-primary-base mb-3">
                     Join the Movement
                   </p>
-                  <h3 className="font-header font-semibold text-strong text-2xl mb-2">Join in 30 seconds.</h3>
+                  <h3 className="font-header font-semibold text-strong text-2xl mb-2">Become An Ally in 30 seconds.</h3>
                   <p className="font-body text-sub text-sm leading-[1.6] mb-7">
                     Email only is all we need. The rest is optional and helps us tailor what we send you.
                   </p>

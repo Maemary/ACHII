@@ -27,7 +27,7 @@ export default function ShowcaseHero({
   sideContent?: React.ReactNode;
 }) {
   return (
-    <section className="relative bg-primary-dark pt-[148px] pb-16 lg:pb-20 overflow-hidden">
+    <section className="relative bg-primary-dark pt-[100px] sm:pt-[148px] pb-16 lg:pb-20 overflow-hidden">
       <div className="container-site">
         {eyebrow && (
           <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">{eyebrow}</p>
@@ -49,7 +49,7 @@ export default function ShowcaseHero({
 
       <div className="container-site mt-12 lg:mt-16">
         <div className={sideContent ? "grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8 lg:gap-10 items-start" : ""}>
-          <div className="relative w-[730px] h-[400px] sm:h-[420px] lg:h-[580px] rounded-3xl overflow-hidden">
+          <div className="relative w-full h-[450px] sm:h-[450px] lg:h-[580px] lg:w-[730px] rounded-3xl overflow-hidden">
             {imageContent ? (
               imageContent
             ) : (

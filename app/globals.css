@@ -17,7 +17,7 @@ body {
   display: flex;
 }
 .embla__slide {
-  flex: 0 0 60%; /* mobile: ~1.5 visible, creates overflow */
+  flex: 0 0 53.333%; /* mobile: ~3 visible, matches smaller logo size */
   min-width: 0;
 }
 @media (min-width: 768px) {

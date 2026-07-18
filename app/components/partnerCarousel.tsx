@@ -24,9 +24,9 @@ export default function PartnerCarousel() {
               alt={partner.name}
               width={100}
               height={80}
-              className="h-40 w-60 object-contain"
+              className="h-16 w-24 object-contain md:h-40 md:w-60"
             />
-            <p className="mt-2 text-center font-bold text-2xl text-primary-base">
+            <p className="hidden md:block mt-2 text-center font-bold text-2xl text-primary-base">
               {partner.name}
             </p>
           </div>

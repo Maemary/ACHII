@@ -40,7 +40,7 @@ export default function HomeInsights() {
       <div className="container-site">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
 
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-2xl mb-4 md:mb-12">
           <p className="label-tag mb-4">
             ACHII Resource Bank · Access free, open-source tools and research built for African contexts
           </p>

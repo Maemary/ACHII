@@ -12,20 +12,17 @@ export default function ImpactStats({
 }: {
   columns?: 2 | 3;
 }) {
-  const gridCols =
-    columns === 3
-      ? "sm:grid-cols-2 lg:grid-cols-3"
-      : "sm:grid-cols-2";
+  const gridCols = columns === 3 ? "grid-cols-3" : "grid-cols-2";
 
   return (
-    <div className={`grid grid-cols-1 ${gridCols} gap-6`}>
+    <div className={`grid ${gridCols} gap-2.5 md:gap-6`}>
       {stats.map((s) => (
-        <div key={s.label} className="bg-primary-dark rounded-xl p-7">
-          <div className="font-header font-semibold text-[56px] leading-none text-white mb-6">
+        <div key={s.label} className="bg-primary-dark rounded-lg md:rounded-xl p-2.5 md:p-7">
+          <div className="font-header font-semibold text-lg md:text-[56px] leading-none text-white mb-2 md:mb-6">
             {s.value}
           </div>
-          <div className="border-t border-stroke-sub/60 pt-4">
-            <span className="font-body text-sm text-white/80">{s.label}</span>
+          <div className="border-t border-stroke-sub/60 pt-1.5 md:pt-4">
+            <span className="font-body text-[10px] md:text-sm text-white/80">{s.label}</span>
           </div>
         </div>
       ))}

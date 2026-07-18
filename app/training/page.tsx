@@ -60,12 +60,9 @@ export default function TrainingPage() {
         Real conversations on Africa's climate–health frontline
       </h2>
       <p className="font-body text-white/70 text-md leading-[1.75]">
-        Every session brings clinicians, researchers, and community advocates
-        together to unpack how climate change is reshaping health across the
-        continent — and what we can do about it. Free to join, recorded for
-        later.
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi possimus porro corrupti nam facere eaque dicta accusamus magnam vel quidem necessitatibus, adipisci ab nisi molestiae, quasi tempore quaerat. Eaque.
-      </p>
+       ACHII runs a monthly webinar series designed to train healthcare professionals, students, and communities on the health impacts of climate change. Every month, a new session tackles a critical topic, from child health and infectious disease to mental health and heat inequality, led by experts across Africa. Since January 2026, ACHII has delivered training consistently, month after month, equipping attendees with practical, evidence-based actions they can apply immediately. When you join ACHII's webinar series, you're signing up for ongoing, reliable training on climate and health. 
+
+        </p>
     </div>
   }
 />

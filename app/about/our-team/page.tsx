@@ -117,14 +117,14 @@ export default function OurTeamPage() {
         <section className="bg-bg-soft py-20 lg:py-[120px]">
           <div className="container-site">
             <SectionHeader
-              eyebrow="Volunteers & ACHII Allies"
+              eyebrow="Volunteers"
               title="ACHII is powered by the people who show up."
               intro="Beyond our core team, ACHII is sustained by a growing network of volunteers — ACHII GENG."
               className="mb-10"
             />
             <VolunteerGrid volunteers={volunteers} />
-            
-            <p className="font-body text-sub text-base mb-8">
+
+            <p className="font-body text-sub text-base mt-10 mb-8">
               If you’re already volunteering — thank you. If you’re not yet — there’s a place for you.
             </p>
             <Button href="/get-involved#volunteer" variant="yellow">Volunteer with ACHII</Button>

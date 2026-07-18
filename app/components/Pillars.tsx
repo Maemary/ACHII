@@ -25,15 +25,15 @@ const pillars = [
 function Card({ p }: { p: typeof pillars[number] }) {
   const dark = p.theme === "dark";
   return (
-    <div className={`rounded-2xl p-7 h-full ${dark ? "bg-primary-base text-white" : "bg-primary-light text-strong"}`}>
-      <div className="flex items-start justify-between mb-7">
-        <span className={`font-header font-semibold text-[28px] ${dark ? "text-white" : "text-strong"}`}>{p.num}</span>
-        <div className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 ${dark ? "bg-white/15 text-white" : "bg-white text-primary-base"}`}>
+    <div className={`rounded-lg md:rounded-2xl p-2.5 md:p-7 h-full ${dark ? "bg-primary-base text-white" : "bg-primary-light text-strong"}`}>
+      <div className="flex items-start justify-between mb-2 md:mb-7">
+        <span className={`font-header font-semibold text-sm md:text-[28px] ${dark ? "text-white" : "text-strong"}`}>{p.num}</span>
+        <div className={`w-7 h-7 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 [&_svg]:w-3.5 [&_svg]:h-3.5 md:[&_svg]:w-[22px] md:[&_svg]:h-[22px] ${dark ? "bg-white/15 text-white" : "bg-white text-primary-base"}`}>
           {p.icon}
         </div>
       </div>
-      <h3 className="font-header font-semibold text-lg mb-3">{p.title}</h3>
-      <p className={`font-body text-sm leading-[1.7] ${dark ? "text-white/80" : "text-strong/75"}`}>{p.desc}</p>
+      <h3 className="font-header font-semibold text-[11px] md:text-lg mb-0 md:mb-3 leading-snug">{p.title}</h3>
+      <p className={`hidden md:block font-body text-sm leading-[1.7] ${dark ? "text-white/80" : "text-strong/75"}`}>{p.desc}</p>
     </div>
   );
 }
@@ -52,11 +52,8 @@ export default function Pillars() {
           <p className="font-body text-sub text-base">Five interconnected pillars. One unified theory of change.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-          {pillars.slice(0, 3).map((p) => <Card key={p.num} p={p} />)}
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {pillars.slice(3).map((p) => <Card key={p.num} p={p} />)}
+        <div className="grid grid-cols-3 gap-3 md:gap-6">
+          {pillars.map((p) => <Card key={p.num} p={p} />)}
         </div>
       </div>
     </section>

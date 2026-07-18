@@ -71,7 +71,7 @@ export default function ReportsPage() {
           eyebrow="Blog Posts & Resources"
           title="Everything we’ve learned. In one place. Yours to use."
           subtitle="Webinar recordings, written reports, practical toolkits, infographics, and writings from African voices on the climate-health front line."
-          image="https://res.cloudinary.com/davuaeyxb/image/upload/v1784123972/achii/images/band-research.jpg"
+          image="https://res.cloudinary.com/davuaeyxb/image/upload/v1784390987/IMG_9679_hcr0nn.jpg"
           imageAlt="Healthcare professionals reviewing climate-health data together"
         />
       </div>
