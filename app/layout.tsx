@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway, Montserrat } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import JoinModalProvider from "@/app/components/JoinModalProvider";
 
@@ -71,6 +72,7 @@ export default function RootLayout({
         />
         <JoinModalProvider>{children}</JoinModalProvider>
       </body>
+      <GoogleAnalytics gaId="G-X62E6BPV8F" />
     </html>
   );
 }
