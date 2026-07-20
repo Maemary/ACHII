@@ -7,6 +7,7 @@ import SectionHeader from "@/app/components/SectionHeader";
 import Button from "@/app/components/Button";
 import WebinarSlide from "../components/webinarSlide";
 import TestimonialsCarousel from "@/app/components/TestimonialsCarousel";
+import SpeakersCarousel from "@/app/components/SpeakersCarousel";
 
 export const metadata = {
   title: "Training — ACHII",
@@ -26,10 +27,10 @@ const recordings = [
   { tag: "WB0000 · October 2025 ", title: "Climate Change Is a Health Emergency: What Every Healthcare Worker Must Know", desc: "From heat waves to flooding, shifting weather patterns are fueling new health emergencies. Healthcare workers stand at the frontline, yet many lack the knowledge to connect climate change with its medical consequences.", href: "https://drive.google.com/drive/folders/1u31rqEaKku9eeUlxZd70g7WX801b6Fuu", linkType: "recording"},
   { tag: "WB0001 · January 2026", title: "The Future of Food & Sustainable Agriculture in Nigeria", desc: "Nigeria loses ₦3.5 trillion in food annually post-harvest. Climate change is compounding these failures. Four audience-specific solutions across households, farmers, youth, and advocates.", href: "https://drive.google.com/file/d/1Z_4sRm_vtwjRHEoZTaMf-jooQi6lWy4R/view?usp=drive_link", linkType: "report"},
   { tag: "WB0002 · February 2026", title: "Future-Proofing Childhood: Building Climate-Resilient Minds", desc: "85% of brain development happens before age 3. Heat, malnutrition, and disaster stress during this window cause irreversible damage. The most evidence-dense session of the series.", href: "https://drive.google.com/file/d/1T5Ezw5EQ5lPkD0e2P5xpmS34YQfPKQvp/view?usp=sharing", linkType: "report"},
-  { tag: "WB0003 · March 2026", title: "The Big Itch: Why Climate Change is the Best Thing to Happen to Mosquitoes", desc: "International attendance from Afghanistan and Zambia. Two One Health and epidemiology experts featured. AI outbreak prediction accuracy: 85%.", href: "https://drive.google.com/open?id=1gNLNEklLqfuleq_Qm7e2y9evS0cGl0Wt", linkType: "recording" },
-  { tag: "WB0004 · April 2026", title: "Too Hot to Handle: Why Heat is the Ultimate Inequality", desc: "The highest participation quality of the series. Interactive Kahoot quiz introduced. Extreme heat framed as a justice and equity issue, not just a medical one.", href: "https://drive.google.com/open?id=15pk3F-o2XD432kn9bdhIBV4x27BzntTA", linkType: "recording" },
+  { tag: "WB0003 · March 2026", title: "The Big Itch: Why Climate Change is the Best Thing to Happen to Mosquitoes", desc: "International attendance from Afghanistan and Zambia. Two One Health and epidemiology experts featured. AI outbreak prediction accuracy: 85%.", href: "https://drive.google.com/file/d/1TGCKxJ782m7CnvczVm6Rm8jWxW8OAOE4/view?usp=drive_open", linkType: "report" },
+  { tag: "WB0004 · April 2026", title: "Too Hot to Handle: Why Heat is the Ultimate Inequality", desc: "The highest participation quality of the series. Interactive Kahoot quiz introduced. Extreme heat framed as a justice and equity issue, not just a medical one.", href: "https://drive.google.com/file/d/1B9CIbf9LiycLEheeb7487_2incV2yk4J/view?usp=drive_open", linkType: "recording" },
   { tag: "WB0005 · May 2026", title: " Minds Under Pressure: The Unseen Wounds of Climate Change", desc: "Explored the mental health impacts of climate change in African communities, highlighting issues such as eco-anxiety, eco-grief, and the need for holistic post-disaster support.", href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link", linkType: "recording" },
-  { tag: "WB0006 · June 2026", title: "Voices From The Margins: Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis", desc: "This webinar examined the disproportionate climate burdens faced by vulnerable populations across Africa — women, the elderly, and low-income communities — who bear the greatest impacts yet remain excluded from decision-making. The 90-minute conversation centered these communities' lived experiences, elevated solutions-oriented voices from within them, and explored evidence-based adaptation strategies. Discussions built pathways toward inclusive climate action grounded in protection, dignity, and equitable access to resources.", href: "https://drive.google.com/file/d/1Nx83XjR80r_uxHcLcNWyQDOJIoQBPEyz/view", linkType: "recording" },
+  { tag: "WB0006 · June 2026", title: "Voices From The Margins: Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis", desc: "This webinar examined the disproportionate climate burdens faced by vulnerable populations across Africa — women, the elderly, and low-income communities — who bear the greatest impacts yet remain excluded from decision-making.", href: "https://drive.google.com/file/d/1Nx83XjR80r_uxHcLcNWyQDOJIoQBPEyz/view", linkType: "recording" },
 ];
 
 const modules = [
@@ -60,7 +61,7 @@ export default function TrainingPage() {
         Real conversations on Africa's climate–health frontline
       </h2>
       <p className="font-body text-white/70 text-md leading-[1.75]">
-       ACHII runs a monthly webinar series designed to train healthcare professionals, students, and communities on the health impacts of climate change. Every month, a new session tackles a critical topic, from child health and infectious disease to mental health and heat inequality, led by experts across Africa. Since January 2026, ACHII has delivered training consistently, month after month, equipping attendees with practical, evidence-based actions they can apply immediately. When you join ACHII's webinar series, you're signing up for ongoing, reliable training on climate and health. 
+       Africa Climate and Health Innovation Institute runs a monthly webinar series designed to train healthcare professionals, students, and communities on the health impacts of climate change. Every month, a new session tackles a critical topic, from child health and infectious disease to mental health and heat inequality, led by experts across Africa. Since January 2026, ACHII has delivered training consistently, month after month, equipping attendees with practical, evidence-based actions they can apply immediately. When you join ACHII's webinar series, you're signing up for ongoing, reliable training on climate and health. 
 
         </p>
     </div>
@@ -131,6 +132,11 @@ export default function TrainingPage() {
             </aside>
           </div>
         </section>
+      </div>
+
+      {/* Featured speakers */}
+      <div data-nav-theme="light">
+        <SpeakersCarousel />
       </div>
 
       {/* Past recordings */}

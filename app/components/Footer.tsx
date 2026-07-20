@@ -16,9 +16,9 @@ const cols = [
   ] },
   { heading: "Get Involved", links: [
     { label: "Join as an Ally", href: "/get-involved" },
-    //{ label: "Donate", href: "/donate" },
+    //{ label: "", href: "/donate" },
     { label: "Volunteer", href: "/get-involved#volunteer" },
-    { label: "Partner with us", href: "/donate" },
+    { label: "Partner with us", href: "/partner" },
   ] },
 ];
 

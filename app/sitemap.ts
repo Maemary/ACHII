@@ -11,7 +11,7 @@ const routes = [
   "/training",
   "/reports",
   "/insights",
-  "/donate",
+  "/partner",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -82,7 +82,7 @@ export default function ReportsPage() {
           <div className="container-site">
             <SectionHeader
               light
-              eyebrow="The ACHII Allies Resource Bank"
+              eyebrow="The Africa Climate and Health Innovation Institute Allies Resource Bank"
               title="Unlock the knowledge vault."
               intro="Watch, listen, or read. We’ve curated months of data-driven insight in one place."
               className="mb-12"

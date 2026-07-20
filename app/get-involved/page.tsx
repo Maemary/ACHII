@@ -37,10 +37,10 @@ export default function GetInvolvedPage() {
         <PageHero
           image="https://res.cloudinary.com/davuaeyxb/image/upload/v1784123969/achii/images/assembly-field.jpg"
           eyebrow="Get Involved"
-          title="Three ways to build with us."
-          subtitle="Join as an Ally. Fund the work. Partner with us."
+          title="Four ways to build with us."
+          subtitle="Join as an Ally. Fund the work. Partner with us. Volunteer with us"
           body={[
-            "ACHII isn’t built by a single team. It’s built by a continent-wide community of people who believe Africa’s climate-health future is worth fighting for. Here’s how you join us.",
+            "Africa Climate and Health Innovation Institute isn’t built by a single team. It’s built by a continent-wide community of people who believe Africa’s climate-health future is worth fighting for. Here’s how you join us.",
           ]}
         />
       </div>

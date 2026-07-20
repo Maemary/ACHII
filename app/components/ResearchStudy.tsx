@@ -65,7 +65,7 @@ export default function ResearchStudy() {
         </p>
         <div className="space-y-4 max-w-[1280px] mb-12">
           <p className="font-body text-white/85 text-base leading-[1.75]">
-            Climate change is reshaping public health, yet frontline realities are rarely connected to clinical data. ACHII is changing that by launching a pan-national climate-health study across all six geopolitical zones. We are scaling our successful 533-response pilot to a nationwide target of 900 verified perspectives. 
+            Climate change is reshaping public health, yet frontline realities are rarely connected to clinical data. ACHII is changing that by launching a pan-national climate-health study across all six geopolitical zones. We are scaling our successful 603-response pilot to a nationwide target of 900 verified perspectives. 
           </p>
           <p className="font-body text-white/85 text-base leading-[1.75]">
             Your voice is the missing piece. By submitting your responses right now, you shift from a bystander to a co-creator of the evidence base.

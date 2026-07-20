@@ -8,7 +8,7 @@ const actions = [
   { title: "Take the Survey", desc: "Help us reach 900 responses across Nigeria.", cta: "Take the Survey", href: 
     "https://forms.gle/UXaxsnP7xBfshLdHA"
     , bg: "bg-yellow", text: "text-strong", desc2: "text-strong/75", btn: "border border-strong/40 text-strong hover:bg-strong hover:text-yellow" },
-  { title: "Parter With Us", desc: "Fund the research, training, and infrastructure work.", cta: "Support ACHII", href: "/donate", bg: "bg-green", text: "text-white", desc2: "text-white/75", btn: "border border-white/50 text-white hover:bg-white hover:text-green" },
+  { title: "Partner With Us", desc: "Reach out if you would like to collaborate or fund a project", cta: "Partner", href: "/partner", bg: "bg-green", text: "text-white", desc2: "text-white/75", btn: "border border-white/50 text-white hover:bg-white hover:text-green" },
 ];
 
 export default function CallToAction() {

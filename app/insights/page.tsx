@@ -68,7 +68,7 @@ export default function ProgrammesPage() {
               From data to the doorstep. How ACHII&apos;s work actually reaches people.
             </h1>
             <p className="mt-6 font-body text-white/75 text-lg leading-[1.65] max-w-6xl">
-              Three programmes. One goal: closing the gap between climate-health evidence and the
+              Two programmes. One goal: closing the gap between climate-health evidence and the
               communities living the crisis.
             </p>
             <div className="mt-9 flex flex-wrap gap-x-6 gap-y-2">
@@ -104,7 +104,7 @@ export default function ProgrammesPage() {
             <div className="grid lg:grid-cols-[1fr_380px] gap-12 items-start">
               <div>
                 <h2 className="font-header font-semibold text-strong text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em] mb-8 max-w-3xl">
-                  From one school to six: how ACHII takes climate-health education into the classroom
+                  From one school to six: how Africa Climate and Health Innovation Institute takes climate-health education into the classroom
                 </h2>
 
                 <div className="space-y-8 mb-8">

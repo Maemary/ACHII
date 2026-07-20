@@ -41,7 +41,7 @@ app/
   training/page.tsx     /training
   reports/page.tsx      /reports
   get-involved/page.tsx /get-involved
-  donate/page.tsx       /donate (reads ?type=monthly)
+  partner/page.tsx       /partner (reads ?type=monthly)
   insights/page.tsx     /insights (Knowledge Hub)
 
   data/

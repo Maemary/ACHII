@@ -18,7 +18,7 @@ const upcomingWebinar = {
 const pastWebinars = [
   {
     tag: "WB0006 · June 2026",
-    title: "Climate Health in Africa: A Youth-Led Research Agenda",
+    title: "Voices From The Margins: Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis",
     href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
   },
   {
