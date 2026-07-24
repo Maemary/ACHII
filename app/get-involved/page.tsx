@@ -148,7 +148,7 @@ export default function GetInvolvedPage() {
               partners across funding, research collaboration, training delivery, policy advocacy, and
               infrastructure prototyping.
             </p>
-            <Button href="mailto:Ecodoctr@gmail.com" variant="yellow">Partner With Us</Button>
+            <Button href="mailto:info@achii.co" variant="yellow">Partner With Us</Button>
           </div>
         </section>
       </div>

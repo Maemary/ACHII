@@ -10,7 +10,7 @@ export const metadata = {
     "How ACHII builds climate-resilient communities on the ground — school outreach, the Regional Champion Model, and Nigeria's first national climate-health study.",
 };
 
-const CONTACT_EMAIL = "ecodoctr@gmail.com";
+const CONTACT_EMAIL = "info@achii.co";
 
 function StatusTag({ children, dark = false }: { children: React.ReactNode; dark?: boolean }) {
   return (

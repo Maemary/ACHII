@@ -88,7 +88,7 @@ export default function Footer() {
             <div>
               <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-white/50 mb-5">Contact Us</p>
               <address className="not-italic font-body text-sm text-white/80 leading-relaxed mb-5">
-                <a href="mailto:ecodoctr@gmail.com" className="underline underline-offset-2 hover:text-white">ecodoctr@gmail.com</a>
+                <a href="mailto:info@achii.co" className="underline underline-offset-2 hover:text-white">info@achii.co</a>
               </address>
               <SocialLinks links={profileLinks} size="sm" />
             </div>
