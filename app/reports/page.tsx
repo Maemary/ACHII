@@ -10,6 +10,7 @@ export const metadata = {
   title: "Blogs & Resources — ACHII",
   description:
     "Webinar recordings, written reports, toolkits, infographics, and writings from African voices on the climate-health front line.",
+  alternates: { canonical: "/reports" },
 };
 
 const bankItems = [
@@ -205,7 +206,7 @@ export default function ReportsPage() {
 </div>
 
       {/* Newsletter + Writings */}
-      <div data-nav-theme="light">
+      <div data-nav-theme="light" id="newsletter">
         <section className="bg-bg-soft py-20 lg:py-[120px]">
           <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="bg-white rounded-2xl p-9">

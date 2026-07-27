@@ -7,6 +7,7 @@ export const metadata = {
   title: "Core Values — ACHII",
   description:
     "The six values that guide how ACHII works: Collaboration, Inclusion, Proactiveness, Excellence, Integrity, and Empathy.",
+  alternates: { canonical: "/about/core-values" },
 };
 
 const values = [

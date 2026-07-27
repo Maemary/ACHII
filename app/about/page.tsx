@@ -10,6 +10,7 @@ export const metadata = {
   title: "About ACHII — ACHII",
   description:
     "Africa Climate and Health Innovation Institute. Formerly Ecodoctr. Built by African clinicians, students, and researchers for the climate-health future Africa deserves.",
+  alternates: { canonical: "/about" },
 };
 
 const truths = [

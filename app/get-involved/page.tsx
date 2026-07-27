@@ -10,6 +10,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Get Involved — ACHII",
   description: "Join as an Ally. Fund the work. Wear the movement. Partner with us. Volunteer.",
+  alternates: { canonical: "/get-involved" },
 };
 
 const allyPerks = [

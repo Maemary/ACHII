@@ -235,7 +235,7 @@ export const items: Item[] = [
     duration: "7:00–8:30 PM WAT",
     speakers: ["Lasisi Godwin (UNICEF GEN-U Youth Advisor) "],
     image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124035/achii/images/outreach-assembly.jpg",
-    watchHref: "https://forms.gle/rG283eQxCjRa7i1M6",
+    watchHref: "https://drive.google.com/file/d/1Nx83XjR80r_uxHcLcNWyQDOJIoQBPEyz/view",
     takeaways: [
       "Climate shocks compound an already under-resourced mental-health system.",
       "Eco-anxiety and eco-grief are clinical realities, not metaphors.",
@@ -247,7 +247,34 @@ export const items: Item[] = [
       "Building peer-support networks after disasters.",
     ],
     related: ["wb0004-heat", "research-national"],
-    upcoming: true,
+  },
+
+  {
+    id: "wb0007-cities",
+    type: "Webinar",
+    topic: "Urban Resilience",
+    tag: "WB0007 · July 2026",
+    title: "Cities Underwater: Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience",
+    excerpt:
+      "Extreme rainfall and failing municipal infrastructure are turning seasonal rains into flash-flood emergencies across Africa's cities.",
+    summary:
+      "This session unpacked the immediate realities of the 2026 flood emergency and connected them to systemic climate vulnerabilities — from blocked drainage and plastic waste bottlenecks to the waterborne disease outbreaks they trigger — and explored youth-led data models for community-level adaptation.",
+    date: "Saturday, 25 July 2026",
+    duration: "7:00–8:30 PM WAT",
+    speakers: ["Sharon Chiahemen"],
+    image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123996/achii/images/July-Webinar.jpg",
+    watchHref: "https://drive.google.com/file/d/1lcunRQwyVIZD7biVXyG0iT0hicwp_Gr5/view?usp=drive_open",
+    takeaways: [
+      "Blocked drainage and waste bottlenecks turn seasonal rains into emergencies.",
+      "Urban flooding is a public health crisis, not just an infrastructure one.",
+      "Youth-led data and early-warning mapping can drive community adaptation.",
+    ],
+    discussion: [
+      "Structural drivers behind urban flooding.",
+      "Cascading public-health risks from waterborne disease.",
+      "Building community-level early-warning and emergency response.",
+    ],
+    related: ["wb0006-equity", "wb0004-heat", "report-q1"],
   },
 
   {

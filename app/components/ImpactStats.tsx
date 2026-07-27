@@ -1,6 +1,6 @@
 const stats = [
   { value: "5", label: "Active Projects" },
-  { value: "1570", label: "Students Trained" },
+  { value: "2753", label: "Students Trained" },
   { value: "75,363", label: "People reached via social media" },
   { value: "170", label: "Webinar Attendees" },
   { value: "22", label: "Regional Champions" },

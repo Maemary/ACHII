@@ -12,6 +12,7 @@ export const metadata = {
   title: "Our Team — ACHII",
   description:
     "Meet the clinicians, researchers, communicators, and operations leads running ACHII, plus the volunteers and Allies who power the work.",
+  alternates: { canonical: "/about/our-team" },
 };
 
 const teams = [
@@ -58,9 +59,7 @@ const volunteers = [
   { name: "Aminat Poopola", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124206/achii/images/Volunteers/Volunteer24.jpg" },
   { name: "Bridget Useni", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124213/achii/images/Volunteers/Volunteer25.jpg" },
   { name: "Chidera Ugoh", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124214/achii/images/Volunteers/Volunteer26.jpg" },
-  { name: "Adaeze Nwachukwu ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124216/achii/images/Volunteers/Volunteer27.jpg" },
   { name: "Ngozi Godfrey", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124176/achii/images/Volunteers/Volunteer12.jpg" },
-  { name: "Kwesi Ampofo ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124181/achii/images/Volunteers/Volunteer13.jpg" },
   { name: "Adedoyin Babatunde", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124183/achii/images/Volunteers/Volunteer14.jpg" },
   { name: "Ogbaino Gabriel", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124185/achii/images/Volunteers/Volunteer15.png" },
   { name: "Sowunmi Kayode", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124188/achii/images/Volunteers/Volunteer16.jpg" },
@@ -68,16 +67,11 @@ const volunteers = [
   { name: "Jennifer Kalu", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124191/achii/images/Volunteers/Volunteer18.jpg" },
   { name: "George Wushi Deborah ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124233/achii/images/Volunteers/Volunteer6.jpg" },
   { name: "Unabor Olanike ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124199/achii/images/Volunteers/Volunteer20.jpg" },
-  { name: "Sylvia Atieno Ngantsala ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124201/achii/images/Volunteers/Volunteer21.jpg" },
   { name: "Akinola Pelumi Semilore", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124202/achii/images/Volunteers/Volunteer22.jpg" },
   { name: "Boluwatife Adetutu", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124205/achii/images/Volunteers/Volunteer23.jpg" },
   { name: "Helen Otailku", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124242/achii/images/Volunteers/Volunteer8.jpg" },
   { name: "Mercy Omobobola ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124245/achii/images/Volunteers/Volunteer9.png" },
-  { name: "Paschaline Umoche Eleojo", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784125220/achii/images/Volunteers/Volunteer10.jpg" },
   { name: "Amadou Kongira ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124168/achii/images/Volunteers/Volunteer11.jpg" },
-  { name: "Emmanuel Blessing Amarachi", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124217/achii/images/Volunteers/Volunteer28.jpg" },
-  { name: "Ahmad Abdulrahim ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124218/achii/images/Volunteers/Volunteer29.jpg" },
-  { name: "Vincent odhiambo otieno ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124222/achii/images/Volunteers/Volunteer30.jpg" },
   {name: "Praise Ipadeola", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784378566/NX1A7299_-_Ipadeola_Praise_omonnj.jpg"},
 ];
 

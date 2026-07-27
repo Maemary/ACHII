@@ -13,14 +13,15 @@ export const metadata = {
   title: "Training — ACHII",
   description:
     "Climate-health training built for the African front line: Webinars, specialized workshops, and evidence-based training designed by African clinicians, for African clinicians.",
+  alternates: { canonical: "/training" },
 };
 
 const eventDetails = [
-  ["Date", "Saturday, 25th July 2026"],
+  ["Date", "To be announced"],
   ["Time", "7:00 PM – 8:30 PM WAT"],
   ["Duration", "90 minutes"],
   ["Platform", "Google Meet"],
-  ["Cost", "Free — registration required"],
+  ["Cost", "Free — registration opens soon"],
 ];
 
 const recordings = [
@@ -31,6 +32,7 @@ const recordings = [
   { tag: "WB0004 · April 2026", title: "Too Hot to Handle: Why Heat is the Ultimate Inequality", desc: "The highest participation quality of the series. Interactive Kahoot quiz introduced. Extreme heat framed as a justice and equity issue, not just a medical one.", href: "https://drive.google.com/file/d/1B9CIbf9LiycLEheeb7487_2incV2yk4J/view?usp=drive_open", linkType: "recording" },
   { tag: "WB0005 · May 2026", title: " Minds Under Pressure: The Unseen Wounds of Climate Change", desc: "Explored the mental health impacts of climate change in African communities, highlighting issues such as eco-anxiety, eco-grief, and the need for holistic post-disaster support.", href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link", linkType: "recording" },
   { tag: "WB0006 · June 2026", title: "Voices From The Margins: Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis", desc: "This webinar examined the disproportionate climate burdens faced by vulnerable populations across Africa — women, the elderly, and low-income communities — who bear the greatest impacts yet remain excluded from decision-making.", href: "https://drive.google.com/file/d/1Nx83XjR80r_uxHcLcNWyQDOJIoQBPEyz/view", linkType: "recording" },
+  { tag: "WB0007 · July 2026", title: "Cities Underwater: Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience", desc: "As extreme rainfall and failing municipal infrastructure trigger flash floods across Africa, this session unpacked the flood emergency and connected it to systemic climate vulnerabilities — from blocked drainage to waterborne disease outbreaks.", href: "https://drive.google.com/file/d/1lcunRQwyVIZD7biVXyG0iT0hicwp_Gr5/view?usp=drive_open", linkType: "recording" },
 ];
 
 const modules = [
@@ -50,8 +52,8 @@ export default function TrainingPage() {
   subtitle="Webinars, specialized workshops, and evidence-based training — designed by African clinicians, for African clinicians."
   imageContent={<WebinarSlide />}
   imageAlt="An ACHII facilitator addressing students at a school outreach"
-  card={{ title: "Next Webinar · WB0007", sub: "Cities Underwater — 25 July 2026" }}
-  stat={{ value: "7", label: "Past webinars · free recordings" }}
+  card={{ title: "Next Webinar", sub: "August · Coming Soon" }}
+  stat={{ value: "8", label: "Past webinars · free recordings" }}
   sideContent={
     <div>
       <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-4">
@@ -71,36 +73,32 @@ export default function TrainingPage() {
         
       </div>
 
-      {/* Upcoming webinar feature */}
+      {/* Coming soon: August webinar */}
       <div data-nav-theme="light">
         <section className="bg-white py-20 lg:py-[120px]">
           <div className="container-site grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10 lg:gap-14">
             <div>
-              <p className="label-tag mb-4">Upcoming Webinar · WB0007 · 25 July 2026</p>
+              <p className="label-tag mb-4">Coming Soon · August Webinar</p>
               <h2 className="font-header font-semibold text-strong text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em] mb-4">
-                July Webinar: Cities Underwater
+                Next up: the August webinar
                 </h2>
               <p className="font-body italic text-sub text-base mb-7">
-             Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience
+                Topic and speaker to be announced.
               </p>
               <div className="hidden md:block space-y-4 mb-8">
                 <p className="font-body text-sub text-base leading-[1.75]">
-                 As extreme rainfall and failing municipal infrastructure trigger severe flash floods across Africa, our cities are facing an escalating health and water crisis. Blocked drainage networks and plastic waste bottlenecks are turning seasonal rains into immediate emergencies—compromising local clinics, threatening water security, and driving deadly outbreaks of waterborne pathogens like cholera.
+                 ACHII's monthly webinar series continues in August. We're finalizing the topic, speakers, and registration link for this session.
                  </p>
                 <p className="font-body text-sub text-base leading-[1.75]">
-                This webinar unpacks the immediate realities of the current flood emergency and connects them directly to systemic climate vulnerabilities.</p>
-                <p className="font-body text-sub text-base leading-[1.75]">
-                Join us for a 90-minute session to decode the structural drivers behind urban flooding, analyze cascading public health risks, and explore youth-led data models. Together, we will build actionable frameworks for community-level adaptation, early-warning mapping, and emergency response to protect frontline communities.
-
-                 </p>
+                Check back soon, or join the newsletter to be the first to hear when registration opens.</p>
               </div>
               <div className="mb-8">
                 <p className="font-header font-semibold text-strong text-sm mb-2">Who should attend</p>
                 <p className="font-body text-sub text-sm leading-[1.7]">
-                 Healthcare professionals, WASH practitioners, environmental advocates, youth urban planners, community leaders, civil society organizations, students, and citizens dedicated to building climate-resilient cities.
+                 Healthcare professionals, students, advocates, and community members — as with every ACHII webinar.
                 </p>
               </div>
-              <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3HMKcuFBZ79qv9blfYRpMd313JLzYWyJw/viewform" external>Register for the July Webinar</Button>
+              <Button href="/reports#newsletter">Get Notified</Button>
             </div>
 
             {/* Event details sidebar */}
@@ -112,22 +110,15 @@ export default function TrainingPage() {
                     <div key={k}>
                       <dt className="font-body text-xs text-white/50 uppercase tracking-wide mb-1">{k}</dt>
                       <dd className="font-body text-white text-sm">{v}</dd>
-                      
+
                     </div>
-                    
+
                   ))}
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3HMKcuFBZ79qv9blfYRpMd313JLzYWyJw/viewform" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-header font-medium text-xs text-yellow underline underline-offset-4 hover:text-primary-base transition-colors self-start">
-                Register for the July Webinar
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
-              </a>
                 </dl>
                 <div className="border-t border-white/15 pt-5">
                   <p className="font-body text-xs text-white/50 uppercase tracking-wide mb-2">Speakers</p>
-                  <p className="font-body text-white text-sm">Sharon Chiahemen</p>
+                  <p className="font-body text-white text-sm">To be announced</p>
                 </div>
-               
-
-                <p className="mt-6 font-body text-xs text-white/40">#CitiesUnderwater</p>
               </div>
             </aside>
           </div>

@@ -13,7 +13,9 @@ import { partners } from "@/app/data/partners";
 import PartnerCarousel from "../components/partnerCarousel";
 import ContactCTA from "../components/ContactCTA";
 
-
+export const metadata = {
+  alternates: { canonical: "/partner" },
+};
 
 //const stats = [["5", "Active Projects"], ["170", "Webinar Attendees"], ["22", "Regional Champions"], ["15", "Countries Reached"]];
 

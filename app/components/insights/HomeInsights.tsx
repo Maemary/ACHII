@@ -5,33 +5,31 @@ import Image from "next/image";
 
 
 const upcomingWebinar = {
-  tag: "Upcoming Webinar · WB0007",
-  title: "Cities Underwater",
-  subtitle: "Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience",
-  date: "Saturday, 25th July 2026",
+  tag: "Coming Soon · August Webinar",
+  title: "Details to be announced",
+  subtitle: "Topic and speaker will be shared soon.",
+  date: "To be announced",
   time: "7:00 PM – 8:30 PM WAT",
   platform: "Google Meet",
-  registerHref:
-    "https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3HMKcuFBZ79qv9blfYRpMd313JLzYWyJw/viewform",
 };
 
 const pastWebinars = [
   {
+    tag: "WB0007 · July 2026",
+    title: "Cities Underwater: Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience",
+    href: "https://drive.google.com/file/d/1lcunRQwyVIZD7biVXyG0iT0hicwp_Gr5/view?usp=drive_open",
+  },
+  {
     tag: "WB0006 · June 2026",
     title: "Voices From The Margins: Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis",
-    href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
+    href: "https://drive.google.com/file/d/1Nx83XjR80r_uxHcLcNWyQDOJIoQBPEyz/view",
   },
   {
     tag: "WB0005 · May 2026",
     title: "Minds Under Pressure: The Unseen Wounds of Climate Change",
     href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
   },
-  {
-    tag: "WB0004 · April 2026",
-    title: "Too Hot to Handle: Why Heat is the Ultimate Inequality",
-    href: "https://drive.google.com/open?id=15pk3F-o2XD432kn9bdhIBV4x27BzntTA",
-  },
-  
+
 ];
 
 export default function HomeInsights() {
@@ -66,7 +64,7 @@ export default function HomeInsights() {
           <div className="flex flex-col lg:flex-row gap-8 lg:col-span-2 rounded-3xl overflow-hidden bg-primary-base p-8 lg:p-10">
           <div className=" flex flex-1 flex-col">
             <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">
-              {upcomingWebinar.tag} · {upcomingWebinar.date}
+              {upcomingWebinar.tag}
             </p>
             <h3 className="font-header font-semibold text-white text-2xl sm:text-[32px] leading-[1.15] tracking-[-0.01em] mb-3">
               {upcomingWebinar.title}
@@ -91,8 +89,8 @@ export default function HomeInsights() {
 </dl>
 
             <div className="mt-auto flex flex-wrap items-center gap-4">
-              <Button href={upcomingWebinar.registerHref} variant="yellow" external>
-                Register for the July Webinar
+              <Button href="/reports" variant="yellow">
+                Get Notified
               </Button>
               <Link
                 href="/training"
@@ -107,7 +105,7 @@ export default function HomeInsights() {
           </div>
            <div className="relative w-full h-[280px] sm:h-[350px] lg:w-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 shadow-lg shadow-black/20 lg:ml-auto">
   <Image
-    src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784123996/achii/images/July-Webinar.jpg"
+    src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124134/achii/images/train.jpg"
     alt="An ACHII volunteer holding a climate-health education poster"
     fill
     sizes="(max-width:1024px) 100vw, 360px"

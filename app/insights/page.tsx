@@ -8,6 +8,7 @@ export const metadata = {
   title: "Programmes — ACHII",
   description:
     "How ACHII builds climate-resilient communities on the ground — school outreach, the Regional Champion Model, and Nigeria's first national climate-health study.",
+  alternates: { canonical: "/insights" },
 };
 
 const CONTACT_EMAIL = "info@achii.co";
