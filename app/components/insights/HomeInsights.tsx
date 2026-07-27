@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Button from "@/app/components/Button";
 import Image from "next/image";
+import Placeholder from "../Placeholder";
 
 
 
@@ -104,13 +105,14 @@ export default function HomeInsights() {
             </div>
           </div>
            <div className="relative w-full h-[280px] sm:h-[350px] lg:w-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 shadow-lg shadow-black/20 lg:ml-auto">
-  <Image
+  {/* <Image
     src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784124134/achii/images/train.jpg"
     alt="An ACHII volunteer holding a climate-health education poster"
     fill
     sizes="(max-width:1024px) 100vw, 360px"
     className="object-cover"
-  />
+  /> */}
+  <Placeholder label="Upcomming Webinar" className="mt-28" textClassName="text-3xl" diagonal border={false}></Placeholder>
 </div>
           </div>
 
