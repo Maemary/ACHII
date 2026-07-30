@@ -313,15 +313,15 @@ export const items: Item[] = [
     excerpt:
       "Eight webinars, in-person outreach, the pilot research phase, and the Regional Champion Model.",
     summary:
-      "Our first quarterly impact report is a window into how ACHII works — what we measure, what we learn, and what we do next. It covers the launch of the webinar series, school outreach, the national study pilot, and the deployment of 17 Regional Champions.",
+      "Our first quarterly impact report is a window into how ACHII works — what we measure, what we learn, and what we do next. It covers the launch of the webinar series, school outreach, the national study pilot, and the deployment of 22 Regional Champions.",
     date: "April 2026",
     speakers: ["ACHII"],
     image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124037/achii/images/outreach-blue.jpg",
     reportHref: "/reports",
     takeaways: [
-      "117 webinar attendees across four countries.",
+      "170 webinar attendees across four countries.",
       "~70 students reached through in-person outreach.",
-      "17 Regional Champions deployed across six zones.",
+      "22 Regional Champions deployed across six zones.",
     ],
     discussion: [
       "What the numbers reveal about demand.",
@@ -388,7 +388,7 @@ export const items: Item[] = [
     id: "insight-mosquitoes",
     type: "Insight Brief",
     topic: "Disease Surveillance",
-    tag: "Insight · mosquitoes",
+    tag: "Insight · Mosquitoes",
     title: "Climate change is the best thing to happen to mosquitoes in a century.",
     excerpt:
       "how climate change is expanding the range and season of disease-carrying mosquitoes.",

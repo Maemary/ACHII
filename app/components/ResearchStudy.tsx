@@ -75,7 +75,7 @@ export default function ResearchStudy() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <SurveyCard
             title="Add Your Voice to the Research"
-            desc="10 minutes. Fully anonymous.  Community members & Healthcare professionals in Nigeria."
+            desc="10 minutes. Fully anonymous. Community members & healthcare professionals in Nigeria."
             cta="Take the Survey"
             href={surveyUrl}
           />

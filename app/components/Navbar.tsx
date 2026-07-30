@@ -16,7 +16,7 @@ const links = [
     ],
   },
  { label: "Training", href: "/training" },
- { label: "Programs", href: "/insights" },
+ { label: "Programmes", href: "/insights" },
   { label: "Blogs", href: "/reports" },
   { label: "Get Involved", href: "/get-involved" },
   {label: "Partner with Us", href: "/partner"},

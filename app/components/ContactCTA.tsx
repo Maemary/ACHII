@@ -76,7 +76,7 @@ export default function ContactCTA() {
 
               <p className="font-body text-sub leading-[1.75]">
                 Whether you're a researcher, healthcare professional, donor,
-                policymaker, or organization, we'd love to hear from you and
+                policymaker, or organisation, we'd love to hear from you and
                 explore how we can advance climate-health solutions together.
               </p>
             </div>

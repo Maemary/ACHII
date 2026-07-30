@@ -31,10 +31,12 @@ const LOGO_URL = "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123955/
 
 function renderEmailShell({
   preheader,
+  headerTitle,
   headerSubtitle,
   bodyHtml,
 }: {
   preheader: string;
+  headerTitle: string;
   headerSubtitle: string;
   bodyHtml: string;
 }) {
@@ -66,7 +68,7 @@ function renderEmailShell({
             <tr>
               <td style="background:#0f766e;padding:32px 30px 40px;text-align:center;">
                 <h1 style="margin:0;color:#ffffff;font-size:28px;font-weight:700;">
-                  Welcome ACHII Allies
+                  ${headerTitle}
                 </h1>
                 <p style="margin:12px 0 0;color:#d1fae5;font-size:16px;">
                   ${headerSubtitle}
@@ -200,6 +202,7 @@ function allyWelcomeEmail(name?: string) {
     subject: "Welcome to ACHII: Your access to the Climate-Health Resource Bank is inside",
     html: renderEmailShell({
       preheader: "You are now officially an ACHII Ally. Let's bridge the gap and save lives.",
+      headerTitle: "Welcome ACHII Allies",
       headerSubtitle: "You are now officially an ACHII Ally.",
       bodyHtml,
     }),
@@ -276,10 +279,11 @@ function newsletterWelcomeEmail(name?: string) {
   `;
 
   return {
-    subject: "Welcome to the Africa Climate and Health Innovation Institute : Actionable insights at the intersection of climate and health",
+    subject: "Welcome to the Africa Climate and Health Innovation Institute: Actionable insights at the intersection of climate and health",
     html: renderEmailShell({
-      preheader: "Your source for Interesting Climate and Health insights.",
-      headerSubtitle: "Your source for Interesting Climate and Health insights.",
+      preheader: "Your source for interesting Climate and Health insights.",
+      headerTitle: "Welcome to the ACHII Newsletter",
+      headerSubtitle: "Your source for interesting Climate and Health insights.",
       bodyHtml,
     }),
   };

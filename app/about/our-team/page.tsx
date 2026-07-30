@@ -17,9 +17,9 @@ export const metadata = {
 
 const teams = [
   {
-    name: "Dr Promise Ozor",
+    name: "Dr. Promise Ozor",
     role: "Operations Team Lead",
-    bio: "Dr. Promise Chidinma Ozor is a Project & Operations Manager who believes sustainable organizations run on efficient systems and empowered people, not just exceptional individuals. With over four years of experience, she leads ACHII's Operations Team using a Theory of Change framework that links strategy to execution and execution to measurable impact.",
+    bio: "Dr. Promise Chidinma Ozor is a Project & Operations Manager who believes sustainable organisations run on efficient systems and empowered people, not just exceptional individuals. With over four years of experience, she leads ACHII's Operations Team using a Theory of Change framework that links strategy to execution and execution to measurable impact.",
     photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784125175/achii/images/promise.jpg",
   },
   {
@@ -37,7 +37,7 @@ const teams = [
   {
     name: "Adebayo Temitope",
     role: "Media Team Lead",
-    bio: "Adebayo Temitope Eunice is a Social Media Strategist, Content Manager, and Brand Communications Professional with expertise in building engaged digital communities through strategic content and storytelling. She has worked with startups, nonprofits, and impact-driven organizations across the agriculture, climate and health, education, and technology sectors, leading content strategy, campaigns, and community engagement. As Co-Lead of the Media Team at ACHII (formerly EcoDoctr), she helps drive the organization's digital presence and media strategy. A Chemical Engineering graduate of the Federal University of Petroleum Resources, Effurun (FUPRE), she combines analytical thinking with creative communication to deliver impactful digital campaigns.",
+    bio: "Adebayo Temitope Eunice is a Social Media Strategist, Content Manager, and Brand Communications Professional with expertise in building engaged digital communities through strategic content and storytelling. She has worked with startups, nonprofits, and impact-driven organisations across the agriculture, climate and health, education, and technology sectors, leading content strategy, campaigns, and community engagement. As Co-Lead of the Media Team at ACHII (formerly EcoDoctr), she helps drive the organization's digital presence and media strategy. A Chemical Engineering graduate of the Federal University of Petroleum Resources, Effurun (FUPRE), she combines analytical thinking with creative communication to deliver impactful digital campaigns.",
     photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124129/achii/images/temitope.jpg",
   },
   {

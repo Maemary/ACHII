@@ -28,11 +28,11 @@ export default function FounderSection() {
           <div>
             <img
               src="https://res.cloudinary.com/davuaeyxb/image/upload/v1784123963/achii/images/Aisha.jpg"
-              alt="Dr Aishat Oduye"
+              alt="Dr. Aishat Oduye"
               className="aspect-[4/5] w-full object-cover rounded-2xl mb-5"
             />
             <h2 className="font-header font-semibold text-strong text-2xl leading-tight">
-              Dr Aishat Oduye
+              Dr. Aishat Oduye
             </h2>
             <p className="font-body text-primary-base text-sm mt-1">
               Founder & Executive Director

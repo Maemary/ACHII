@@ -136,7 +136,7 @@ export default function AboutPage() {
           four countries. We've reached 2,753 secondary school students through in-person outreach.
           We've launched Nigeria's first national climate-health awareness study. We've deployed
           22 Regional Champions across all six geopolitical zones. And we've built active partnerships
-          with NYSC, CHDI, Transformers Global, and Ecohealth Africa.
+          with NYSC, CHDI, Transformers Global, and EcoHealth Africa.
         </p>
       </div>
     </div>

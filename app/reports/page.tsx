@@ -39,11 +39,11 @@ const webinarReports = [
     link: "https://drive.google.com/file/d/13oW_jL8wlDlkYxPzh5rO-EKZL2sxlaxr/view",
   },
    {
-    title: "WB0005 Briefs —  Wounds of Climate Change",
+    title: "WB0005 Briefs — Minds Under Pressure: The Unseen Wounds of Climate Change",
     link: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
   },
   {
-    title: "WB0006 Briefs —  Voices From The Margins",
+    title: "WB0006 Briefs — Voices From The Margins",
     link: "https://drive.google.com/file/d/1NDLPtBtVhjCuLvug2Z_Ahs4XIkZhZ9YW/view",
   },
 ];
@@ -133,7 +133,7 @@ export default function ReportsPage() {
                 the Regional Champion Model. It’s also a window into how ACHII works — what we
                 measure, what we learn, and what we do next.
               </p>
-                <Button href="https://drive.google.com/file/d/1bLIfrLKF6yd2MylH6F0jaeaKpKQMw9lf/view?usp=drive_link" variant="yellow">Download the Q1-Q2 Report (PDF)</Button>
+                <Button href="https://drive.google.com/file/d/1bLIfrLKF6yd2MylH6F0jaeaKpKQMw9lf/view?usp=drive_link" variant="yellow">Download the Q1-Q2 Report (PDF) (Coming Soon)</Button>
               </div>
             </div>
           </div>
