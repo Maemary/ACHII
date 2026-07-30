@@ -32,7 +32,7 @@ const testimonials = [
   },
   {
     quote:
-      "**What Yill You Change** - I now have the knowledge and zeal to talk about the effect of climate change of children, so I will educate parents, teachers and children I come across and spend time with.",
+      "**What Will You Change** - I now have the knowledge and zeal to talk about the effect of climate change of children, so I will educate parents, teachers and children I come across and spend time with.",
     role: "Operations Manager",
   },
    {
@@ -42,7 +42,7 @@ const testimonials = [
   },
    {
     quote:
-      "**What Yill You Change** -  I already make little changes such as disposing my waste properly, but I'm committing to speaking more to my friends and colleagues about climate change and the action it has on our planet and our health. I used to do that earlier on to the extent my friends nicknamed me 'zero waste advocate', now however, I want to be able to help communities especially low income communities in any little way as possible and also keep advocating for climate action.",
+      "**What Will You Change** -  I already make little changes such as disposing my waste properly, but I'm committing to speaking more to my friends and colleagues about climate change and the action it has on our planet and our health. I used to do that earlier on to the extent my friends nicknamed me 'zero waste advocate', now however, I want to be able to help communities especially low income communities in any little way as possible and also keep advocating for climate action.",
     role: "Final Year Pharmacy Student",
   },
   

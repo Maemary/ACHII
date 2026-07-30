@@ -43,8 +43,8 @@ const webinarReports = [
     link: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
   },
   {
-    title: "WB0006 Briefs —  Voices From The Margins report missing",
-    link: "https://drive.google.com/file/d/1Sf65sWbKoGPtBRyozghAWNy8D1zQ3gvQ/view?usp=sharing",
+    title: "WB0006 Briefs —  Voices From The Margins",
+    link: "https://drive.google.com/file/d/1NDLPtBtVhjCuLvug2Z_Ahs4XIkZhZ9YW/view",
   },
 ];
 

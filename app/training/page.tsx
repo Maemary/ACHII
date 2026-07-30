@@ -17,11 +17,11 @@ export const metadata = {
 };
 
 const eventDetails = [
-  ["Date", "To be announced"],
+  ["Date", "Saturday, 29 August 2026"],
   ["Time", "7:00 PM – 8:30 PM WAT"],
   ["Duration", "90 minutes"],
   ["Platform", "Google Meet"],
-  ["Cost", "Free — registration opens soon"],
+  ["Cost", "Free — registration open"],
 ];
 
 const recordings = [
@@ -78,19 +78,16 @@ export default function TrainingPage() {
         <section className="bg-white py-20 lg:py-[120px]">
           <div className="container-site grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10 lg:gap-14">
             <div>
-              <p className="label-tag mb-4">Coming Soon · August Webinar</p>
-              <h2 className="font-header font-semibold text-strong text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em] mb-4">
-                Next up: the August webinar
-                </h2>
+              <p className="label-tag mb-4">1-Year Anniversary · August Webinar</p>
               <p className="font-body italic text-sub text-base mb-7">
                 Topic and speaker to be announced.
               </p>
               <div className="hidden md:block space-y-4 mb-8">
                 <p className="font-body text-sub text-base leading-[1.75]">
-                 ACHII's monthly webinar series continues in August. We're finalizing the topic, speakers, and registration link for this session.
+                 ACHII turns one in August, and we're marking the occasion with our monthly webinar. Registration is open now.
                  </p>
                 <p className="font-body text-sub text-base leading-[1.75]">
-                Check back soon, or join the newsletter to be the first to hear when registration opens.</p>
+                Register now, or join the newsletter to catch future sessions as soon as they're announced.</p>
               </div>
               <div className="mb-8">
                 <p className="font-header font-semibold text-strong text-sm mb-2">Who should attend</p>
@@ -98,7 +95,7 @@ export default function TrainingPage() {
                  Healthcare professionals, students, advocates, and community members — as with every ACHII webinar.
                 </p>
               </div>
-              <Button href="/reports#newsletter">Get Notified</Button>
+              <Button href="/reports#newsletter" variant="outline-dark">Get Notified</Button>
             </div>
 
             {/* Event details sidebar */}
@@ -115,10 +112,11 @@ export default function TrainingPage() {
 
                   ))}
                 </dl>
-                <div className="border-t border-white/15 pt-5">
+                <div className="border-t border-white/15 pt-5 mb-7">
                   <p className="font-body text-xs text-white/50 uppercase tracking-wide mb-2">Speakers</p>
                   <p className="font-body text-white text-sm">To be announced</p>
                 </div>
+                <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3HMKcuFBZ79qv9blfYRpMd313JLzYWyJw/viewform" variant="yellow" className="w-full">Register Now</Button>
               </div>
             </aside>
           </div>

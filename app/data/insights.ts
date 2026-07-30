@@ -311,7 +311,7 @@ export const items: Item[] = [
     tag: "Q1 2026",
     title: "ACHII Q1 Impact Report — January to April 2026",
     excerpt:
-      "Four webinars, in-person outreach, the pilot research phase, and the Regional Champion Model.",
+      "Eight webinars, in-person outreach, the pilot research phase, and the Regional Champion Model.",
     summary:
       "Our first quarterly impact report is a window into how ACHII works — what we measure, what we learn, and what we do next. It covers the launch of the webinar series, school outreach, the national study pilot, and the deployment of 17 Regional Champions.",
     date: "April 2026",

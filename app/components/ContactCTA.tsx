@@ -6,7 +6,7 @@ import SocialLinks, { type SocialLink } from "@/app/components/SocialLinks";
 const profileLinks:SocialLink[] = [
   {
     name: "Email",
-    href: "mailto:Ecodoctr@gmail.com",
+    href: "mailto:info@achii.co",
     icon: socialIcons.email,
   },
   {

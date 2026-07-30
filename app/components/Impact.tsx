@@ -24,8 +24,8 @@ export default function Impact() {
           <p className="font-body text-strong font-medium text-base leading-[1.75]">
             The urgency of this work is anchored in our findings. While 100% of healthcare professionals surveyed in our pilot research express a clear need for climate-health training, 57.9% have received no formal preparation. This is the critical gap ACHII exists to close.
           </p>
-          <Button href="https://drive.google.com/file/d/1bLIfrLKF6yd2MylH6F0jaeaKpKQMw9lf/view?ts=6a43d1b6" variant="yellow">
-            Read Our Q1-Q2 Impact Report
+          <Button href="" variant="yellow">
+            Read Our Q1-Q2 Impact Report (Coming Soon)
           </Button>
         </div>
       </div>

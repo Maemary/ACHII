@@ -60,6 +60,7 @@ const volunteers = [
   { name: "Bridget Useni", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124213/achii/images/Volunteers/Volunteer25.jpg" },
   { name: "Chidera Ugoh", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124214/achii/images/Volunteers/Volunteer26.jpg" },
   { name: "Ngozi Godfrey", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124176/achii/images/Volunteers/Volunteer12.jpg" },
+  { name: "Pius Amadi", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1785406775/IMG_0474_-_Amadi_Pius_stewgi.jpg" },
   { name: "Adedoyin Babatunde", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124183/achii/images/Volunteers/Volunteer14.jpg" },
   { name: "Ogbaino Gabriel", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124185/achii/images/Volunteers/Volunteer15.png" },
   { name: "Sowunmi Kayode", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124188/achii/images/Volunteers/Volunteer16.jpg" },

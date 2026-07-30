@@ -6,10 +6,9 @@ import Placeholder from "../Placeholder";
 
 
 const upcomingWebinar = {
-  tag: "Coming Soon · August Webinar",
-  title: "Details to be announced",
-  subtitle: "Topic and speaker will be shared soon.",
-  date: "To be announced",
+  tag: "1-Year Anniversary · August Webinar",
+  subtitle: "Topic and speaker to be announced.",
+  date: "Saturday, 29 August 2026",
   time: "7:00 PM – 8:30 PM WAT",
   platform: "Google Meet",
 };
@@ -67,9 +66,6 @@ export default function HomeInsights() {
             <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">
               {upcomingWebinar.tag}
             </p>
-            <h3 className="font-header font-semibold text-white text-2xl sm:text-[32px] leading-[1.15] tracking-[-0.01em] mb-3">
-              {upcomingWebinar.title}
-            </h3>
             <p className="font-body italic text-white/70 text-base mb-6 max-w-xl">
               {upcomingWebinar.subtitle}
             </p>
@@ -90,18 +86,12 @@ export default function HomeInsights() {
 </dl>
 
             <div className="mt-auto flex flex-wrap items-center gap-4">
-              <Button href="/reports" variant="yellow">
+              <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3HMKcuFBZ79qv9blfYRpMd313JLzYWyJw/viewform" variant="yellow">
+                Register Now
+              </Button>
+              <Button href="/reports#newsletter" variant="outline-dark">
                 Get Notified
               </Button>
-              <Link
-                href="/training"
-                className="font-header font-medium text-sm text-white/80 hover:text-white inline-flex items-center gap-1.5 transition-colors"
-              >
-                Event Details
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M13 6l6 6-6 6" />
-                </svg>
-              </Link>
             </div>
           </div>
            <div className="relative w-full h-[280px] sm:h-[350px] lg:w-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 shadow-lg shadow-black/20 lg:ml-auto">

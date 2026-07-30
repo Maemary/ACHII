@@ -95,17 +95,17 @@ export default function ProgrammesPage() {
 
             <StatBar
               stats={[
-                { value: "6", label: "Secondary schools reached" },
-                { value: "1,570+", label: "Students reached" },
+                { value: "10", label: "Secondary schools reached" },
+                { value: "2,753", label: "Students reached" },
                 { value: "4", label: "Module curriculum" },
-                { value: "14", label: "Infographic banners donated" },
+                { value: "20", label: "Infographic banners donated" },
               ]}
             />
 
             <div className="grid lg:grid-cols-[1fr_380px] gap-12 items-start">
               <div>
                 <h2 className="font-header font-semibold text-strong text-3xl lg:text-[40px] leading-[1.15] tracking-[-0.01em] mb-8 max-w-3xl">
-                  From one school to six: how Africa Climate and Health Innovation Institute takes climate-health education into the classroom
+                  From one school to ten: how Africa Climate and Health Innovation Institute takes climate-health education into the classroom
                 </h2>
 
                 <div className="space-y-8 mb-8">
@@ -124,10 +124,10 @@ export default function ProgrammesPage() {
                     <p className="label-tag mb-3">Phase 2 · ACHIIlites (Q2 2026)</p>
                     <p className="font-body text-sub text-base leading-[1.75]">
                       Building on that pilot, ACHII partnered with the National Youth Service Corps (NYSC)
-                      to launch ACHIIlites — scaling the model to six secondary schools across Ibadan. Each
+                      to launch ACHIIlites — scaling the model to ten secondary schools across Ibadan. Each
                       school received a structured four-module curriculum: climate change and health,
                       environmental stewardship, disease prevention, and practical community action. The
-                      programme reached more than 1,570 students, and infographic banners were left behind
+                      programme reached more than 2,753 students, and infographic banners were left behind
                       in every school as permanent classroom resources. These materials remain in the schools as permanent educational tools.
                     </p>
                   </div>
