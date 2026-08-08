@@ -12,6 +12,9 @@ const routes = [
   "/reports",
   "/insights",
   "/partner",
+  "/privacy",
+  "/terms",
+  "/disclaimer",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

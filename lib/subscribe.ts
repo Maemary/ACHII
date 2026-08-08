@@ -18,8 +18,8 @@ const WEBINAR_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3H
 const LINKEDIN_URL = "https://www.linkedin.com/company/ecodoctr";
 const X_URL = "https://x.com/ACHII_Ecodoctr";
 const INSTAGRAM_URL = "https://www.instagram.com/achii_ecodoctr/";
-const BLOG_URL = "https://achii.africa/insights";
-const ALLY_SIGNUP_URL = "https://achii.africa/get-involved#ally";
+const BLOG_URL = "https://achii.co/insights";
+const ALLY_SIGNUP_URL = "https://achii.co/get-involved#ally";
 
 const socialLinksHtml = `
   <a href="${LINKEDIN_URL}" target="_blank" style="color:#0f766e;font-weight:700;">LinkedIn</a>,

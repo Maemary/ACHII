@@ -97,8 +97,12 @@ export default function Footer() {
 
         <div className="border-t border-white/15 pt-6 flex flex-col md:flex-row justify-between gap-4">
           <div className="flex gap-6">
-            {["Privacy Policy", "Terms of Service", "Disclaimer"].map((item) => (
-              <Link key={item} href="#" className="font-body text-xs text-white/60 hover:text-white transition-colors">{item}</Link>
+            {[
+              { label: "Privacy Policy", href: "/privacy" },
+              { label: "Terms of Service", href: "/terms" },
+              { label: "Disclaimer", href: "/disclaimer" },
+            ].map((item) => (
+              <Link key={item.label} href={item.href} className="font-body text-xs text-white/60 hover:text-white transition-colors">{item.label}</Link>
             ))}
           </div>
           <p className="font-body text-xs text-white/60">
