@@ -8,16 +8,16 @@ const SLIDES = [
     src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124075/achii/images/Slides1.jpg",
     alt: "A clinician and a community member examine a seedling in dry farmland",
   },
+  {
+    src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1787140622/ACHII_Outreach-08_thjvhp.jpg",
+    alt: "Description of second image",
+  },
+  {
+    src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1787141259/ACHII_Outreach-01_hylgwr.jpg",
+    alt: "Description of third image",
+  },
   // {
-  //   src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124083/achii/images/Slides2.jpg",
-  //   alt: "Description of second image",
-  // },
-  // {
-  //   src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124088/achii/images/Slides3.jpg",
-  //   alt: "Description of third image",
-  // },
-  // {
-  //   src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124094/achii/images/Slides4.jpg",
+  //   src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1787141259/ACHII_Outreach-19_fkynjf.jpg",
   //   alt: "Description of third image",
   // },
   {
@@ -28,10 +28,7 @@ const SLIDES = [
     src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124108/achii/images/Slides6.jpg",
     alt: "Description of third image",
   },
-  {
-    src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124113/achii/images/Slides7.jpg",
-    alt: "Description of third image",
-  },
+  
   // {
   //   src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124117/achii/images/Slides8.jpg",
   //   alt: "Description of third image",

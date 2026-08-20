@@ -35,6 +35,12 @@ const teams = [
     photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123974/achii/images/Benjamin.jpg",
   },
   {
+    name: "Praise Ipadeola",
+    role:"Climate and Health Lead",
+    bio: "Praise Ipadeola is a climate and health researcher and advocate with a background in public health and environmental science. She leads ACHII's climate-health initiatives, focusing on research, policy advocacy, and community engagement to address the health impacts of climate change.",
+    photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784378566/NX1A7299_-_Ipadeola_Praise_omonnj.jpg",
+  },
+  {
     name: "Adebayo Temitope",
     role: "Media Team Lead",
     bio: "Adebayo Temitope Eunice is a Social Media Strategist, Content Manager, and Brand Communications Professional with expertise in building engaged digital communities through strategic content and storytelling. She has worked with startups, nonprofits, and impact-driven organisations across the agriculture, climate and health, education, and technology sectors, leading content strategy, campaigns, and community engagement. As Co-Lead of the Media Team at ACHII (formerly EcoDoctr), she helps drive the organization's digital presence and media strategy. A Chemical Engineering graduate of the Federal University of Petroleum Resources, Effurun (FUPRE), she combines analytical thinking with creative communication to deliver impactful digital campaigns.",
@@ -46,10 +52,16 @@ const teams = [
     bio: "Oluwasemilore Daniel Olaitan is an environmental scientist and digital strategist serving as Media Team Co-Lead at ACHII. He transforms complex climate and health data into accessible advocacy, drawing on a background in Marine Science and coastal oceanography to drive impactful climate communication across Africa.",
     photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124033/achii/images/Oluwasemilore.jpg",
   },
+  
+  {
+    name: "Ezinne Nwosu",
+    role: "Media Team Co-Lead",
+    bio: "Ezinne Nwosu is a climate and health researcher and advocate with a background in public health and environmental science. She leads ACHII's climate-health initiatives, focusing on research, policy advocacy, and community engagement to address the health impacts of climate change.",
+    photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124143/achii/images/Volunteers/Volunteer1.jpg",
+  }
 ];
 
 const volunteers = [
-  { name: "Ezinne Nwosu ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124143/achii/images/Volunteers/Volunteer1.jpg" },
   { name: "Praise Adewusi", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124197/achii/images/Volunteers/Volunteer2.jpg" },
   { name: "Onuora Chizaram", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124221/achii/images/Volunteers/Volunteer3.png" },
   { name: "Favour Iyore", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124230/achii/images/Volunteers/Volunteer4.jpg" },
@@ -73,7 +85,6 @@ const volunteers = [
   { name: "Helen Otailku", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124242/achii/images/Volunteers/Volunteer8.jpg" },
   { name: "Mercy Omobobola ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124245/achii/images/Volunteers/Volunteer9.png" },
   { name: "Amadou Kongira ", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124168/achii/images/Volunteers/Volunteer11.jpg" },
-  {name: "Praise Ipadeola", photo: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784378566/NX1A7299_-_Ipadeola_Praise_omonnj.jpg"},
 ];
 
 

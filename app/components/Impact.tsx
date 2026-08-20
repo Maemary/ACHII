@@ -8,7 +8,7 @@ export default function Impact() {
         <div className="mb-12">
           <p className="label-tag mb-4">Our Impact So Far</p>
           <h2 className="font-header font-semibold text-[34px] lg:text-5xl leading-[1.12] tracking-[-0.02em] max-w-2xl">
-            <span className="text-green">Eleven months</span>
+            <span className="text-green">Twelve months</span>
             <span className="text-strong"> in. The numbers are just the start.</span>
           </h2>
         </div>

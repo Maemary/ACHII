@@ -52,7 +52,7 @@ export default function TrainingPage() {
   subtitle="Webinars, specialized workshops, and evidence-based training — designed by African clinicians, for African clinicians."
   imageContent={<WebinarSlide />}
   imageAlt="An ACHII facilitator addressing students at a school outreach"
-  card={{ title: "Next Webinar", sub: "August · Coming Soon" }}
+  card={{ title: "Next Webinar", sub: "29 Aug 2026 · 7PM WAT" }}
   stat={{ value: "8", label: "Past webinars · free recordings" }}
   sideContent={
     <div>

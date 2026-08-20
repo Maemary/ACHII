@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 
 const SLIDES = [
+  { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1787139268/WhatsApp_Image_2026-08-19_at_11.24.27_AM_iaid8k.jpg", alt: "ACHII Turns One anniversary webinar flyer — Youth Advocacy in Climate & Health, 29 August 7PM on Google Meet" },
   { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123995/achii/images/Jan.png", alt: "A clinician and a community member examine a seedling in dry farmland" },
   { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784123990/achii/images/February-Webinar.jpg", alt: "Description of second image" },
   { src: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784124018/achii/images/March.png", alt: "Description of third image" },
