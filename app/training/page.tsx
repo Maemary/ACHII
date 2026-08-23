@@ -80,7 +80,7 @@ export default function TrainingPage() {
             <div>
               <p className="label-tag mb-4">1-Year Anniversary · August Webinar</p>
               <p className="font-body italic text-sub text-base mb-7">
-                Topic and speaker to be announced.
+                Youth Advocacy in Climate & Health — the speaker is still a surprise.
               </p>
               <div className="hidden md:block space-y-4 mb-8">
                 <p className="font-body text-sub text-base leading-[1.75]">

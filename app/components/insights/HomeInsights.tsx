@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const upcomingWebinar = {
   tag: "1-Year Anniversary · August Webinar",
-  subtitle: "Topic and speaker to be announced.",
+  subtitle: "Youth Advocacy in Climate & Health — the speaker is still a surprise.",
   date: "Saturday, 29 August 2026",
   time: "7:00 PM – 8:30 PM WAT",
   platform: "Google Meet",
