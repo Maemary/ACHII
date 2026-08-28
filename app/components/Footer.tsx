@@ -109,6 +109,12 @@ export default function Footer() {
             &copy; 2026 Africa Climate and Health Innovation Institute. Formerly Ecodoctr. All rights reserved.
           </p>
         </div>
+
+        <div className="mt-4 pt-4 border-t border-white/10">
+          <p className="font-body text-xs text-white/50 leading-relaxed">
+            Africa Climate and Health Innovation Institute &middot; Reg. No. 9418473 &middot; 26A Old Olowora Road, Isheri, Lagos, Nigeria
+          </p>
+        </div>
       </div>
     </footer>
   );

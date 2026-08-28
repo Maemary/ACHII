@@ -67,6 +67,9 @@ export default function AboutPage() {
               <p className="font-body text-strong font-medium text-base leading-[1.75]">
                 The name has changed because the work has scaled. The mission has not.
               </p>
+              <p className="font-body text-sub text-sm leading-[1.7] pt-1">
+                ACHII is registered in Nigeria as the Africa Climate and Health Innovation Institute, Reg. No. 9418473.
+              </p>
             </div>
           </div>
         </section>

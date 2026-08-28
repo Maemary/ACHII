@@ -12,7 +12,7 @@ export default function FeaturedIn() {
     <section className="bg-bg-soft py-6">
       <div className="container-site flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-10">
         <p className="label-tag text-primary-dark whitespace-nowrap">Featured On</p>
-        <div className="flex flex-nowrap items-center gap-x-5 sm:gap-x-10">
+        <div className="flex flex-nowrap items-center gap-x-5 sm:gap-x-10 lg:flex-1 lg:justify-between">
           {outlets.map((o) => {
             const img = (
               <Image
