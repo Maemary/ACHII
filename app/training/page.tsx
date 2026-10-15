@@ -130,8 +130,8 @@ export default function TrainingPage() {
                   ))}
                 </dl>
                 <div className="border-t border-white/15 pt-5 mb-7">
-                  <p className="font-body text-xs text-white/50 uppercase tracking-wide mb-2">Speakers</p>
-                  <p className="font-body text-white text-sm">To be announced</p>
+                  <p className="font-body text-xs text-white/50 uppercase tracking-wide mb-2">Speaker</p>
+                  <p className="font-body text-white text-sm">Theophilus Opoh</p>
                 </div>
                 <Button href="/reports#newsletter" variant="yellow" className="w-full">Get Notified</Button>
               </div>
