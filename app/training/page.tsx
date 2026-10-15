@@ -16,11 +16,10 @@ export const metadata = {
   alternates: { canonical: "/training" },
 };
 
-// Generic placeholder until the next webinar's details are confirmed.
 const eventDetails = [
-  ["Date", "To be announced"],
-  ["Time", "7:00 PM – 8:30 PM WAT"],
-  ["Duration", "90 minutes"],
+  ["Date", "Saturday, 31 October 2026"],
+  ["Time", "6:00 PM – 7:30 PM WAT"],
+  ["Duration", "1 hour 30 minutes"],
   ["Platform", "Google Meet"],
   ["Cost", "Free"],
 ];
@@ -55,7 +54,7 @@ export default function TrainingPage() {
   subtitle="Webinars, specialized workshops, and evidence-based training — designed by African clinicians, for African clinicians."
   imageContent={<WebinarSlide />}
   imageAlt="An ACHII facilitator addressing students at a school outreach"
-  card={{ title: "Next Webinar", sub: "Date to be announced" }}
+  card={{ title: "Next Webinar", sub: "31 Oct 2026 · 6PM WAT" }}
   stat={{ value: "10", label: "Past webinars · free recordings" }}
   sideContent={
     <div>
@@ -76,26 +75,41 @@ export default function TrainingPage() {
         
       </div>
 
-      {/* Coming soon: next webinar (generic until details are confirmed) */}
+      {/* Coming soon: October webinar */}
       <div data-nav-theme="light">
         <section className="bg-white py-20 lg:py-[120px]">
           <div className="container-site grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10 lg:gap-14">
             <div>
-              <p className="label-tag mb-4">Next Webinar · Coming Soon</p>
+              <p className="label-tag mb-4">Upcoming · WB0010 · October Webinar</p>
+              <h2 className="font-header font-semibold text-strong text-2xl lg:text-[32px] leading-tight tracking-[-0.01em] mb-3">
+                Antalya COP31: Wetin climate change really mean for your health?
+              </h2>
               <p className="font-body italic text-sub text-base mb-7">
-                Our next climate-health session is on the way. Details will be announced soon.
+                COP31 Conversations: The Road to COP31 — what COP is, what&apos;s at stake in Antalya, and Africa and Nigeria&apos;s climate-health priorities.
               </p>
-              <div className="hidden md:block space-y-4 mb-8">
+              <div className="space-y-4 mb-8">
                 <p className="font-body text-sub text-base leading-[1.75]">
-                 A new ACHII webinar lands every month. The topic, speaker, and registration link will be shared here once confirmed.
+                 With COP31 approaching in November, this conversation will break down what COP is, what is at stake at COP31, and the key climate and health priorities Nigeria and Africa should be advocating for.
                  </p>
                 <p className="font-body text-sub text-base leading-[1.75]">
-                Join the newsletter to catch future sessions as soon as they're announced.</p>
+                 COP31 runs 9–20 November 2026 in Antalya, Türkiye, under a Türkiye–Australia presidency arrangement, with the theme &ldquo;Dialogue. Consensus. Action.&rdquo; It follows COP30 in Belém, Brazil, which delivered the Belém Health Action Plan and put &ldquo;resilient health systems&rdquo; on the COP agenda as a named priority theme for the first time. Health is now one of COP31&apos;s own ten priority themes.
+                 </p>
+                <p className="font-body text-sub text-base leading-[1.75]">
+                 Antalya is also a stepping stone: COP32 moves to Addis Ababa in 2027 under the African Group&apos;s presidency, and African negotiators are treating COP31 as the moment to consolidate a unified &ldquo;African Common Platform&rdquo; on adaptation finance, loss and damage, and health before the continent takes the chair.
+                 </p>
+              </div>
+              <div className="mb-8">
+                <p className="font-header font-semibold text-strong text-sm mb-2">What you&apos;ll leave with</p>
+                <ul className="font-body text-sub text-sm leading-[1.7] list-disc pl-5 space-y-1">
+                  <li>The ability to explain COP31 in plain terms to someone else.</li>
+                  <li>At least two Africa-specific priorities going into Antalya.</li>
+                  <li>One way to personally engage with or track the outcomes.</li>
+                </ul>
               </div>
               <div className="mb-8">
                 <p className="font-header font-semibold text-strong text-sm mb-2">Who should attend</p>
                 <p className="font-body text-sub text-sm leading-[1.7]">
-                 Healthcare professionals, students, advocates, and community members — as with every ACHII webinar.
+                 Health professionals and students, climate policy and advocacy-minded attendees, ACHII Fellowship and Policy Lab participants, and the wider ACHII community across Africa.
                 </p>
               </div>
               <Button href="/reports#newsletter" variant="outline-dark">Get Notified</Button>

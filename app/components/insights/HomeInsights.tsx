@@ -3,13 +3,12 @@ import Button from "@/app/components/Button";
 
 
 
-// Generic placeholder until the next webinar's details are confirmed.
 const upcomingWebinar = {
-  tag: "Next Webinar · Coming Soon",
-  title: "Our next webinar is on the way.",
-  subtitle: "A new climate-health session every month. Details will be announced soon.",
-  date: "To be announced",
-  time: "7:00 PM – 8:30 PM WAT",
+  tag: "Upcoming · WB0010 · October 2026",
+  title: "Antalya COP31: Wetin climate change really mean for your health?",
+  subtitle: "COP31 Conversations: The Road to COP31 — what COP is, what's at stake in Antalya, and Africa and Nigeria's climate-health priorities.",
+  date: "Saturday, 31 October 2026",
+  time: "6:00 PM – 7:30 PM WAT",
   platform: "Google Meet",
 };
 
@@ -59,7 +58,7 @@ export default function HomeInsights() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
-          {/* Upcoming webinar (generic until details are confirmed) */}
+          {/* Upcoming webinar announcement */}
           <div className="flex flex-col lg:flex-row gap-8 lg:col-span-2 rounded-3xl overflow-hidden bg-primary-base p-8 lg:p-10">
           <div className=" flex flex-1 flex-col">
             <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">
@@ -92,10 +91,12 @@ export default function HomeInsights() {
                 Get Notified
               </Button>
               <Button href="/training" variant="outline-dark">
-                Watch Past Recordings
+                Learn More
               </Button>
             </div>
           </div>
+          {/* Flyer placeholder: swap this box for an <Image fill className="object-cover" /> once the flyer is ready */}
+          <div className="relative w-full h-[280px] sm:h-[350px] lg:w-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 bg-white/5 lg:ml-auto" />
           </div>
 
           {/* Past webinar recordings */}
