@@ -49,6 +49,14 @@ const webinarReports = [
   {
     title: "WB0007 Briefs — Cities Underwater",
     link: "https://drive.google.com/file/d/10EosAeqJ9ooujx1nxr3HTYMQiC6296lj/view",
+  },
+  {
+    title: "WB0008 Briefs — ACHII @ 1 Anniversary: Youth Advocacy in Climate & Health",
+    link: "https://drive.google.com/file/d/1FC0leNkLdmxGXfJr6juFhrwuCYb3YHRr/view?usp=drive_open",
+  },
+  {
+    title: "WB0009 Briefs — Environmental Health 101: What They Didn’t Teach You in School",
+    link: "https://drive.google.com/file/d/1FjQlmkn14hz6YaFrjPNLftY5mzYIJZ8S/view?usp=drive_open",
   }
 ];
 
