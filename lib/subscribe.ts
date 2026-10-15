@@ -5,6 +5,7 @@ type SubscribeInput = {
   email: string;
   name?: string;
   role?: string;
+  country?: string;
   source: string;
 };
 
@@ -289,7 +290,7 @@ function newsletterWelcomeEmail(name?: string) {
   };
 }
 
-export async function subscribeEmail({ email, name, role, source }: SubscribeInput): Promise<SubscribeResult> {
+export async function subscribeEmail({ email, name, role, country, source }: SubscribeInput): Promise<SubscribeResult> {
   if (!email || typeof email !== "string") {
     return { ok: false, reason: "invalid", message: "Email is required" };
   }
@@ -298,6 +299,7 @@ export async function subscribeEmail({ email, name, role, source }: SubscribeInp
     email,
     name: name || null,
     role: role || null,
+    country: country || null,
     source,
   });
 

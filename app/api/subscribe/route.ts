@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { subscribeEmail } from "@/lib/subscribe";
 
 export async function POST(req: NextRequest) {
-  const { email, name, role, source } = await req.json();
+  const { email, name, role, country, source } = await req.json();
 
-  const result = await subscribeEmail({ email, name, role, source: source ?? "unknown" });
+  const result = await subscribeEmail({ email, name, role, country, source: source ?? "unknown" });
 
   if (!result.ok) {
     const status = result.reason === "already_exists" ? 409 : result.reason === "invalid" ? 400 : 500;

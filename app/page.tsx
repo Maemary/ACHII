@@ -1,7 +1,6 @@
 import Navbar from "@/app/components/Navbar";
 import Hero from "@/app/components/Hero";
 import FeaturedIn from "@/app/components/FeaturedIn";
-import UpcomingEvents from "@/app/components/UpcomingEvents";
 import About from "@/app/components/About";
 import VisionMission from "@/app/components/VisionMission";
 import Pillars from "@/app/components/Pillars";
@@ -21,7 +20,6 @@ export default function Home() {
       <Navbar />
       <div data-nav-theme="dark"><Hero /></div>
       <div data-nav-theme="light"><FeaturedIn /></div>
-      <div data-nav-theme="light"><UpcomingEvents /></div>
       <div data-nav-theme="light"><About /></div>
       <div data-nav-theme="dark"><VisionMission /></div>
       <div data-nav-theme="light"><Impact /></div>

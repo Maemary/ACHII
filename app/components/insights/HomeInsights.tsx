@@ -1,18 +1,24 @@
 import Link from "next/link";
 import Button from "@/app/components/Button";
-import Image from "next/image";
 
 
 
+// Generic placeholder until the next webinar's details are confirmed.
 const upcomingWebinar = {
-  tag: "1-Year Anniversary · August Webinar",
-  subtitle: "Youth Advocacy in Climate & Health — the speaker is still a surprise.",
-  date: "Saturday, 29 August 2026",
+  tag: "Next Webinar · Coming Soon",
+  title: "Our next webinar is on the way.",
+  subtitle: "A new climate-health session every month. Details will be announced soon.",
+  date: "To be announced",
   time: "7:00 PM – 8:30 PM WAT",
   platform: "Google Meet",
 };
 
 const pastWebinars = [
+  {
+    tag: "WB0008 · August 2026",
+    title: "ACHII @ 1 Anniversary: Youth Advocacy in Climate & Health",
+    href: "https://drive.google.com/file/d/1uiMsCxSR-cakXitJHJiHvC037p4uAHAy/view",
+  },
   {
     tag: "WB0007 · July 2026",
     title: "Cities Underwater: Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience",
@@ -23,12 +29,6 @@ const pastWebinars = [
     title: "Voices From The Margins: Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis",
     href: "https://drive.google.com/file/d/1Nx83XjR80r_uxHcLcNWyQDOJIoQBPEyz/view",
   },
-  {
-    tag: "WB0005 · May 2026",
-    title: "Minds Under Pressure: The Unseen Wounds of Climate Change",
-    href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link",
-  },
-
 ];
 
 export default function HomeInsights() {
@@ -59,12 +59,15 @@ export default function HomeInsights() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
-          {/* Upcoming webinar announcement */}
+          {/* Upcoming webinar (generic until details are confirmed) */}
           <div className="flex flex-col lg:flex-row gap-8 lg:col-span-2 rounded-3xl overflow-hidden bg-primary-base p-8 lg:p-10">
           <div className=" flex flex-1 flex-col">
             <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">
               {upcomingWebinar.tag}
             </p>
+            <h3 className="font-header font-semibold text-white text-2xl lg:text-[32px] leading-tight tracking-[-0.01em] mb-3">
+              {upcomingWebinar.title}
+            </h3>
             <p className="font-body italic text-white/70 text-base mb-6 max-w-xl">
               {upcomingWebinar.subtitle}
             </p>
@@ -85,23 +88,14 @@ export default function HomeInsights() {
 </dl>
 
             <div className="mt-auto flex flex-wrap items-center gap-4">
-              <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3HMKcuFBZ79qv9blfYRpMd313JLzYWyJw/viewform" variant="yellow">
-                Register Now
-              </Button>
-              <Button href="/reports#newsletter" variant="outline-dark">
+              <Button href="/reports#newsletter" variant="yellow">
                 Get Notified
+              </Button>
+              <Button href="/training" variant="outline-dark">
+                Watch Past Recordings
               </Button>
             </div>
           </div>
-           <div className="relative w-full h-[280px] sm:h-[350px] lg:w-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 shadow-lg shadow-black/20 lg:ml-auto">
-  <Image
-    src="https://res.cloudinary.com/davuaeyxb/image/upload/v1787139268/WhatsApp_Image_2026-08-19_at_11.24.27_AM_iaid8k.jpg"
-    alt="ACHII Turns One anniversary webinar flyer — Youth Advocacy in Climate & Health, 29 August 7PM on Google Meet"
-    fill
-    sizes="(max-width:1024px) 100vw, 360px"
-    className="object-cover"
-  />
-</div>
           </div>
 
           {/* Past webinar recordings */}

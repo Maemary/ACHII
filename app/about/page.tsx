@@ -135,7 +135,7 @@ export default function AboutPage() {
 
       <div className="max-w-8xl">
         <p className="font-body text-sub text-base leading-[1.75]">
-          In our first eleven months, ACHII has delivered eight webinars reaching 170 attendees across
+          In our first fourteen months, ACHII has delivered ten webinars reaching 170 attendees across
           four countries. We've reached 2,753 secondary school students through in-person outreach.
           We've launched Nigeria's first national climate-health awareness study. We've deployed
           22 Regional Champions across all six geopolitical zones. And we've built active partnerships

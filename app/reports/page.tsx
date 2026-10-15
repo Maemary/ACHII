@@ -238,7 +238,7 @@ export default function ReportsPage() {
                 we want to hear from you.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button href="#" variant="outline-dark">Read the Latest Writings <p className="text-yellow">(Coming Soon)</p></Button>
+                {/* <Button href="/blog" variant="outline-dark">Read the Latest Writings</Button> */}
                 <Button href="https://forms.gle/bYggA3xcLdvT5eMK7" variant="yellow">Submit Your Writing</Button>
               </div>
             </div>

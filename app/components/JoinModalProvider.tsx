@@ -2,6 +2,7 @@
 import { supabase } from "@/lib/supabase";
 import { createContext, useContext, useEffect, useState } from "react";
 import SubscribeForm from "./EmailSignup";
+import { COUNTRIES } from "@/lib/countries";
 
 type JoinCtx = { open: () => void; close: () => void };
 const Ctx = createContext<JoinCtx>({ open: () => {}, close: () => {} });
@@ -20,6 +21,7 @@ export default function JoinModalProvider({ children }: { children: React.ReactN
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
+  const [country, setCountry] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
   const open = () => {
@@ -127,7 +129,7 @@ export default function JoinModalProvider({ children }: { children: React.ReactN
                 const res = await fetch("/api/subscribe", {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify({ email, name, role, source: "join_movement" }),
+                  body: JSON.stringify({ email, name, role, country, source: "join_movement" }),
                 });
 
                 setSubmitting(false);
@@ -181,6 +183,19 @@ export default function JoinModalProvider({ children }: { children: React.ReactN
                         <option>Advocate / Community member</option>
                         <option>Partner / Funder</option>
                         <option>Other</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block font-body text-xs text-sub mb-1.5">Country (optional)</label>
+                      <select
+                        value={country}
+                        onChange={(ev) => setCountry(ev.target.value)}
+                        className="w-full rounded-xl px-4 py-3 font-body text-sm text-strong bg-white border border-stroke-sub focus:border-primary-base outline-none transition-colors"
+                      >
+                        <option value="">Select one</option>
+                        {COUNTRIES.map((c) => (
+                          <option key={c}>{c}</option>
+                        ))}
                       </select>
                     </div>
                     <button

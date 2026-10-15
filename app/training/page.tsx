@@ -16,12 +16,13 @@ export const metadata = {
   alternates: { canonical: "/training" },
 };
 
+// Generic placeholder until the next webinar's details are confirmed.
 const eventDetails = [
-  ["Date", "Saturday, 29 August 2026"],
+  ["Date", "To be announced"],
   ["Time", "7:00 PM – 8:30 PM WAT"],
   ["Duration", "90 minutes"],
   ["Platform", "Google Meet"],
-  ["Cost", "Free — registration open"],
+  ["Cost", "Free"],
 ];
 
 const recordings = [
@@ -33,6 +34,7 @@ const recordings = [
   { tag: "WB0005 · May 2026", title: "Minds Under Pressure: The Unseen Wounds of Climate Change", desc: "Explored the mental health impacts of climate change in African communities, highlighting issues such as eco-anxiety, eco-grief, and the need for holistic post-disaster support.", href: "https://drive.google.com/file/d/1AGZfMb_Q7SjkTas95ucCRzJTx3h1RmxW/view?usp=drive_link", linkType: "recording" },
   { tag: "WB0006 · June 2026", title: "Voices From The Margins: Protecting Women, Elderly, and Low-Income Communities in Africa's Climate Crisis", desc: "This webinar examined the disproportionate climate burdens faced by vulnerable populations across Africa — women, the elderly, and low-income communities — who bear the greatest impacts yet remain excluded from decision-making.", href: "https://drive.google.com/file/d/1Nx83XjR80r_uxHcLcNWyQDOJIoQBPEyz/view", linkType: "recording" },
   { tag: "WB0007 · July 2026", title: "Cities Underwater: Decoding the 2026 Flood Crisis and How Youth Can Build Climate Resilience", desc: "As extreme rainfall and failing municipal infrastructure trigger flash floods across Africa, this session unpacked the flood emergency and connected it to systemic climate vulnerabilities — from blocked drainage to waterborne disease outbreaks.", href: "https://drive.google.com/file/d/1lcunRQwyVIZD7biVXyG0iT0hicwp_Gr5/view?usp=drive_open", linkType: "recording" },
+  { tag: "WB0008 · August 2026", title: "ACHII @ 1 Anniversary: Youth Advocacy in Climate & Health", desc: "Our first-anniversary webinar, celebrating a year of climate-health training and exploring how young people can lead advocacy on climate and health across Africa.", href: "https://drive.google.com/file/d/1uiMsCxSR-cakXitJHJiHvC037p4uAHAy/view", linkType: "recording" },
 ];
 
 const modules = [
@@ -52,8 +54,8 @@ export default function TrainingPage() {
   subtitle="Webinars, specialized workshops, and evidence-based training — designed by African clinicians, for African clinicians."
   imageContent={<WebinarSlide />}
   imageAlt="An ACHII facilitator addressing students at a school outreach"
-  card={{ title: "Next Webinar", sub: "29 Aug 2026 · 7PM WAT" }}
-  stat={{ value: "8", label: "Past webinars · free recordings" }}
+  card={{ title: "Next Webinar", sub: "Date to be announced" }}
+  stat={{ value: "10", label: "Past webinars · free recordings" }}
   sideContent={
     <div>
       <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-4">
@@ -73,21 +75,21 @@ export default function TrainingPage() {
         
       </div>
 
-      {/* Coming soon: August webinar */}
+      {/* Coming soon: next webinar (generic until details are confirmed) */}
       <div data-nav-theme="light">
         <section className="bg-white py-20 lg:py-[120px]">
           <div className="container-site grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10 lg:gap-14">
             <div>
-              <p className="label-tag mb-4">1-Year Anniversary · August Webinar</p>
+              <p className="label-tag mb-4">Next Webinar · Coming Soon</p>
               <p className="font-body italic text-sub text-base mb-7">
-                Youth Advocacy in Climate & Health — the speaker is still a surprise.
+                Our next climate-health session is on the way. Details will be announced soon.
               </p>
               <div className="hidden md:block space-y-4 mb-8">
                 <p className="font-body text-sub text-base leading-[1.75]">
-                 ACHII turns one in August, and we're marking the occasion with our monthly webinar. Registration is open now.
+                 A new ACHII webinar lands every month. The topic, speaker, and registration link will be shared here once confirmed.
                  </p>
                 <p className="font-body text-sub text-base leading-[1.75]">
-                Register now, or join the newsletter to catch future sessions as soon as they're announced.</p>
+                Join the newsletter to catch future sessions as soon as they're announced.</p>
               </div>
               <div className="mb-8">
                 <p className="font-header font-semibold text-strong text-sm mb-2">Who should attend</p>
@@ -116,7 +118,7 @@ export default function TrainingPage() {
                   <p className="font-body text-xs text-white/50 uppercase tracking-wide mb-2">Speakers</p>
                   <p className="font-body text-white text-sm">To be announced</p>
                 </div>
-                <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdNSwJam6YwSDlCJ3HMKcuFBZ79qv9blfYRpMd313JLzYWyJw/viewform" variant="yellow" className="w-full">Register Now</Button>
+                <Button href="/reports#newsletter" variant="yellow" className="w-full">Get Notified</Button>
               </div>
             </aside>
           </div>

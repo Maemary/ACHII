@@ -17,7 +17,8 @@ const links = [
   },
  { label: "Training", href: "/training" },
  { label: "Programmes", href: "/insights" },
-  { label: "Blogs", href: "/reports" },
+  { label: "Resource Bank", href: "/reports" },
+  // { label: "Blog/Articles", href: "/blog" }, // hidden until articles are published
   { label: "Get Involved", href: "/get-involved" },
   {label: "Partner with Us", href: "/partner"},
 ];
