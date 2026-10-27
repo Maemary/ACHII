@@ -11,7 +11,7 @@ const cols = [
     { label: "Training", href: "/training" },
     { label: "Programmes", href: "/insights" },
     { label: "Research", href: "/#research" },
-    { label: "Blogs", href: "/reports" },
+    { label: "Blogs", href: "/blog" },
     { label: "About", href: "/about" },
   ] },
   { heading: "Get Involved", links: [

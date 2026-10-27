@@ -10,6 +10,7 @@ const speakers = [
   { name: "Toluwalase Abiona",  image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784555372/Abiona_mpqwjv.jpg" },
   { name: "Jennifer Uchendu",  image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784555374/Jennifer_ssjmpu.jpg" },
   { name: "Dr. Ayodele Majekodunmi",  image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784555371/Ayodele_vgjxw6.jpg" },
+  { name: "Dr. Adaeze Ezirigwe",  image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1793101010/WhatsApp_Image_2026-10-27_at_9.23.07_AM_rpfow1.jpg" },
   { name: "Dr. Msilikale Walter Manyiri",  image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784555376/Walter_vxv5ny.jpg" },
   { name: "Pharm (Dr.) Esther Amos",  image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784555371/Esther_eedc4f.jpg" },
   { name: "Odunola Oladeji",   image: "https://res.cloudinary.com/davuaeyxb/image/upload/v1784555375/Oladeji_kxb4lf.jpg" },

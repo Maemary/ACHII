@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/app/components/Button";
 
 
@@ -59,7 +60,7 @@ export default function HomeInsights() {
 
         <div className="grid lg:grid-cols-3 gap-6">
           {/* Upcoming webinar announcement */}
-          <div className="flex flex-col lg:flex-row gap-8 lg:col-span-2 rounded-3xl overflow-hidden bg-primary-base p-8 lg:p-10">
+          <div className="flex flex-col xl:flex-row gap-8 lg:col-span-2 rounded-3xl overflow-hidden bg-primary-base p-8 lg:p-10">
           <div className=" flex flex-1 flex-col">
             <p className="font-body font-semibold text-[11px] tracking-[0.14em] uppercase text-yellow mb-5">
               {upcomingWebinar.tag}
@@ -95,8 +96,15 @@ export default function HomeInsights() {
               </Button>
             </div>
           </div>
-          {/* Flyer placeholder: swap this box for an <Image fill className="object-cover" /> once the flyer is ready */}
-          <div className="relative w-full h-[280px] sm:h-[350px] lg:w-[350px] lg:h-[450px] rounded-3xl overflow-hidden border border-white/10 bg-white/5 lg:ml-auto" />
+          <div className="relative w-full max-w-[450px] aspect-square xl:self-start xl:w-[350px] xl:flex-shrink-0 rounded-3xl overflow-hidden border border-white/10 xl:ml-auto">
+            <Image
+              src="https://res.cloudinary.com/davuaeyxb/image/upload/v1792765648/achii/images/cop31-flyer-register.webp"
+              alt="Antalya COP31 webinar flyer — Which side your health dey for climate change? With Dr. Henrietta Ampofo and Queen Amazundiro, 31 October, 6:00 PM WAT on Google Meet"
+              fill
+              sizes="(max-width:1280px) 450px, 350px"
+              className="object-cover"
+            />
+          </div>
           </div>
 
           {/* Past webinar recordings */}
