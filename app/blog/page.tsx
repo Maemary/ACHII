@@ -2,6 +2,8 @@ import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import SectionHeader from "@/app/components/SectionHeader";
+import Button from "@/app/components/Button";
+import { socialIcons } from "@/lib/socialIcons";
 import { blogPosts, upcomingPosts, formatPostDate, type BlogPost, type UpcomingPost } from "@/app/data/blogPosts";
 
 export const metadata = {
@@ -188,9 +190,12 @@ function ComingSoonCard({ post }: { post: UpcomingPost }) {
               href={l.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-primary-dark/90 px-3 py-1 font-body font-medium text-[11px] text-white hover:bg-primary-dark transition-colors"
+              aria-label={`${post.author} on ${l.label}`}
+              className="w-9 h-9 rounded-full bg-primary-dark/90 text-white flex items-center justify-center hover:bg-primary-dark transition-colors"
             >
-              {l.label}
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true">
+                <path d={socialIcons[l.icon]} />
+              </svg>
             </a>
           ))}
         </div>
@@ -208,7 +213,12 @@ function ComingSoonCard({ post }: { post: UpcomingPost }) {
         <h3 className="font-header font-semibold text-white text-2xl lg:text-[32px] leading-[1.15] tracking-[-0.01em] mb-5">
           {post.title}
         </h3>
-        <p className="font-body text-white/70 text-sm lg:text-[15px] leading-[1.8]">{post.authorBio}</p>
+        {post.shortBio && (
+          <p className="md:hidden font-body text-white/70 text-sm leading-[1.8]">{post.shortBio}</p>
+        )}
+        <p className={`${post.shortBio ? "hidden md:block" : ""} font-body text-white/70 text-sm lg:text-[15px] leading-[1.8]`}>
+          {post.authorBio}
+        </p>
       </div>
     </article>
   );
@@ -324,6 +334,31 @@ export default function BlogPage() {
           </section>
         </div>
       )}
+
+      {/* Submit your writing */}
+      <div data-nav-theme="light">
+        <section className="bg-bg-soft py-20 lg:py-[120px]">
+          <div className="container-site">
+            <div className="relative overflow-hidden rounded-3xl bg-white border border-stroke-soft p-9 lg:p-14 grid lg:grid-cols-[1fr_auto] gap-8 items-center">
+              <div className="pointer-events-none absolute -bottom-24 -right-16 w-[320px] h-[320px] rounded-full bg-yellow/30 blur-3xl" />
+              <div className="relative max-w-2xl">
+                <p className="label-tag mb-4">Writings from African Voices</p>
+                <h2 className="font-header font-semibold text-strong text-2xl lg:text-[34px] leading-[1.2] tracking-[-0.01em] mb-4">
+                  Climate health, told by the people living it.
+                </h2>
+                <p className="font-body text-sub text-base leading-[1.75]">
+                  Op-eds, essays, poems, and field reflections from African clinicians, researchers, and community
+                  advocates. If you have a story to tell, a perspective to share, or research you want amplified,
+                  we want to hear from you.
+                </p>
+              </div>
+              <div className="relative">
+                <Button href="https://forms.gle/bYggA3xcLdvT5eMK7" variant="yellow">Submit Your Writing</Button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <div data-nav-theme="dark">
         <Footer />

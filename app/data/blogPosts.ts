@@ -59,7 +59,8 @@ export type UpcomingPost = {
   title: string;
   author: string;
   authorBio: string;
-  links: { label: string; href: string }[];
+  shortBio?: string; // shown instead of authorBio on mobile
+  links: { label: string; href: string; icon: "instagram" | "linkedin" }[];
 };
 
 // Shown in the "Coming soon" tile on /blog until the piece is published.
@@ -69,7 +70,13 @@ export const upcomingPosts: UpcomingPost[] = [
     author: "Precious Kosomolate",
     authorBio:
       "Precious Kosomolate, popularly known as \"The Global Cosmolate,\" is a visionary Nigerian science communicator and first-class graduate of Adekunle Ajasin University who operates at the vital intersection of environmental health and creative advocacy. Driven by a deep interest in molecular biology and the One Health framework, she uses her platform, The One Health Diaries, to creatively demystify the links between human, animal, and planetary health. Through Project Typhoid Free Nigeria, Precious merges physical activism, such as community cleanups, with strategic health education on sanitation and hand hygiene to tackle waterborne diseases influenced by climate change. As a STEM mentor and environmentalist, she inspires a new generation to view scientific innovation as a creative tool for ecological resilience, proving that protecting our shared environment is the most effective way to ensure a healthy and sustainable future for all.",
-    links: [{ label: "Instagram", href: "https://www.instagram.com/theglobalcosmolate" }],
+    shortBio:
+      "Precious Kosomolate, \"The Global Cosmolate,\" is a Nigerian science communicator and One Health advocate. Through The One Health Diaries and Project Typhoid Free Nigeria, she links human, animal, and planetary health and tackles climate-driven waterborne disease.",
+    links: [
+      // TODO: swap for her LinkedIn profile URL once we have it — this is a name search for now.
+      { label: "LinkedIn", href: "https://www.linkedin.com/search/results/people/?keywords=Precious%20Kosomolate", icon: "linkedin" },
+      { label: "Instagram", href: "https://www.instagram.com/theglobalcosmolate", icon: "instagram" },
+    ],
   },
 ];
 

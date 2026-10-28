@@ -7,9 +7,9 @@ import Button from "@/app/components/Button";
 import SubscribeForm from "../components/EmailSignup";
 
 export const metadata = {
-  title: "Blogs & Resources — ACHII",
+  title: "Resource Bank — ACHII",
   description:
-    "Webinar recordings, written reports, toolkits, infographics, and writings from African voices on the climate-health front line.",
+    "Webinar recordings, written reports, toolkits, and infographics on the climate-health front line.",
   alternates: { canonical: "/reports" },
 };
 
@@ -81,9 +81,9 @@ export default function ReportsPage() {
 
       <div data-nav-theme="dark">
         <SplitHero
-          eyebrow="Blog Posts & Resources"
+          eyebrow="Resource Bank"
           title="Everything we’ve learned. In one place. Yours to use."
-          subtitle="Webinar recordings, written reports, practical toolkits, infographics, and writings from African voices on the climate-health front line."
+          subtitle="Webinar recordings, written reports, practical toolkits, and infographics from the climate-health front line."
           image="https://res.cloudinary.com/davuaeyxb/image/upload/v1784390987/IMG_9679_hcr0nn.jpg"
           imageAlt="Healthcare professionals reviewing climate-health data together"
         />
@@ -217,37 +217,25 @@ export default function ReportsPage() {
   </section>
 </div>
 
-      {/* Newsletter + Writings */}
+      {/* Newsletter */}
       <div data-nav-theme="light" id="newsletter">
         <section className="bg-bg-soft py-20 lg:py-[120px]">
-          <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="bg-white rounded-2xl p-9">
-              <p className="label-tag mb-4">Newsletter Archive</p>
-              <h2 className="font-header font-semibold text-strong text-2xl lg:text-[28px] leading-tight mb-3">The ACHII Newsletter.</h2>
-              <p className="font-body text-sub text-base mb-5">Monthly. Honest. Free.</p>
-              <p className="font-body text-sub text-sm leading-[1.75] mb-7">
-                Once a month, we share what we’re working on, what we’ve learned, and what we need
-                help with. Past editions are archived here so new readers can catch up.
-              </p>
-              <SubscribeForm
-  source="newsletter"
-  buttonLabel="Subscribe to the Newsletter"
-/>
-<p className="font-body text-soft text-xs mt-3">
-  Email only. We'll send your welcome letter, WhatsApp invite, and Resource Bank link.
-</p>
+          <div className="container-site">
+            <div className="bg-white rounded-2xl p-9 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+              <div>
+                <p className="label-tag mb-4">Newsletter Archive</p>
+                <h2 className="font-header font-semibold text-strong text-2xl lg:text-[34px] leading-tight mb-3">The ACHII Newsletter.</h2>
+                <p className="font-body text-sub text-base mb-5">Monthly. Honest. Free.</p>
+                <p className="font-body text-sub text-sm leading-[1.75]">
+                  Once a month, we share what we’re working on, what we’ve learned, and what we need
+                  help with. Past editions are archived here so new readers can catch up.
+                </p>
               </div>
-            <div className="bg-white rounded-2xl p-9">
-              <p className="label-tag mb-4">Writings from African Voices</p>
-              <h2 className="font-header font-semibold text-strong text-2xl lg:text-[28px] leading-tight mb-3">Climate health, told by the people living it.</h2>
-              <p className="font-body text-sub text-base mb-5">Op-eds, essays, and field reflections from African clinicians, researchers, and community advocates.</p>
-              <p className="font-body text-sub text-sm leading-[1.75] mb-7">
-                If you have a story to tell, a perspective to share, or research you want amplified —
-                we want to hear from you.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                {/* <Button href="/blog" variant="outline-dark">Read the Latest Writings</Button> */}
-                <Button href="https://forms.gle/bYggA3xcLdvT5eMK7" variant="yellow">Submit Your Writing</Button>
+              <div>
+                <SubscribeForm source="newsletter" buttonLabel="Subscribe to the Newsletter" />
+                <p className="font-body text-soft text-xs mt-3">
+                  Email only. We'll send your welcome letter, WhatsApp invite, and Resource Bank link.
+                </p>
               </div>
             </div>
           </div>
